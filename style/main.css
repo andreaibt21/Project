@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 main{
     display: grid;
     grid-template-columns: repeat(4, 100vw);
@@ -20,6 +21,81 @@ div {
     border: 1px solid black;
     
 } 
+
+/*----------------------BACKGROUND-----------------*/
+
+html, body {
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+#backgroundStars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 1920px;
+    } 
+    
+  
+#planet{
+      width: 1500px; 
+      height: 500px; 
+      background: #659999;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+      box-shadow: 0 0 50px black;
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      position: absolute;
+      bottom: 0;
+      left: 200px;
+      z-index: 2;
+    }
+  
+#estrella-fugaz{
+      width: 200px;
+      left: 60px;
+      position: absolute;
+    }
+  
+#estrella-fugaz1{
+      width: 100px;
+      left: 250px;
+      position: absolute;
+    }
+  
+#estrella-fugaz2{
+      width: 250px;
+      left: 1000px;
+      top: 100px;
+      position: absolute;
+    }
+  
+#estrella-fugaz3{
+      width: 100px;
+      left: 1500px;
+      position: absolute;
+    }
+  
+ 
+#planeta2{
+      height: 100px;
+      position: absolute;
+      top: 350px;
+      left: 200px;
+      z-index: 5;
+    }
+
+/*----------------------MARCIANITO DASFIO-----------------*/
+    #marcianito{
+        height: 400px;
+        position: absolute;
+        bottom: 400px;
+        left: 700px;
+        z-index: 4;
+      }
 
 /*----------------------NAVE-----------------*/
 
