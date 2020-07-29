@@ -1,12 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     overflow: hidden;
-}
-*{
-    margin: 0;
-    padding: 0;
 }
 
 main{
@@ -15,87 +12,170 @@ main{
     grid-template-rows: (4, 100vh);
 }
 
-div {
+article{
+    position: relative;
     height: 100vh;
-    width: 100vw;
-    border: 1px solid black;
+}
+
+/*----------------------FLECHAS-----------------*/
+
+.cuerpo-flecha{
+    width: 50px;
+    height: 20px;
+    background: black;
     
-} 
+}
+
+.triangulo{
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+    top: -20px ;
+    left: 50px;
+}
+
+.triangulo2{
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 300px ;
+    left: 700px;
+}
+
+.flecha-derecha{
+    position: absolute;
+    left: 1250px;
+    top: 50%;
+    z-index: 10;
+
+}
+
+.flecha-abajo{
+    position: absolute;
+    transform: rotate(90deg);
+    left: 50%;
+    top: 580px;
+    z-index: 10;
+}
+
+.flecha-izquierda{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 50%;
+    left: 40px; 
+    z-index: 10;
+}
+
+.flecha-arriba{
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 50px;
+    left: 50%; 
+    z-index: 10;
+}
 
 /*----------------------BACKGROUND-----------------*/
 
-html, body {
+#inicio {
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+} 
 
 #backgroundStars {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      width: 1920px;
-    } 
-    
-  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 1920px;
+} 
+
 #planet{
-      width: 1500px; 
-      height: 500px; 
-      background: #659999;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-      box-shadow: 0 0 50px black;
-      border-top-left-radius: 50% 100%;
-      border-top-right-radius: 50% 100%;
-      position: absolute;
-      bottom: 0;
-      left: 200px;
-      z-index: 2;
-    }
-  
+    width: 1100px; 
+    height: 300px; 
+    background: #659999;  /* fallback for old browsers */ 
+    background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    z-index: 2;
+}
+
 #estrella-fugaz{
-      width: 200px;
-      left: 60px;
-      position: absolute;
-    }
-  
+    width: 200px;
+    left: 60px;
+    position: absolute;
+}
+
 #estrella-fugaz1{
-      width: 100px;
-      left: 250px;
-      position: absolute;
-    }
-  
+    width: 100px;
+    left: 250px;
+    position: absolute;
+}
+
 #estrella-fugaz2{
-      width: 250px;
-      left: 1000px;
-      top: 100px;
-      position: absolute;
-    }
-  
+    width: 250px;
+    left: 900px;
+    top: 200px;
+    position: absolute;
+}
+
 #estrella-fugaz3{
-      width: 100px;
-      left: 1500px;
-      position: absolute;
-    }
-  
- 
-#planeta2{
-      height: 100px;
-      position: absolute;
-      top: 350px;
-      left: 200px;
-      z-index: 5;
+    width: 100px;
+    left: 800px;
+    top: 100px;
+    position: absolute;
+}
+
+@keyframes estrella-fugaz{
+    0%{
+        transform: translate(400px,-400px);
     }
 
+    50%{
+        transform: translate(0,0);
+    }
+
+    100%{
+        transform: translate(-400px,400px);
+    }
+}
+
+
+#estrella-fugaz,#estrella-fugaz1,#estrella-fugaz2,#estrella-fugaz3{
+    animation-name: estrella-fugaz;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#planeta2{
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    z-index: 5;
+}
+
 /*----------------------MARCIANITO DASFIO-----------------*/
-    #marcianito{
-        height: 400px;
-        position: absolute;
-        bottom: 400px;
-        left: 700px;
-        z-index: 4;
-      }
+
+#marcianito{
+    height: 300px;
+    position: absolute;
+    bottom: 200px;
+    left: 400px;
+    z-index: 4;
+}
 
 /*----------------------NAVE-----------------*/
 
@@ -236,10 +316,14 @@ html, body {
 }
 
 .movimientoNave{
-    width: 50%; /*REVISAR*/
-    height: 50%;
+    width: 5%; /*REVISAR*/
+    height: 5%;
+    position: absolute;
+    right: 250px;
+    z-index: 10;
     border: none;
 }
+
 
 .movimientoNave>div{
     border: none;
@@ -260,10 +344,6 @@ html, body {
     animation-timing-function: linear;
 }
 
-.movimientoNave{
-    margin: 10% 0;
-}
-
 @keyframes movimientoNave{
     0%{
         transform: translateY(-50%);
@@ -280,10 +360,182 @@ html, body {
 
 .movimientoNave{ 
     animation-name: movimientoNave;
-    animation-duration: 40s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 
 
+/*
+#backgroundStars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 1920px;
+} 
+    
+#planet{
+      width: 1500px; 
+      height: 500px; 
+      background: #659999;  /* fallback for old browsers */ /*
+      background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 *//*
+      background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+     /*
+      box-shadow: 0 0 50px black;
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      position: absolute;
+      bottom: 0;
+      left: 200px;
+      z-index: 2;
+}
+  
+#estrella-fugaz{
+      width: 200px;
+      left: 60px;
+      position: absolute;
+}
+  
+#estrella-fugaz1{
+      width: 100px;
+      left: 250px;
+      position: absolute;
+}
+  
+#estrella-fugaz2{
+      width: 250px;
+      left: 1000px;
+      top: 100px;
+      position: absolute;
+}
+  
+#estrella-fugaz3{
+      width: 100px;
+      left: 1500px;
+      position: absolute;
+}
+  
+ 
+#planeta2{
+      height: 100px;
+      position: absolute;
+      top: 350px;
+      left: 200px;
+      z-index: 5;
+}
+/*
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 100vw);
+    grid-template-rows: (4, 100vh);
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    
+} 
+
+/*----------------------FLECHAS-----------------*/
+/*
+a{
+    width: 10%;
+    height: 10%;
+}
+.flecha-derecha{
+    width: 1000px;
+    height: 1000px;
+    background: red;
+}
+
+/*----------------------BACKGROUND-----------------*/
+
+/*html, body {
+    background: #C33764;  /* fallback for old browsers */
+   /* background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* } 
+
+#backgroundStars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 1920px;
+    } 
+    
+/*
+#planet{
+      width: 1500px; 
+      height: 500px; 
+      background: #659999;  /* fallback for old browsers */ /*
+      background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
+     /* background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    /*
+     
+      box-shadow: 0 0 50px black;
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      position: absolute;
+      bottom: 0;
+      left: 200px;
+      z-index: 2;
+    }
+  
+#estrella-fugaz{
+      width: 200px;
+      left: 60px;
+      position: absolute;
+    }
+  
+#estrella-fugaz1{
+      width: 100px;
+      left: 250px;
+      position: absolute;
+    }
+  
+#estrella-fugaz2{
+      width: 250px;
+      left: 1000px;
+      top: 100px;
+      position: absolute;
+    }
+  
+#estrella-fugaz3{
+      width: 100px;
+      left: 1500px;
+      position: absolute;
+    }
+  
+ 
+#planeta2{
+      height: 100px;
+      position: absolute;
+      top: 350px;
+      left: 200px;
+      z-index: 5;
+    }
+
+/*----------------------MARCIANITO DASFIO-----------------*/
+/*
+    #marcianito{
+        height: 400px;
+        position: absolute;
+        bottom: 400px;
+        left: 700px;
+        z-index: 4;
+      }
+*/
