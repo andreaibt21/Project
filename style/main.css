@@ -60,7 +60,7 @@ i{
 }
 /*----------------------BACKGROUND-----------------*/
 
-#inicio {
+#inicio,#seis,#diez,#catorce {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -158,9 +158,9 @@ i{
     z-index: 5;
 }
 
-/*----------------------MARCIANITO DASFIO-----------------*/
+/*----------------------MARCIANITO DASAFIO-----------------*/
 
-#marcianito{
+.marcianito{
     height: 300px;
     position: absolute;
     bottom: 200px;
@@ -357,3 +357,27 @@ i{
 }
 
 
+/*---------6-10-14----------*/
+@keyframes caida {
+    100%{
+        transform: translateY(450px);
+    } 
+    50% {
+      transform: translateY(100px);
+    }
+    0%{
+        transform: translate(50px);
+    }
+    
+}
+#seis>.marcianito{
+    top: 10vh;
+    left: 45vw;
+    height: 100px;
+    animation-name: caida;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    
+}
+
+/*-----------------------------------------------*/
