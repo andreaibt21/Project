@@ -4,6 +4,7 @@ html{
 
 body{
     overflow: hidden;
+    margin:0;
 }
 
 main{
@@ -90,10 +91,11 @@ article{
 
 #backgroundStars {
     position: absolute;
+    Height: 100vh;
+    Width: 100vw;
     top: 0;
     left: 0;
     z-index: 0;
-    width: 1920px;
 } 
 
 #planet{
