@@ -19,17 +19,13 @@ article{
 }
 
 /*----------------------FLECHAS-----------------*/
-
-
-
-
 .flecha-derecha{
     position: absolute;
     right: 50px;
     top: 50%;
     z-index: 10;
-
 }
+
 
 .flecha-abajo{
     position: absolute;
@@ -47,7 +43,6 @@ article{
 
 .flecha-arriba{
     position: absolute;
-   
     top: 50px;
     left: 50%; 
     z-index: 10;
@@ -58,6 +53,57 @@ i{
     font-size: 30px ;
     color: #191970;
 }
+/*-------Mensajes-----------*/
+
+/*Inicio*/
+p>.mensaje, .sms-d,.sms-ar,.sms-i,.sms-ab{
+    display: none;
+    padding: 2px;
+    position:absolute;
+    border: black solid 1px;
+    color: blanchedalmond;
+    background-color: crimson;
+    z-index: 10;
+}
+p>.mensaje, .sms-x{
+    display: none;
+    padding: 15px;
+    font-size: xx-large;
+    position:absolute;
+    border: black solid 1px;
+    background-color:greenyellow;
+    z-index: 10;
+}
+
+.flecha-derecha:hover ~ .sms-d {
+    display: block;
+    left: 84vw;
+    top: 49vh;
+ 
+}
+
+.flecha-abajo:hover ~ .sms-ab {
+    display: block;
+    left: 47vw;
+    top: 78vh;
+}
+
+.flecha-izquierda:hover ~ .sms-i{
+    display: block;
+    left: 8vw;
+    top: 49vh;
+}
+.flecha-arriba:hover ~ .sms-ar {
+    display: block;
+    left: 47vw;
+    top: 13vh;
+}
+.revivir:hover ~ .sms-x {
+    display: block;
+    left: 40vw;
+    top: 40vh;
+}
+
 /*----------------------BACKGROUND-----------------*/
 
 #inicio,#seis,#diez,#catorce {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
