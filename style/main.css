@@ -1,3 +1,4 @@
+/*-------------------GENERAL-----------------*/
 html{
     scroll-behavior: smooth;
 }
@@ -16,71 +17,6 @@ main{
 article{
     position: relative;
     height: 100vh;
-}
-
-/*----------------------FLECHAS-----------------*/
-
-#siete:target
-
-.cuerpo-flecha{
-    width: 50px;
-    height: 20px;
-    background: black;
-    
-}
-
-.triangulo{
-    border-right: 30px solid transparent;
-    border-top: 30px solid transparent;
-    border-left: 30px solid transparent;
-    border-bottom: 30px solid black;
-    position: absolute;
-    transform: rotate(90deg);
-    top: -20px ;
-    left: 50px;
-}
-
-.triangulo2{
-    border-right: 30px solid transparent;
-    border-top: 30px solid transparent;
-    border-left: 30px solid transparent;
-    border-bottom: 30px solid black;
-    position: absolute;
-    transform: rotate(90deg);
-    top: 300px ;
-    left: 700px;
-}
-
-.flecha-derecha{
-    position: absolute;
-    left: 1250px;
-    top: 50%;
-    z-index: 10;
-
-}
-
-.flecha-abajo{
-    position: absolute;
-    transform: rotate(90deg);
-    left: 50%;
-    top: 580px;
-    z-index: 10;
-}
-
-.flecha-izquierda{
-    position: absolute;
-    transform: rotate(180deg);
-    top: 50%;
-    left: 40px; 
-    z-index: 10;
-}
-
-.flecha-arriba{
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 50px;
-    left: 50%; 
-    z-index: 10;
 }
 
 /*-------------------BOTON DE REVIVIR-----------------*/
@@ -166,14 +102,106 @@ article{
     transition-delay: 0.75s;
 }
 
+
+/*----------------------FLECHAS-----------------*/
+
+.flecha-derecha{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 10;
+
+}
+
+.flecha-abajo{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    z-index: 10;
+}
+
+.flecha-izquierda{
+    position: absolute;
+    top: 50%;
+    left: 5%; 
+    z-index: 10;
+}
+
+.flecha-arriba{
+    position: absolute;
+    top: 5%;
+    left: 50%; 
+    z-index: 10;
+}
+
+i{
+    text-decoration: none;
+    font-size: 30px ;
+    color: #191970;
+}
+
+
+
+.flecha-derecha:hover ~ .sms-d {
+    display: block;
+    left: 84vw;
+    top: 49vh;
+ 
+}
+
+.flecha-abajo:hover ~ .sms-ab {
+    display: block;
+    left: 47vw;
+    top: 78vh;
+}
+
+.flecha-izquierda:hover ~ .sms-i{
+    display: block;
+    left: 8vw;
+    top: 49vh;
+}
+.flecha-arriba:hover ~ .sms-ar {
+    display: block;
+    left: 47vw;
+    top: 13vh;
+}
+.revivir:hover ~ .sms-x {
+    display: block;
+    left: 40vw;
+    top: 40vh;
+}
+
+/*-------Mensajes-----------*/
+
+/*Inicio*/
+
+p>.mensaje, .sms-d,.sms-ar,.sms-i,.sms-ab{
+    display: none;
+    padding: 2px;
+    position:absolute;
+    border: black solid 1px;
+    color: blanchedalmond;
+    background-color: crimson;
+    z-index: 11;
+}
+p>.mensaje, .sms-x{
+    display: none;
+    padding: 15px;
+    font-size: xx-large;
+    position:absolute;
+    border: black solid 1px;
+    background-color:greenyellow;
+    z-index: 11;
+}
+
 /*----------------------BACKGROUND-----------------*/
-#inicio, #siete{
+
+#inicio,#seis,#siete,#diez,#catorce {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
-/*----------------------MARCIANITO DASFIO-----------------*/
 #backgroundStars {
     height: 100%;
     width: 100%;
@@ -240,9 +268,22 @@ article{
 
 #estrella-fugaz,#estrella-fugaz1,#estrella-fugaz2,#estrella-fugaz3{
     animation-name: estrella-fugaz;
-    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+#estrella-fugaz{
+    animation-duration: 4s;
+}
+
+#estrella-fugaz1{
+    animation-duration: 2.5s;
+}
+#estrella-fugaz2{
+    animation-duration: 2s;
+}
+#estrella-fugaz3{
+    animation-duration: 3s;
 }
 
 #planeta2{
@@ -253,9 +294,9 @@ article{
     z-index: 4;
 }
 
-/*----------------------MARCIANITO DASFIO-----------------*/
+/*----------------------MARCIANITO DASAFIO-----------------*/
 
-#marcianito{
+.marcianito{
     height: 40%;
     position: absolute;
     bottom: 20%;
@@ -263,8 +304,10 @@ article{
     z-index: 5;
 }
 
+/*----------------------MURTE METEORITO - 7 -----------------*/
 
-/*----------------------MURTE METEORITO-----------------*/
+
+
 @keyframes meteorito{
 
     from{
@@ -284,14 +327,14 @@ article{
     z-index: 5;
 }
 
-
-#meteorito{
+#siete:target #meteorito{
     animation-name: meteorito;
     animation-duration: 3s;
     animation-iteration-count: inherit;
     animation-timing-function: linear;
 
 }
+
 
 @keyframes vuelaMarciano{
     0%{
@@ -315,7 +358,17 @@ article{
    
 }
 
-.marcianito7{
+.marcianito-muerto-7{
+    height: 40%;
+    position: absolute;
+    bottom: 220%;
+    transform: rotate(-45deg);
+    left: 0;
+    z-index: 4;
+ 
+}
+
+#seven:target #marcianito7{
     animation-name: vuelaMarciano;
     animation-delay: 2.5s;
     animation-duration: 1s;
@@ -324,20 +377,16 @@ article{
     animation-fill-mode: forwards;
 }
 
-.marcianito-muerto-7{
-    height: 40%;
-    position: absolute;
-    bottom: 220%;
-    transform: rotate(-45deg);
-    left: 0;
-    z-index: 4;
+
+
+ #seven:target marcianito-muerto-7{
     animation-name: cae-marciano-muerto;
     animation-delay: 4s;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     
-}
+ }
 
 @keyframes cartel-muerte{
     100%{
@@ -372,6 +421,9 @@ article{
     background: rgb(78, 15, 119);
     box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
     z-index: 100;
+}
+
+#seven:target .cartel-muerte {
     animation: cartel-muerte 3s linear 7s, movimiento-cartel 5s linear 13s infinite;
     animation-fill-mode: forwards;
 }
@@ -382,6 +434,9 @@ article{
     text-align: center;
     opacity: 0;
     font-size: 0;
+}
+
+#seven:target .cartel-muerte>p{
     animation-name: cartel-muerte;
     animation-delay: 7s;
     animation-duration: 6s;
@@ -404,9 +459,40 @@ article{
 .revivir7{
     top: 110%;
     left: 10%;
+}
+
+#seven:target .revivir7{
     animation: aparece-boton-revivir 3s linear 7s;
     animation-fill-mode: forwards;
 }
+
+/*----------------------------------------------------------------------------------------*/
+
+/*---------6-10-14----------*/
+@keyframes caida {
+    100%{
+        transform: translateY(450px);
+    } 
+    50% {
+      transform: translateY(100px);
+    }
+    0%{
+        transform: translate(50px);
+    }
+    
+}
+
+#seis>.marcianito{
+    top: 10vh;
+    left: 45vw;
+    height: 100px;
+    animation-name: caida;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    
+}
+
+/*-----------------------------------------------*/
 
 
  /*----------------------MEDIA QUERIES-----------------*/
@@ -421,8 +507,8 @@ article{
     }
 
     /*----------------------MARCIANITO DASFIO-----------------*/
-
-    #marcianito{
+    	
+    .marcianito{
         height: 50%;
         left: 20%;
     }
@@ -667,7 +753,7 @@ article{
 
     }
 
-    .marcianito7{
+    #marcianito7{
         animation-name: vuelaMarciano;
         animation-delay: 2.7s;
         animation-duration: 1s;
@@ -768,4 +854,5 @@ article{
     }
 
 }
+
 
