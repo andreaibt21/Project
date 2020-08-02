@@ -472,28 +472,74 @@ p>.mensaje, .sms-x{
 
 /*---------6-10-14----------*/
 @keyframes caida {
-    100%{
-        transform: translateY(450px);
-    } 
-    50% {
-      transform: translateY(100px);
-    }
     0%{
-        transform: translate(50px);
+        top:0;
+        left: 45vw;  
+        height: 50px;         
     }
+    100%{
+        top: 50vh;
+        left: 45vw;           
+        height: 200px;
+    } 
     
 }
+@keyframes agujero{
+    0%{
+        opacity: 0;
+       
+    }
+    50%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        transform: scale(2);
+    }
+}
 
-#seis>.marcianito{
-    top: 10vh;
-    left: 45vw;
-    height: 100px;
+#seis:target >.marcianito{
     animation-name: caida;
     animation-duration: 2s;
-    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+}
+#seis:target>#agujero{
+    position: absolute;
+    background-color: #000;
+    top:9vh;
+    left: 45vw;
+    animation-name: agujero;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding: 10px 40px;
+    border-radius: 50%;
+ 
     
 }
 
+#seis> .sms-m6, .sms-ab6,.sms-d6{
+    display: none;
+    padding: 15px;
+    position: absolute;
+    border: black solid 1px;
+    border-radius: 50%;
+    background-color:bisque;
+    color: black;
+    z-index: 11;
+    left: 55vw;
+    top: 45vh;
+}
+
+#seis>.flecha-derecha:hover ~ .sms-d6{
+    display: block;
+}
+#seis>.flecha-abajo:hover ~ .sms-ab6 {
+    display: block;
+}
+#seis>.marcianito:hover ~ .sms-m6 {
+    display: block;
+}
 /*-----------------------------------------------*/
 
 
