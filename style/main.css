@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 /*-------------------GENERAL-----------------*/
 html{
     scroll-behavior: smooth;
@@ -882,6 +884,29 @@ p>.mensaje, .sms-x{
     animation-iteration-count: infinite;
 
 }
+
+#azul, #astronauta p{
+    z-index: 90;
+    position: absolute;
+    animation-name: vueloAstro;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#azul{
+    width: 20vw;
+    right: 45vw;
+    top:8vh;
+}
+#astronauta p{
+    width: 13vw;
+    right: 48.5vw;
+    top:13.5vh;
+    font-family:  'Amatic SC', cursive;
+    font-size: 18px;
+    text-indent: 1em;
+}
+
 #dos{
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #157b97, #01013d);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1017,7 +1042,7 @@ p>.mensaje, .sms-x{
     height: 5%;
     position: absolute;
     left: 15vw;
-    top: 20vh;
+    top: 30vh;
     z-index: 10;
     border: none;
 }
@@ -1070,4 +1095,61 @@ p>.mensaje, .sms-x{
     right: 3vw;
     top: -1vw;
     transform: rotateX(180deg);
+    z-index: 90;
 }
+#cuerda{
+width:33vw;
+position: absolute;
+right: 12vw;
+top: 4.5vh;
+animation: cuerda 5s linear infinite;
+transform-origin: right;
+}
+@keyframes cuerda{
+    0%{
+        transform: rotate(10deg);
+        
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+#pregunta {
+    width: 30vw;
+    margin-left: 5vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    z-index: 90;
+    border-radius: 20px;
+    
+}
+#pregunta p{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 4px;
+    text-indent: 2em;
+}
+.verde {
+    position: absolute;
+    left:120px;
+    top: -90px;
+    width: 30vw;
+    /* display: none; */
+}
+/* 
+#alien2:hover ~ .verde{
+    display: inline;
+} */
+ .verde p{
+    position: absolute;
+    left: 117px;
+    top: 45px;
+    width: 13vw; 
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    
+} 
