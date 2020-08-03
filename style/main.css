@@ -198,7 +198,7 @@ p>.mensaje, .sms-x{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce, #ocho {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
@@ -1199,3 +1199,5 @@ transform-origin: right;
     font-size: 18px;
     
 } 
+
+/* -------------OCHO--------------- */
