@@ -1428,6 +1428,11 @@ transform-origin: right;
     z-index: 6;
 }
 
+#fireworks{
+    width: 30%;
+
+}
+
 #fireworks2{
     width: 10%;
     top: 5%;
@@ -1506,8 +1511,8 @@ transform-origin: right;
     top:5%;
     right: 10%;
     background-color: lightslategray;
-    width: 20%;
-    height: 10%;
+    width: 40vh;
+    height: 5vw;
     text-align: center;
     border-radius: 20px;
     z-index: 8;
@@ -1518,8 +1523,8 @@ transform-origin: right;
     top: 20%;
     right: 10%;
     background-color: lightslategray;
-    width: 20%;
-    height: 10%;
+    width: 40vh;
+    height: 5vw;
     text-align: center;
     border-radius: 20px;
     z-index: 20;
@@ -1527,11 +1532,11 @@ transform-origin: right;
 
 #text3{
     position: absolute;
-    top: 35%;
+    top: 35vh;
     right: 10%;
     background-color: lightslategray;
-    width: 20%;
-    height: 20%;
+    width: 40vh;
+    height: 13vw;
     text-align: center;
     text-justify: center;
     border-radius: 20px;
@@ -1543,18 +1548,17 @@ transform-origin: right;
     display: inline;
     font-weight: 700;
     color: aliceblue;
-    font-size: 70px;
-
+    font-size: 3.5vw;
 }
 #text3 p{
     font-family: 'Amatic SC', cursive;
     display: inline;
     font-weight: 700;
     color: aliceblue;
-    font-size: 30px;
-    padding-top: 20px;
-
+    font-size: 2vw;
 }
+
+
 /* ------------------TRES------------------------ */
 
 #tres{
