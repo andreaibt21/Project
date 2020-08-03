@@ -198,7 +198,7 @@ p>.mensaje, .sms-x{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
@@ -469,6 +469,194 @@ p>.mensaje, .sms-x{
 }
 
 /*----------------------------------------------------------------------------------------*/
+
+/* -------------5--------------- */
+
+.tree-wrapper {
+    z-index: 0;
+    overflow: hidden;
+    margin:auto;
+    /*background: rgba(0, 63, 0, 0.21);*/
+    background: -moz-linear-gradient(top, rgba(229,232,126,0) 0%, rgba(137,154,30,.1)100%);
+  background: -webkit-linear-gradient(top, rgba(229,232,126,0) 0%,rgba(137,154,30,.3) 100%);
+  background: linear-gradient(to bottom, rgba(229,232,126,0) 0%,rgba(137,154,30,.55) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e87e', endColorstr='#899a1e',GradientType=0 );
+  }
+.tree-container {
+
+display:flex;
+justify-content: center;
+margin:auto;
+flex-wrap: nowrap;
+}
+
+.back {
+margin-bottom: 1.3rem !important;
+z-index: 20 !important;
+border-bottom-color: #849c65 !important;
+
+}
+.middle {
+margin-bottom: .75rem !important;
+z-index: 30 !important;
+border-bottom-color: #45681e !important;
+}
+.tree-extra-large {
+width: 0; 
+height: 0; 
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-bottom: 95px solid #365416;
+margin-top:auto;
+margin-right:-.9rem;
+z-index: 50;
+}
+.tree-large {
+dispaly: inherit;
+width: 0; 
+height: 0; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 75px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
+.tree-medium {
+width: 0; 
+height: 0; 
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-bottom: 65px solid #365416;
+margin-top:auto;
+margin-right:-1rem;
+z-index: 50;
+}
+.tree-small {
+    width: 0; 
+height: 0; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 55px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
+
+.backGroundNueveCinco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sopi{
+    background-color: #384e21;
+    position: absolute;
+    height: 43%;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+}
+.lodo{
+    background-color: #2b100c;
+    position: absolute;
+    height: 19%;
+    width: 39%;
+    bottom: 63px;
+    left: 322px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.lodoUpper{
+    background-color: #2b100c;
+    position: absolute;
+    height: 17%;
+    width: 35%;
+    z-index: 100;
+    bottom: 66px;
+    left: 345px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.marcianitoTree {
+    margin-left: 10px;
+    left:0px !important;
+}
+
+@keyframes alienWalkForest {
+    0%{
+        
+    }
+    100%{
+        transform: translate(500px);
+    }
+}
+
+.moreLeft{
+    left:1100px !important
+}
+
+#cinco:target>#marcianitoWalkForest{
+    animation: alienWalkForest 3s forwards
+}
+
+#nueve:target>#marcianitoFallForest{
+    animation: alienFallForest 1s forwards;
+    animation-delay: 0.2s;
+
+}
+#nueve:target>.reviveButton{
+    animation: showReviveButton 1.0s forwards;
+    animation-delay: 1.5s;
+}
+
+.marcianitoFallTree {
+    margin-left: 10px;
+    top: 0;
+    left: 500px !important;
+}
+
+@keyframes alienFallForest {
+    0%{
+    }
+    70%{
+        transform: translate(0,300px) rotate(90deg);
+    }
+    71%{
+        transform: translate(0,280px) rotate(90deg);
+    }
+    100%{
+        transform: translate(0,300px) rotate(90deg);
+    }
+}
+
+@keyframes showReviveButton {
+    100%{
+        opacity: 1;
+    }
+}
+.reviveButton>p{
+    color: yellow;
+    font-size: xx-large;
+}
+
+.reviveButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    height: 170px;
+    width: 170px;
+    background-color:red;
+    z-index: 100;
+    opacity: 0;
+    text-decoration: none;
+}
+
+  
+/* -------------5--------------- */
 
 /*---------6-10-14----------*/
 @keyframes caida {
