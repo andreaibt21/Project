@@ -198,7 +198,7 @@ p>.mensaje, .sms-x{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
@@ -469,6 +469,194 @@ p>.mensaje, .sms-x{
 }
 
 /*----------------------------------------------------------------------------------------*/
+
+/* -------------5--------------- */
+
+.tree-wrapper {
+    z-index: 0;
+    overflow: hidden;
+    margin:auto;
+    /*background: rgba(0, 63, 0, 0.21);*/
+    background: -moz-linear-gradient(top, rgba(229,232,126,0) 0%, rgba(137,154,30,.1)100%);
+  background: -webkit-linear-gradient(top, rgba(229,232,126,0) 0%,rgba(137,154,30,.3) 100%);
+  background: linear-gradient(to bottom, rgba(229,232,126,0) 0%,rgba(137,154,30,.55) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e87e', endColorstr='#899a1e',GradientType=0 );
+  }
+.tree-container {
+
+display:flex;
+justify-content: center;
+margin:auto;
+flex-wrap: nowrap;
+}
+
+.back {
+margin-bottom: 1.3rem !important;
+z-index: 20 !important;
+border-bottom-color: #849c65 !important;
+
+}
+.middle {
+margin-bottom: .75rem !important;
+z-index: 30 !important;
+border-bottom-color: #45681e !important;
+}
+.tree-extra-large {
+width: 0; 
+height: 0; 
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-bottom: 95px solid #365416;
+margin-top:auto;
+margin-right:-.9rem;
+z-index: 50;
+}
+.tree-large {
+display: inherit;
+width: 0; 
+height: 0; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 75px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
+.tree-medium {
+width: 0; 
+height: 0; 
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-bottom: 65px solid #365416;
+margin-top:auto;
+margin-right:-1rem;
+z-index: 50;
+}
+.tree-small {
+    width: 0; 
+height: 0; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 55px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
+
+.backGroundNueveCinco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sopi{
+    background-color: #384e21;
+    position: absolute;
+    height: 43%;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+}
+.lodo{
+    background-color: #2b100c;
+    position: absolute;
+    height: 19%;
+    width: 39%;
+    bottom: 63px;
+    left: 322px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.lodoUpper{
+    background-color: #2b100c;
+    position: absolute;
+    height: 17%;
+    width: 35%;
+    z-index: 100;
+    bottom: 66px;
+    left: 345px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.marcianitoTree {
+    margin-left: 10px;
+    left:0px !important;
+}
+
+@keyframes alienWalkForest {
+    0%{
+        
+    }
+    100%{
+        transform: translate(500px);
+    }
+}
+
+.moreLeft{
+    left:1100px !important
+}
+
+#cinco:target>#marcianitoWalkForest{
+    animation: alienWalkForest 3s forwards
+}
+
+#nueve:target>#marcianitoFallForest{
+    animation: alienFallForest 1s forwards;
+    animation-delay: 0.2s;
+
+}
+#nueve:target>.reviveButton{
+    animation: showReviveButton 1.0s forwards;
+    animation-delay: 1.5s;
+}
+
+.marcianitoFallTree {
+    margin-left: 10px;
+    top: 0;
+    left: 500px !important;
+}
+
+@keyframes alienFallForest {
+    0%{
+    }
+    70%{
+        transform: translate(0,300px) rotate(90deg);
+    }
+    71%{
+        transform: translate(0,280px) rotate(90deg);
+    }
+    100%{
+        transform: translate(0,300px) rotate(90deg);
+    }
+}
+
+@keyframes showReviveButton {
+    100%{
+        opacity: 1;
+    }
+}
+.reviveButton>p{
+    color: yellow;
+    font-size: xx-large;
+}
+
+.reviveButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    height: 170px;
+    width: 170px;
+    background-color:red;
+    z-index: 100;
+    opacity: 0;
+    text-decoration: none;
+}
+
+  
+/* -------------5--------------- */
 
 /*---------6-10-14----------*/
 @keyframes caida {
@@ -904,7 +1092,7 @@ p>.mensaje, .sms-x{
 }
 
 
-/* -------------DOS--------------- */
+/* --------------------DOS-------------------------- */
 
 
 @keyframes vueloAstro{
@@ -960,7 +1148,7 @@ p>.mensaje, .sms-x{
  
 }
 
-
+/* --------- inicio nave-------- */
 .ventana1{
     position: relative;
     margin: 50px auto;
@@ -1097,13 +1285,14 @@ p>.mensaje, .sms-x{
 .movimientoNave1>div{
     border: none;
 }
-
+/* --------- fin nave-------- */
 #alien2{
     display: flex;
     margin: 0 auto;
     margin-top: 15px;
     z-index: 90;
     height: 100px;
+    transform: rotateY(180deg);
    
 
 }
@@ -1184,12 +1373,12 @@ transform-origin: right;
     left:120px;
     top: -90px;
     width: 30vw;
-    /* display: none; */
+     /* display: none;  */
 }
-/* 
-#alien2:hover ~ .verde{
+
+#alien2:hover  .verde{
     display: inline;
-} */
+} 
  .verde p{
     position: absolute;
     left: 117px;
@@ -1215,10 +1404,9 @@ transform-origin: right;
     left: 10%;
     z-index: 2;
 }
-
 #casamarcianito { 
-    width: 22%;
     position: absolute;
+    width: 22%;
     left: 30%;
     bottom: 25%;
     z-index: 5 ;
@@ -1365,5 +1553,301 @@ transform-origin: right;
     color: aliceblue;
     font-size: 30px;
     padding-top: 20px;
+
+}
+/* ------------------TRES------------------------ */
+
+#tres{
+   
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#planet3{
+    width: 80%; 
+    height: 40%; 
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 35px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
+
+/* -----INICIO ALIEN---- */
+#alien3{
+    position: absolute;
+    right: 24vw;
+    top: 45vh;
+    z-index: 3;
+    width: 8vw;
+    animation: susto 0.2s linear infinite;
+}
+@keyframes susto{
+    0%{
+        transform: translateX(2px) translateY(2px);
+    }
+    50%{
+        transform: translateX(-2px) translateY(-2px);
+    }
+    100%{
+        transform: translateX(2px) translateY(2px);
+    }
+}
+
+
+/* -----FIN ALIEN---- */
+
+#monstruo{
+    width: 40vw;
+    position: absolute;
+    left: 15vw;
+    top:22vh;
+    z-index: 1;
+    animation: monstruoMove 3s linear infinite;
+}
+@keyframes monstruoMove{
+    0%{
+        transform: translateY(105px) rotate(10deg);
+    }
+    50%{
+        transform: translateY(-105px) rotate(-10deg);
+    }
+    100%{
+        transform: translateY(105px) rotate(10deg);
+
+    }
+}
+
+#ptres{
+    width: 25vw;
+    position:absolute;
+    right: 8vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    z-index: 90;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px;
+    
+
+}
+
+#tres .cuadrito {
+    background-color: #0f9b0fad;
+    border-radius: 5px;
+    border:none; font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+
+}
+
+/* ------------------CUATRO------------------------- */
+
+#cuatro {
+    background-image: linear-gradient( 111.1deg,  rgba(0,40,70,1) -4.8%, rgba(255,115,115,1) 82.7%, rgba(255,175,123,1) 97.2% );
+}
+
+#starlord{
+    height:  30vw;
+    position: absolute;
+    right: 25vw;
+    top: 12vh;
+    animation: starlord 5s linear infinite;
+    z-index: 90;
+}
+
+@keyframes starlord{
+
+    0%{ 
+        transform: translateX(20px) translateY(20px);        
+    }
+    50%{ 
+        transform: translateX(-20px) translateY(-20px);        
+    }
+    100%{ 
+        transform: translateX(20px) translateY(20px);        
+    }
+}
+
+
+
+
+/* --------- inicio nave-------- */
+#cuatro .ventana1{
+    position: relative;
+    margin: 50px auto;
+    width: 200px;
+    height: 100px;
+    border: 2px solid #000;
+    background: #ADD8E6;
+    border-radius: 100px 100px 0 0;
+}
+
+
+#cuatro .franja1{
+    background: #191970;
+    width: 220px;
+    height: 10px;
+    border-radius: 100px 100px 0 0;
+    border: 2px solid #000;
+    position: absolute;
+    top: 100px;
+    right: -13px;
+    z-index: 10;
+}
+
+#cuatro .base11{
+    background: #191970;
+    width: 350px;
+    height: 30px;
+    border-radius: 100px 100px 0 0;
+    border: 2px solid #000;
+    border-bottom: 6px solid #000;
+    position: absolute;
+    left: -75px;
+    top: 114px;
+}
+
+#cuatro .base21{
+    background: #191970;
+    width: 350px;
+    height: 30px;
+    border-radius: 0 0 100px 100px;
+    border: 2px solid #000;
+    border-top: 6px solid #000;
+    position: absolute;
+    left: -2px;
+    top: 36px;
+}
+
+#cuatro .circle1{
+    background: #99FF00;
+    width: 28px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+#cuatro .circle.uno1{
+    position: absolute;
+    left: 280px;
+    top: 4px;
+}
+
+#cuatro .circle.dos1{
+    position: absolute;
+    left: 160px;
+    top: 4px;
+}
+
+#cuatro .circle.tres1{
+    position: absolute;
+    left: 30px;
+    top: 4px;
+}
+
+#cuatro .circle.cuatro1{
+    position: absolute;
+    left: 100px;
+    top: 4px;
+}
+
+#cuatro .circle.cinco1{
+    position: absolute;
+    left: 220px;
+    top: 4px;
+ 
+}
+
+#cuatro .base-antena1{
+    background: #6d6d75;
+    width: 90px;
+    height: 10px;
+    border-radius: 100px 100px 0 0;
+    border: 2px solid #000;
+    border-bottom: 6px solid #000;
+    position: absolute;
+    left: 54px;
+    top: -9px;
+
+}
+
+#cuatro .palo-11{
+    background: #6d6d75;
+    width: 5px;
+    height: 25px;
+    border: 2px solid #000;
+    position: absolute;
+    left: 39px;
+    top: -25px;
+    z-index: -2;
+
+}
+
+#cuatro .circulo-11{
+    background: #a3331f;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    left: -7px;
+    top: -9px;
+}
+
+#cuatro .movimientoNave1{
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    left: 15vw;
+    top: 30vh;
+    z-index: 10;
+    border: none;
+}
+
+
+#cuatro .movimientoNave1>div{
+    border: none;
+}
+
+#cuatro #alien2{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    z-index: 90;
+    height: 100px;
+    transform: rotateY(180deg);
+} 
+/* --------- fin nave-------- */
+
+#cuatro .verde {
+    position: absolute;
+    left:120px;
+    top: -90px;
+    width: 30vw;
+     /* display: none;  */
+}
+
+#pcuatro{
+    width: 25vw;
+    position:absolute;
+    right: 8vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    z-index: 90;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px;
+    
 
 }
