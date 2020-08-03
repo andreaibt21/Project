@@ -453,12 +453,14 @@ p>.mensaje, .sms-x{
         left: 40%;
         top: 80%;
         height: 20px;
+        z-index: 2;
     }
 }
 
 .revivir7{
     top: 110%;
     left: 10%;
+    z-index: 0;
 }
 
 #seven:target .revivir7{
@@ -492,6 +494,54 @@ p>.mensaje, .sms-x{
     
 }
 
+/*--------------------------------PAGINA ONCE------------------------------------------*/
+#once{/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+#planet{
+    background: #EB5757;  /* fallback for old browsers */ 
+    background: -webkit-linear-gradient(to top, #EB5757, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #EB5757, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.cartel-dir{
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    width: 50%;
+    height: 50%;
+    z-index: 6;
+}
+
+@keyframes marciano-salta{
+    0%{
+        bottom: 20%;
+        left: 20%;
+    }
+    25%{
+        bottom: 60%;
+        left: 30%;
+    }
+    50%{
+        bottom: 20%;
+        left: 30%;
+    }
+    70%{
+        bottom: 60%;
+        left: 20%;
+    }
+    100%{
+        bottom: 20%;
+        left: 20%;
+    }
+}
+
+#marcianito-11{
+    animation: marciano-salta 5s linear 0s infinite;
+}
 /*-----------------------------------------------*/
 
 
