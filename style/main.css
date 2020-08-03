@@ -960,7 +960,7 @@ p>.mensaje, .sms-x{
  
 }
 
-
+/* --------- inicio nave-------- */
 .ventana1{
     position: relative;
     margin: 50px auto;
@@ -1097,7 +1097,7 @@ p>.mensaje, .sms-x{
 .movimientoNave1>div{
     border: none;
 }
-
+/* --------- fin nave-------- */
 #alien2{
     display: flex;
     margin: 0 auto;
@@ -1184,12 +1184,12 @@ transform-origin: right;
     left:120px;
     top: -90px;
     width: 30vw;
-    /* display: none; */
+     display: none; 
 }
-/* 
-#alien2:hover ~ .verde{
+
+#alien2:hover  .verde{
     display: inline;
-} */
+} 
  .verde p{
     position: absolute;
     left: 117px;
@@ -1200,4 +1200,97 @@ transform-origin: right;
     
 } 
 
-/* -------------OCHO--------------- */
+/* ------------------TRES------------------------ */
+
+#tres{
+   
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#planet3{
+    width: 80%; 
+    height: 40%; 
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 35px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
+/* -----INICIO ALIEN---- */
+#alien3{
+    position: absolute;
+    right: 24vw;
+    top: 45vh;
+    z-index: 3;
+    width: 8vw;
+    animation: susto 0.2s linear infinite;
+}
+@keyframes susto{
+    0%{
+        transform: translateX(2px) translateY(2px);
+    }
+    50%{
+        transform: translateX(-2px) translateY(-2px);
+    }
+    100%{
+        transform: translateX(2px) translateY(2px);
+    }
+}
+
+
+/* -----FIN ALIEN---- */
+
+#monstruo{
+    width: 40vw;
+    position: absolute;
+    left: 15vw;
+    top:22vh;
+    z-index: 1;
+    animation: monstruoMove 3s linear infinite;
+}
+@keyframes monstruoMove{
+    0%{
+        transform: translateY(105px) rotate(10deg);
+    }
+    50%{
+        transform: translateY(-105px) rotate(-10deg);
+    }
+    100%{
+        transform: translateY(105px) rotate(10deg);
+
+    }
+}
+
+#ptres{
+    width: 25vw;
+    position:absolute;
+    right: 8vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    z-index: 90;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px;
+    
+
+}
+
+#tres .cuadrito {
+    background-color: #0f9b0fad;
+    border-radius: 5px;
+    border:none; font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+
+}
+
+/* ------------------CUATRO------------------------- */
