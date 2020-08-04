@@ -125,14 +125,14 @@ article{
 .flecha-izquierda{
     position: absolute;
     top: 50%;
-    left: 5%; 
+    left: 5%;
     z-index: 10;
 }
 
 .flecha-arriba{
     position: absolute;
     top: 5%;
-    left: 50%; 
+    left: 50%;
     z-index: 10;
 }
 
@@ -148,7 +148,7 @@ i{
     display: block;
     left: 84vw;
     top: 49vh;
- 
+
 }
 
 .flecha-abajo:hover ~ .sms-ab {
@@ -201,7 +201,7 @@ p>.mensaje, .sms-x{
 #inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #backgroundStars {
@@ -211,14 +211,14 @@ p>.mensaje, .sms-x{
     top: 0;
     left: 0;
     z-index: 1;
-} 
+}
 
 #planet{
-    width: 80%; 
-    height: 40%; 
-    background: #659999;  /* fallback for old browsers */ 
+    width: 80%;
+    height: 40%;
+    background: #659999;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -357,7 +357,7 @@ p>.mensaje, .sms-x{
     100%{
         transform: translateY(500%) translateX(200%) rotate(45deg);
     }
-   
+
 }
 
 .marcianito-muerto-7{
@@ -367,7 +367,7 @@ p>.mensaje, .sms-x{
     transform: rotate(-45deg);
     left: 0;
     z-index: 4;
- 
+
 }
 
 #seven:target #marcianito7{
@@ -387,7 +387,7 @@ p>.mensaje, .sms-x{
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    
+
  }
 
 @keyframes cartel-muerte{
@@ -396,7 +396,7 @@ p>.mensaje, .sms-x{
         width: 400px;
         font-size: 24px;
         opacity: 1;
-        
+
     }
 }
 
@@ -502,8 +502,8 @@ z-index: 30 !important;
 border-bottom-color: #45681e !important;
 }
 .tree-extra-large {
-width: 0; 
-height: 0; 
+width: 0;
+height: 0;
 border-left: 25px solid transparent;
 border-right: 25px solid transparent;
 border-bottom: 95px solid #365416;
@@ -512,9 +512,9 @@ margin-right:-.9rem;
 z-index: 50;
 }
 .tree-large {
-dispaly: inherit;
-width: 0; 
-height: 0; 
+display: inherit;
+width: 0;
+height: 0;
 border-left: 15px solid transparent;
 border-right: 15px solid transparent;
 border-bottom: 75px solid #365416;
@@ -523,8 +523,8 @@ margin-right:-1.5rem;
 z-index: 50;
 }
 .tree-medium {
-width: 0; 
-height: 0; 
+width: 0;
+height: 0;
 border-left: 20px solid transparent;
 border-right: 20px solid transparent;
 border-bottom: 65px solid #365416;
@@ -533,8 +533,8 @@ margin-right:-1rem;
 z-index: 50;
 }
 .tree-small {
-    width: 0; 
-height: 0; 
+    width: 0;
+height: 0;
 border-left: 15px solid transparent;
 border-right: 15px solid transparent;
 border-bottom: 55px solid #365416;
@@ -586,7 +586,7 @@ z-index: 50;
 
 @keyframes alienWalkForest {
     0%{
-        
+
     }
     100%{
         transform: translate(500px);
@@ -655,31 +655,31 @@ z-index: 50;
     text-decoration: none;
 }
 
-  
+
 /* -------------5--------------- */
 
 /*---------6-10-14----------*/
 @keyframes caida {
     0%{
         top:0;
-        left: 45vw;  
-        height: 50px;         
+        left: 45vw;
+        height: 50px;
     }
     100%{
         top: 50vh;
-        left: 45vw;           
+        left: 45vw;
         height: 200px;
-    } 
-    
+    }
+
 }
 @keyframes agujero{
     0%{
         opacity: 0;
-       
+
     }
     50%{
         opacity: 1;
-        
+
     }
     100%{
         opacity: 0;
@@ -702,8 +702,8 @@ z-index: 50;
     animation-fill-mode: forwards;
     padding: 10px 40px;
     border-radius: 50%;
- 
-    
+
+
 }
 
 #seis> .sms-m6, .sms-ab6,.sms-d6{
@@ -743,7 +743,7 @@ z-index: 50;
     }
 
     /*----------------------MARCIANITO DASFIO-----------------*/
-    	
+
     .marcianito{
         height: 50%;
         left: 20%;
@@ -835,7 +835,7 @@ z-index: 50;
         position: absolute;
         left: 220px;
         top: 4px;
-    
+
     }
 
     .base-antena{
@@ -903,7 +903,7 @@ z-index: 50;
         0%{
             transform: scaleY(-0.1) scaleX(-0.1);
         }
-    
+
 }
 
     .luz{
@@ -928,7 +928,7 @@ z-index: 50;
         }
     }
 
-    .movimientoNave{ 
+    .movimientoNave{
         animation-name: movimientoNave;
         animation-duration: 4s;
         animation-iteration-count: infinite;
@@ -1094,6 +1094,20 @@ z-index: 50;
 
 /* --------------------DOS-------------------------- */
 
+#dos .cuadrito2, #dos .cuadrito2d{
+    background-color: #157b97c5;
+    font-family:  'Amatic SC', cursive;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+#dos .cuadrito2d{
+    margin-right: 50px ;
+    margin-bottom: 100px;
+}
+
 
 @keyframes vueloAstro{
     0%{
@@ -1107,19 +1121,15 @@ z-index: 50;
     }
 }
 #astro{
-    height: 350px;
+    height: 45vh;
     position: absolute;
-    right: 20vw;
+    right: 7vw;
     top:10vh;
     z-index: 90;
-    animation-name: vueloAstro;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
+    
 }
 
-#azul, #astronauta p{
+/* #azul, #astronauta p, #astro{ */ #astronauta{
     z-index: 90;
     position: absolute;
     animation-name: vueloAstro;
@@ -1127,25 +1137,38 @@ z-index: 50;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-#azul{
+#azul{ /* cuadrito de mensaje*/
     width: 20vw;
-    right: 45vw;
-    top:8vh;
+    position: absolute;
+    right: 25vw;
+    top:6vh;
+
 }
-#astronauta p{
+#textoA{  /* texto de mensaje*/
+    position: absolute;
     width: 13vw;
-    right: 48.5vw;
-    top:13.5vh;
+    right: 28.5vw;
+    top:11.5vh;
     font-family:  'Amatic SC', cursive;
     font-size: 18px;
     text-indent: 1em;
 }
-
+#astronauta{
+   
+    height: 350px;
+    width: 45vw;
+    position: absolute;
+    right: 20vw;
+    top:10vh;
+}
+.mensajeA{
+    display: none; 
+}
 #dos{
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #157b97, #01013d);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #157b97, #01013d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+
 }
 
 /* --------- inicio nave-------- */
@@ -1232,7 +1255,7 @@ z-index: 50;
     position: absolute;
     left: 220px;
     top: 4px;
- 
+
 }
 
 .base-antena1{
@@ -1293,7 +1316,7 @@ z-index: 50;
     z-index: 90;
     height: 100px;
     transform: rotateY(180deg);
-   
+
 
 }
 
@@ -1343,7 +1366,7 @@ transform-origin: right;
 @keyframes cuerda{
     0%{
         transform: rotate(10deg);
-        
+
     }
     50%{
         transform: rotate(-10deg);
@@ -1358,7 +1381,7 @@ transform-origin: right;
     background-color: rgba(7, 25, 102, 0.596);
     z-index: 90;
     border-radius: 20px;
-    
+
 }
 #pregunta p{
     font-family: 'Amatic SC', cursive;
@@ -1373,34 +1396,31 @@ transform-origin: right;
     left:120px;
     top: -90px;
     width: 30vw;
-     /* display: none;  */
+    display: none;
 }
 
-#alien2:hover  .verde{
-    display: inline;
-} 
  .verde p{
     position: absolute;
     left: 117px;
     top: 45px;
-    width: 13vw; 
+    width: 13vw;
     font-family: 'Amatic SC', cursive;
     font-size: 18px;
-    
-} 
+
+}
 
 /* ------------------TRES------------------------ */
 
 #tres{
-   
+
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 #planet3{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1470,7 +1490,7 @@ transform-origin: right;
     color: aliceblue;
     font-size: 25px;
     padding: 10px;
-    
+
 
 }
 
@@ -1485,33 +1505,72 @@ transform-origin: right;
 /* ------------------CUATRO------------------------- */
 
 #cuatro {
-    background-image: linear-gradient( 111.1deg,  rgba(0,40,70,1) -4.8%, rgba(255,115,115,1) 82.7%, rgba(255,175,123,1) 97.2% );
+    background: #870000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
+#cuatro .cuadrito4{
+    background-color: #c7db0fad;
+    border-radius: 5px;
+    border:none; font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+   padding: 0 5px;
+   margin-left: 20px;
+
+}
 #starlord{
     height:  30vw;
     position: absolute;
     right: 25vw;
     top: 12vh;
-    animation: starlord 5s linear infinite;
+    /* animation: starlord 5s linear infinite; */
     z-index: 90;
 }
 
 @keyframes starlord{
 
-    0%{ 
-        transform: translateX(20px) translateY(20px);        
+    0%{
+        transform: translateX(20px) translateY(20px);
     }
-    50%{ 
-        transform: translateX(-20px) translateY(-20px);        
+    50%{
+        transform: translateX(-20px) translateY(-20px);
     }
-    100%{ 
-        transform: translateX(20px) translateY(20px);        
+    100%{
+        transform: translateX(20px) translateY(20px);
     }
 }
+#cuatro #backgroundStars{
+    z-index: 0;
+}
+#mensajeSL{
+    /* display:none; */
+    animation: starlord 5s linear infinite;
 
+}
+#mensajeSL> #imagenTSL{
+    position: absolute;
+    width: 19vw;
+    right: 45vw;
+    top: 35vh;
+    z-index: 90;
+    /* animation: starlord 5s linear infinite; */
 
+}
+#mensajeSL>#textoSL{
+    position: absolute;
+    width: 16vw;
+    right: 45.5vw;
+    top: 40vh;
+    border:none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    z-index: 90;
+    display:none;
+    /* animation: starlord 5s linear infinite; */
 
+}
 
 /* --------- inicio nave-------- */
 #cuatro .ventana1{
@@ -1597,7 +1656,7 @@ transform-origin: right;
     position: absolute;
     left: 220px;
     top: 4px;
- 
+
 }
 
 #cuatro .base-antena1{
@@ -1651,14 +1710,14 @@ transform-origin: right;
     border: none;
 }
 
-#cuatro #alien2{
+#cuatro #alien4{
     display: flex;
     margin: 0 auto;
     margin-top: 15px;
     z-index: 90;
     height: 100px;
     transform: rotateY(180deg);
-} 
+}
 /* --------- fin nave-------- */
 
 #cuatro .verde {
@@ -1666,7 +1725,7 @@ transform-origin: right;
     left:120px;
     top: -90px;
     width: 30vw;
-     /* display: none;  */
+    display: none;
 }
 
 #pcuatro{
@@ -1681,6 +1740,6 @@ transform-origin: right;
     color: aliceblue;
     font-size: 25px;
     padding: 10px;
-    
+
 
 }
