@@ -42,71 +42,6 @@
     text-decoration: none;
 }
 
-.cone {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-}
-
-.cabine {
-    width: 8vw;
-    height: 15vw;
-    background-color: gray;
-}
-
-.legs {
-    width: 8vw;
-    display: flex;
-}
-
-.left-leg {
-    border-top: 50px solid blue;
-    border-right: 50px solid transparent;
-}
-
-.right-leg {
-    border-top: 50px solid blue;
-    border-left: 50px solid transparent;
-    float: right;
-}
-
-.window {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border: solid black 4px;
-    border-radius: 500px;
-    position: absolute;
-    margin-top: 25px;
-    margin-left: 20px;
-}
-
-.left-wing {
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid black;
-    border-left: 50px solid transparent;
-    margin-top: 125px;
-}
-
-.right-wing {
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid black;
-    border-right: 50px solid transparent;
-    margin-top: 125px;
-}
-
-.fire {
-    width: 100px;
-    margin-left: 50px;
-    top: -25px;
-    transform: rotate(180deg);
-    position: relative;
-}
-
 .spaceship {
     transform: rotate(270deg);
     z-index: 999;
@@ -173,7 +108,7 @@
         display: hidden;
     }
     100% {
-        top: -1000px;
+        top: -100vh;
         left: -20vw;
     }
 }
