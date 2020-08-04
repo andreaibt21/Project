@@ -12,6 +12,8 @@
     <link rel="manifest" href="style/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="style/view8.css">
+</head>
 
 <body scroll="no">
  
@@ -93,10 +95,11 @@
             <img src="img/dos/cuerda.svg" alt="cuerda" id="cuerda">
             
             <div id="astronauta">
-                <img src="img/dos/astrofuego.svg" id="astro" alt="astronauta">
-                <img src="img/dos/dialogoAzul.svg" alt="cuadro de dialogo"  id=azul>
-                <p>
-                    ¡Uuy! se que los vi pero no me acuerdo bien 
+                <img src="img/dos/astro.svg" alt="astronauta" id="astro" >
+                
+                <img src="img/dos/dialogoAzul.svg" alt="cuadro de dialogo"  id="azul" class="mensajeA">
+                <p id="textoA" class="mensajeA">
+                    ¡Uuy! sé que los vi pero no me acuerdo bien 
                     hacia qué lado se fueron, puedes ir a la derecha o abajo.
                 </p>
             </div>
@@ -139,14 +142,14 @@
                     <i class="fas fa-angle-double-right flechaDos" ></i>
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje2D</p></div>
+            <div class="mensaje sms-d cuadrito2d" ><p>Por acá es mejor</p></div>
                     
             <div class="flecha-abajo">
-                <a href="#seis">
+                <a href="#d_seis" id="seis_d" onclick='modificar_id("seis_d")'>
                     <i class="fas fa-angle-double-down flechaDos"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje2A</p></div>
+            <div class="mensaje sms-ab cuadrito2" ><p>Ven por acá</p></div>
         </article>
 
 <!--Andrea-->
@@ -174,7 +177,7 @@
             <div class="mensaje sms-d cuadrito" ><p>Corre por acá</p></div>
 
             <div class="flecha-abajo">
-                <a href="#siete">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
@@ -187,7 +190,15 @@
         <article id="cuatro">
             <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
 
+
+            <div id="mensajeSL">
             <img src="img/cuatro/Star Lord.svg" alt="Star Lord" id="starlord">
+
+                <img src="img/cuatro/mensajeSL.svg" alt="cuadro de texto" id="imagenTSL">
+                <p id="textoSL">
+                    ¡Hola Pepi!  Creo que solo tienes un camino jaja ve por ahí.
+                </p>
+            </div>
 
             <p id="pcuatro">
                 Te has encontrado con Star Lord, un superheroe que salvó 
@@ -205,7 +216,7 @@
 
                 <div class="nave1">
                     <div class="ventana1">
-                        <img src="img/Marcianito_dasfio_sor.png" alt="marcianito" id="alien2">
+                        <img src="img/Marcianito_dasfio_sor.png" alt="marcianito" id="alien4">
                         <div class="franja1"></div>
                         <div class="base-antena1">
                             <div class="palo-11">
@@ -234,7 +245,7 @@
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div> 
-            <div class="mensaje sms-ab" ><p>mensaje4A</p></div>
+            <div class="mensaje sms-ab cuadrito4" ><p>Por acá</p></div>
         </article>
 
 <!--Luana-->
@@ -252,7 +263,7 @@
     <img class="fondoArboles" src="./img/arboles_bosque/arboles2.png" alt="arboles">
     <img id = "marcianitoWalkForest" class="marcianito marcianitoTree" src="img/marcianito_meh.png" alt="marcianito">
     <div class="flecha-derecha">
-        <a href="#seis">
+        <a href="#c_seis" id="seis_c" onclick='modificar_id("seis_c")'>
             <i class="fas fa-angle-double-right"></i> 
         </a>
     </div>
@@ -269,39 +280,46 @@
 </article>
 
 <!--Janneth-->
-
-        <article id="seis">
-
-            <div id="bg6"></div>
-            <div id="agujero"></div>
-            <img class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
-            <div class="mensaje sms-m6" >
-                <p>¿Que deberia hacer?</p>
-            </div>
-            <div class="flecha-derecha">
-                <a href="#siete">
+<article id="seis">
+    <div id="bg6"></div>
+    <div id="agujero"></div>
+    <div class="tunel"></div>
+    <div id="tunel_salida"></div>
+    
+    <div id="tunel-conti"></div>
+    <div id="t-franja"></div>
+    <img id="marcianito6" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+    
+    <div class="mensaje sms-m6" >
+        <p>¿Que deberia hacer?</p>
+    </div>
+    <div class="flecha-derecha">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
-            </div>
-            <div class="mensaje sms-d6" >
-                <p>Sigo por el tunel</p>
-            </div>
-
-            <div class="flecha-abajo">
+    </div>
+    <div class="mensaje sms-d6" >
+                <p>Salgo del tunel</p>
+    </div>
+    <div class="flecha-abajo">
                 <a href="#diez">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
-            </div>
-            <div class="mensaje sms-ab6" >
-                <p>Salgo del tunel</p>
-            </div>
-            
+    </div>
+    <div class="mensaje sms-ab6" >
+                <p>Sigo por el tunel</p>
+    </div>
+    <div class="cartel-exit">
+        <p>S a l i d a</p> 
+    </div>
+    <img src="img/background/dX7ch.gif" alt="astronauta" id="astro-fondo">
     
-        </article>
+</article>
 
 <!--Florencia-->
 
         <article id="siete">
+            
             <div class="background">
                 <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
                 <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
@@ -310,11 +328,12 @@
                 <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
                 <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">     
             </div>
-
+            
             <div id="planet"></div>
-            <img id="marcianito7" class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
-            <img class="marcianito-muerto-7" src="img/Marcianito_muerto.png" alt="">
+            <img  id="marcianito7" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <img id="marcianitoMuerto7"  src="img/Marcianito_muerto.png" alt="">>
             <img id="meteorito" src="img/muertes/meteorito.gif" alt=""> 
+           
             <a class="revivir7" id="revivir" href="#inicio">
                 <span id="span1"></span>
                 <span id="span2"></span>
@@ -323,7 +342,7 @@
                 Revivir
             </a>
 
-            <div class="cartel-muerte">
+            <div id="cartel-muerte">
                 <p>Elegiste el camino incorrecto <br><strong>A S E S I N O</strong></p>
             </div>
         </article>
@@ -331,9 +350,53 @@
 <!--Belen-->
 
         <article id="ocho">
-            <div class="revivir">
-                <a href="#inicio">Inicio</a>
+            
+            <div class="background">
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+                
             </div>
+            
+            
+            
+            <div class="deathTextView8" id= "deathTextView8">
+                <h1>¡Oh no! ¡Has enviado a Pepito a otra galaxia!</h1>
+                <a href="#inicio" class="revivir8">¡Revivir!</a>
+            </div>
+            <div class="movimientoNave1 alienship8" id="alienship8">
+                
+                
+                
+                <div class="nave1">
+                    <div class="ventana1">
+                        <img src="img/Marcianito_dasfio_sor.png" alt="marcianito" id="alien2">
+                        <div class="franja1"></div>
+                        <div class="base-antena1">
+                            <div class="palo-11">
+                                <div class="circulo-11"></div>
+                                </div>
+                            </div>
+                        <div class="base11">
+                            <div class="circle uno1"></div>
+                            <div class="circle dos1"></div>
+                            <div class="circle tres1"></div>
+                            <div class="base21">
+                                <div class="circle cuatro1"></div>
+                                <div class="circle cinco1"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="spaceship" id="spaceship8">
+                <img class="spaceshipimage" src="img/angryspaceship.svg">
+            </div>
+            
             <div class="mensaje sms-x" ><p>REVIVIR!!!</p></div>
         </article>
 
@@ -362,53 +425,69 @@
 
         <article id="diez">
             <div id="bg10"></div>
-            <img class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <div class="tunel"></div>
+            <img class="marcianito10" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
             <div class="flecha-derecha">
                 <a href="#once">
                     <i class="fas fa-angle-double-right"></i>   
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje10D</p></div>
+            <div class="mensaje sms-d" ><p>Mejor Salgo<br> del Tunel</p></div>
 
             <div class="flecha-abajo">
                 <a href="#catorce">
                     <i class="fas fa-angle-double-down"></i> 
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje10A</p></div>
+            <div class="mensaje sms-ab" ><p>Esa criatura tierna<br>¿Podra ayudarme?</p></div>
 
             <div class="flecha-izquierda">
                 <a href="#nueve">
                     <i class="fas fa-angle-double-left"></i>
                 </a>
             </div>
-            <div class="mensaje sms-i" ><p>mensaje10I</p></div>
+            <div class="mensaje sms-i" ><p>¿Vamos a buscarlos al Bosque?</p></div>
      
         </article>
 
 <!--Florencia-->
 
         <article id="once">
+
+            <div class="background">
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+                <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">     
+            </div>
+
+            <div id="planet" class="planet11"></div>
+            <img id="marcianito-11" class="marcianito" src="img/marcianito_dasfio.png" alt="">
+            <img class="cartel-dir" src="img/cartel-direcciones.png" alt="">
+            <div id="mensajeUsuario"><p>Hacia donde voy?</p></div>
+
             <div class="flecha-derecha">
                 <a href="#doce">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje11D</p></div>
+            <div class="mensaje sms-d" ><p>Ir hacia la derecha</p></div>
 
             <div class="flecha-arriba">
-                <a href="#siete">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-up"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ar" ><p>mensaje11Ar</p></div>
+            <div class="mensaje sms-ar" ><p>Ir hacia arriba</p></div>
 
             <div class="flecha-abajo">
-                <a href="#quince">
+                <a onclick="animarPaginaQuince()" href="#quince">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje11Ab</p></div>
+            <div class="mensaje sms-ab" ><p>Ir hacia abajo</p></div>
         
         </article>
 
@@ -468,7 +547,7 @@
             <div class="mensaje sms-i" ><p>mensaje14I</p></div>
 
             <div class="flecha-derecha">
-                <a href="#quince">
+                <a onclick="animarPaginaQuince()" href="#quince">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
             </div>
@@ -479,10 +558,24 @@
 <!--Florencia-->
 
         <article id="quince">
+            
+            <img id="marcianito15" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <img id="augero-negro" src="img/muertes/augero-negro.gif" alt="">
+
             <div class="revivir">
                 <a href="#inicio">Inicio</a>
             </div>
-            <div class="mensaje sms-x" ><p>REVIVIR!!!</p></div>
+            <a class="revivir11" id="revivir" href="#inicio">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Revivir
+            </a>
+
+            <div id="cartel-muerte-15">
+                <p>Elegiste el camino incorrecto <br><strong>A S E S I N O</strong></p>
+            </div>
         </article>
 
 
@@ -519,6 +612,7 @@
 
     </main>
     <script src="script/main.js"></script>
+    <script src="script/view8.js"></script>
 </body>
 
 </html>
