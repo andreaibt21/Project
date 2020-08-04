@@ -125,14 +125,14 @@ article{
 .flecha-izquierda{
     position: absolute;
     top: 50%;
-    left: 5%; 
+    left: 5%;
     z-index: 10;
 }
 
 .flecha-arriba{
     position: absolute;
     top: 5%;
-    left: 50%; 
+    left: 50%;
     z-index: 10;
 }
 
@@ -148,7 +148,7 @@ i{
     display: block;
     left: 84vw;
     top: 49vh;
- 
+
 }
 
 .flecha-abajo:hover ~ .sms-ab {
@@ -195,13 +195,28 @@ p>.mensaje, .sms-x{
     background-color:greenyellow;
     z-index: 11;
 }
+#pinicio{
+    position: absolute;
+    right: 38vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 2.3em;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    width: 28vw;
+    height: 16vh;
+    padding: 10px;
+    z-index: 1;
+}
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #backgroundStars {
@@ -211,14 +226,14 @@ p>.mensaje, .sms-x{
     top: 0;
     left: 0;
     z-index: 0;
-} 
+}
 
 #planet{
-    width: 80%; 
-    height: 40%; 
-    background: #659999;  /* fallback for old browsers */ 
+    width: 80%;
+    height: 40%;
+    background: #659999;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #659999, #f4791f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: linear-gradient(to top, #659999, #f4791f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -357,7 +372,7 @@ p>.mensaje, .sms-x{
     100%{
         transform: translateY(500%) translateX(200%) rotate(45deg);
     }
-   
+
 }
 
 .marcianito-muerto-7{
@@ -367,7 +382,7 @@ p>.mensaje, .sms-x{
     transform: rotate(-45deg);
     left: 0;
     z-index: 4;
- 
+
 }
 
 #seven:target #marcianito7{
@@ -387,7 +402,7 @@ p>.mensaje, .sms-x{
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    
+
  }
 
 @keyframes cartel-muerte{
@@ -396,7 +411,7 @@ p>.mensaje, .sms-x{
         width: 400px;
         font-size: 24px;
         opacity: 1;
-        
+
     }
 }
 
@@ -470,26 +485,12 @@ p>.mensaje, .sms-x{
 
 /*----------------------------------------------------------------------------------------*/
 
-/* -------------5--------------- */
-
-.tree-wrapper {
-    z-index: 0;
-    overflow: hidden;
-    margin:auto;
-    /*background: rgba(0, 63, 0, 0.21);*/
-    background: -moz-linear-gradient(top, rgba(229,232,126,0) 0%, rgba(137,154,30,.1)100%);
-  background: -webkit-linear-gradient(top, rgba(229,232,126,0) 0%,rgba(137,154,30,.3) 100%);
-  background: linear-gradient(to bottom, rgba(229,232,126,0) 0%,rgba(137,154,30,.55) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e87e', endColorstr='#899a1e',GradientType=0 );
-  }
-.tree-container {
-
-display:flex;
-justify-content: center;
-margin:auto;
-flex-wrap: nowrap;
+/* -------------5-9--------------- */
+#cinco,#nueve {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 .back {
 margin-bottom: 1.3rem !important;
 z-index: 20 !important;
@@ -501,46 +502,10 @@ margin-bottom: .75rem !important;
 z-index: 30 !important;
 border-bottom-color: #45681e !important;
 }
-.tree-extra-large {
-width: 0; 
-height: 0; 
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 95px solid #365416;
-margin-top:auto;
-margin-right:-.9rem;
-z-index: 50;
-}
-.tree-large {
-display: inherit;
-width: 0; 
-height: 0; 
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 75px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
-}
-.tree-medium {
-width: 0; 
-height: 0; 
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 65px solid #365416;
-margin-top:auto;
-margin-right:-1rem;
-z-index: 50;
-}
-.tree-small {
-    width: 0; 
-height: 0; 
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 55px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
+
+.fondoArboles{
+    z-index: 1;
+    width: 100%;
 }
 
 .backGroundNueveCinco{
@@ -549,34 +514,61 @@ z-index: 50;
     justify-content: center;
 }
 
+#moon{
+    height: 100px;
+    position: absolute;
+    width: 14%;
+    height: 30%;
+    top: 2%;
+    left: 26%;
+    opacity: 28%;
+    z-index: 4;
+}
 .sopi{
-    background-color: #384e21;
+    background: linear-gradient(to bottom, #0f9b0f, #000000);
     position: absolute;
     height: 43%;
     width: 100%;
     overflow: hidden;
     bottom: 0;
 }
-.lodo{
-    background-color: #2b100c;
+
+.hole{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #242020 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #242020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
-    height: 19%;
-    width: 39%;
+    height: 72%;
+    width: 21%;
     bottom: 63px;
-    left: 322px;
+    right: 1px;
+    top: 73px;
     overflow: hidden;
     border-radius: 100%;
+    box-shadow: 0 0 50px white;
+    z-index: 1;
 }
-.lodoUpper{
+
+/* .lodo{
     background-color: #2b100c;
     position: absolute;
-    height: 17%;
-    width: 35%;
-    z-index: 100;
-    bottom: 66px;
-    left: 345px;
+    height: 30%;
+    width: 57%;
+    bottom: -50px;
+    left: 290px;
     overflow: hidden;
     border-radius: 100%;
+    z-index: 100;
+} */
+
+#blackhole{
+    position: absolute;
+    height: 27vh;
+    width: 60vw;
+    bottom: -6%;
+    left: 18%;
+    overflow: hidden;
+    z-index: 80;
 }
 
 .marcianitoTree {
@@ -586,7 +578,7 @@ z-index: 50;
 
 @keyframes alienWalkForest {
     0%{
-        
+
     }
     100%{
         transform: translate(500px);
@@ -598,13 +590,14 @@ z-index: 50;
 }
 
 #cinco:target>#marcianitoWalkForest{
-    animation: alienWalkForest 3s forwards
+    animation: alienWalkForest 1s forwards;
+    -webkit-animation: alienWalkForest 1s forwards;
 }
 
 #nueve:target>#marcianitoFallForest{
-    animation: alienFallForest 1s forwards;
-    animation-delay: 0.2s;
-
+    animation: alienFallForest 2s forwards;
+    animation-delay: 5s;
+    -webkit-animation: alienFallForest 2s forwards;
 }
 #nueve:target>.reviveButton{
     animation: showReviveButton 1.0s forwards;
@@ -613,23 +606,55 @@ z-index: 50;
 
 .marcianitoFallTree {
     margin-left: 10px;
-    top: 0;
-    left: 500px !important;
+    top: 30%;
+    left: 1px !important;
+    bottom: 1%;
 }
+
+
 
 @keyframes alienFallForest {
     0%{
+
+    }
+    30%{
+        transform: translate(300px);
+        -webkit-transform: translate(300px);
+        -moz-transform: translate(300px);
+        -ms-transform: translate(300px);
+        -o-transform: translate(300px);
+}
+    55%{
+        transform: translate(500px) rotate(45deg);
+        -webkit-transform: translate(500px) rotate(45deg);
+        -moz-transform: translate(500px) rotate(45deg);
+        -ms-transform: translate(500px) rotate(45deg);
+        -o-transform: translate(500px) rotate(45deg);
+}
+    100%{
+        transform: translate(600px, 500px) rotate(90deg);
+        -webkit-transform: translate(600px, 500px) rotate(90deg);
+        -moz-transform: translate(600px, 500px) rotate(90deg);
+        -ms-transform: translate(600px, 500px) rotate(90deg);
+        -o-transform: translate(600px, 500px) rotate(90deg);
+}
+}
+    /* 0%{
     }
     70%{
         transform: translate(0,300px) rotate(90deg);
     }
     71%{
         transform: translate(0,280px) rotate(90deg);
-    }
+        -webkit-transform: translate(0,280px) rotate(90deg);
+        -moz-transform: translate(0,280px) rotate(90deg);
+        -ms-transform: translate(0,280px) rotate(90deg);
+        -o-transform: translate(0,280px) rotate(90deg);
+}
     100%{
         transform: translate(0,300px) rotate(90deg);
     }
-}
+} */
 
 @keyframes showReviveButton {
     100%{
@@ -655,31 +680,32 @@ z-index: 50;
     text-decoration: none;
 }
 
-  
-/* -------------5--------------- */
+/* -------------5-9--------------- */
+
+/* ----------------------------------------------------------------------------------------------------------- */
 
 /*---------6-10-14----------*/
 @keyframes caida {
     0%{
         top:0;
-        left: 45vw;  
-        height: 50px;         
+        left: 45vw;
+        height: 50px;
     }
     100%{
         top: 50vh;
-        left: 45vw;           
+        left: 45vw;
         height: 200px;
-    } 
-    
+    }
+
 }
 @keyframes agujero{
     0%{
         opacity: 0;
-       
+
     }
     50%{
         opacity: 1;
-        
+
     }
     100%{
         opacity: 0;
@@ -702,8 +728,8 @@ z-index: 50;
     animation-fill-mode: forwards;
     padding: 10px 40px;
     border-radius: 50%;
- 
-    
+
+
 }
 
 #seis> .sms-m6, .sms-ab6,.sms-d6{
@@ -743,7 +769,7 @@ z-index: 50;
     }
 
     /*----------------------MARCIANITO DASFIO-----------------*/
-    	
+
     .marcianito{
         height: 50%;
         left: 20%;
@@ -835,7 +861,7 @@ z-index: 50;
         position: absolute;
         left: 220px;
         top: 4px;
-    
+
     }
 
     .base-antena{
@@ -903,7 +929,7 @@ z-index: 50;
         0%{
             transform: scaleY(-0.1) scaleX(-0.1);
         }
-    
+
 }
 
     .luz{
@@ -928,7 +954,7 @@ z-index: 50;
         }
     }
 
-    .movimientoNave{ 
+    .movimientoNave{
         animation-name: movimientoNave;
         animation-duration: 4s;
         animation-iteration-count: infinite;
@@ -1145,7 +1171,7 @@ z-index: 50;
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #157b97, #01013d);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #157b97, #01013d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+
 }
 
 /* --------- inicio nave-------- */
@@ -1232,7 +1258,7 @@ z-index: 50;
     position: absolute;
     left: 220px;
     top: 4px;
- 
+
 }
 
 .base-antena1{
@@ -1293,7 +1319,7 @@ z-index: 50;
     z-index: 90;
     height: 100px;
     transform: rotateY(180deg);
-   
+
 
 }
 
@@ -1343,7 +1369,7 @@ transform-origin: right;
 @keyframes cuerda{
     0%{
         transform: rotate(10deg);
-        
+
     }
     50%{
         transform: rotate(-10deg);
@@ -1358,7 +1384,7 @@ transform-origin: right;
     background-color: rgba(7, 25, 102, 0.596);
     z-index: 90;
     border-radius: 20px;
-    
+
 }
 #pregunta p{
     font-family: 'Amatic SC', cursive;
@@ -1378,24 +1404,24 @@ transform-origin: right;
 
 #alien2:hover  .verde{
     display: inline;
-} 
+}
  .verde p{
     position: absolute;
     left: 117px;
     top: 45px;
-    width: 13vw; 
+    width: 13vw;
     font-family: 'Amatic SC', cursive;
     font-size: 18px;
-    
-} 
+
+}
 
 /* --------------------------- FINAL ------------------------- */
 #planet16{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #C6FFDD;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -1404,7 +1430,7 @@ transform-origin: right;
     left: 10%;
     z-index: 2;
 }
-#casamarcianito { 
+#casamarcianito {
     position: absolute;
     width: 22%;
     left: 30%;
@@ -1575,15 +1601,15 @@ transform-origin: right;
 /* ------------------TRES------------------------ */
 
 #tres{
-   
+
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 #planet3{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1654,7 +1680,7 @@ transform-origin: right;
     color: aliceblue;
     font-size: 25px;
     padding: 10px;
-    
+
 
 }
 
@@ -1683,14 +1709,14 @@ transform-origin: right;
 
 @keyframes starlord{
 
-    0%{ 
-        transform: translateX(20px) translateY(20px);        
+    0%{
+        transform: translateX(20px) translateY(20px);
     }
-    50%{ 
-        transform: translateX(-20px) translateY(-20px);        
+    50%{
+        transform: translateX(-20px) translateY(-20px);
     }
-    100%{ 
-        transform: translateX(20px) translateY(20px);        
+    100%{
+        transform: translateX(20px) translateY(20px);
     }
 }
 
@@ -1781,7 +1807,7 @@ transform-origin: right;
     position: absolute;
     left: 220px;
     top: 4px;
- 
+
 }
 
 #cuatro .base-antena1{
@@ -1842,7 +1868,7 @@ transform-origin: right;
     z-index: 90;
     height: 100px;
     transform: rotateY(180deg);
-} 
+}
 /* --------- fin nave-------- */
 
 #cuatro .verde {
@@ -1865,17 +1891,17 @@ transform-origin: right;
     color: aliceblue;
     font-size: 25px;
     padding: 10px;
-    
+
 
 }
 
 /* -------------------------------- TRECE MUERTE CRIATURA ---------------------------------- */
 #planet13{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #D3CCE3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -1989,7 +2015,7 @@ transform-origin: right;
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8;   
+    z-index: 8;
 }
 #moraleja{
     position: absolute;
@@ -2000,7 +2026,7 @@ transform-origin: right;
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8; 
+    z-index: 8;
 }
 
 #moraleja p{
@@ -2027,7 +2053,7 @@ transform-origin: right;
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8; 
+    z-index: 8;
     box-shadow: 0 0 50px black;
 }
 #trece a{
