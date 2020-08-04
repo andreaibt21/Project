@@ -16,3 +16,8 @@ function Back_Ground(ide){
     Back_Ground("bg6");
     Back_Ground("bg10");
     Back_Ground("bg14");
+
+    //funcion animaciones pag 7
+    function myFunction() {
+        document.getElementsById("containerMeteorito").style.animation = "meteorito 3s linear 1s inherit"
+      }
