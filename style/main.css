@@ -198,7 +198,7 @@ p>.mensaje, .sms-x{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
@@ -210,7 +210,7 @@ p>.mensaje, .sms-x{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
 } 
 
 #planet{
@@ -429,6 +429,7 @@ p>.mensaje, .sms-x{
     background: rgb(78, 15, 119);
     box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
     z-index: 100;
+    border-radius: 20px;
 }
 
 .cartel-muerte {
@@ -438,7 +439,7 @@ p>.mensaje, .sms-x{
 .cartel-muerte>p{
     overflow: hidden;
     color: #fff;
-    font-family: monospace;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     opacity: 0;
     font-size: 0;
@@ -704,15 +705,15 @@ z-index: 50;
     width: 40%;
     height: 5%;
     background: #EB5757;
-    box-shadow: 0 0 10px #000, 0 0 40px #000, 0 0 80px #000;
+    border-radius: 20px;
     z-index: 100;
 }
 
 #mensajeUsuario>p{
-  
+    font-family: 'Amatic SC', cursive;
     color: #fff;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
 }
 /*-----------------------------------------------*/
 
@@ -1524,6 +1525,189 @@ transform-origin: right;
     
 } 
 
+/* --------------------------- FINAL ------------------------- */
+#planet16{
+    width: 80%; 
+    height: 40%; 
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+#casamarcianito { 
+    position: absolute;
+    width: 22%;
+    left: 30%;
+    bottom: 25%;
+    z-index: 5 ;
+}
+
+#family{
+    width: 20%;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    z-index: 6 ;
+}
+
+#marcianitofeliz{
+    width: 8%;
+    position: absolute;
+    right: 70%;
+    bottom: 10%;
+    z-index: 6;
+}
+
+#fireworks{
+    width: 30%;
+
+}
+
+#fireworks2{
+    width: 10%;
+    top: 5%;
+    left: 20%;
+    position: absolute;
+}
+#fireworks3{
+    width: 20%;
+    top: 5%;
+    left: 25%;
+    position: absolute;
+}
+
+
+#fireworks4{
+    width: 15%;
+    top: 30%;
+    left: 20%;
+    position: absolute;
+    animation-name: fireworks;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes bounce{
+    0%{
+        transform: translateY(10%);
+    }
+
+    50%{
+        transform: translateY(30%);
+    }
+
+    100%{
+        transform: translateY(10%)
+    }
+}
+
+@keyframes fireworks{
+    0%{
+        opacity:0;
+    }
+
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+#family , #marcianitofeliz{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fireworks{
+    animation-name: fireworks;
+    animation-iteration-count: infinite;
+}
+
+#fireworks{
+    animation-duration: 1s;
+}
+
+#fireworks2{
+    animation-duration: 2s;
+}
+
+#fireworks3{
+    animation-duration: 1.5s;
+}
+
+#text{
+    position: absolute;
+    top:5%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;
+}
+
+#text2{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+#text3{
+    position: absolute;
+    top: 35vh;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 13vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+#dieciseis p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 3.5vw;
+}
+#text3 p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+
 /* ------------------TRES------------------------ */
 
 #tres{
@@ -1547,6 +1731,7 @@ transform-origin: right;
     left: 10%;
     z-index: 2;
 }
+
 
 /* -----INICIO ALIEN---- */
 #alien3{
@@ -1819,3 +2004,180 @@ transform-origin: right;
     
 
 }
+
+/* -------------------------------- TRECE MUERTE CRIATURA ---------------------------------- */
+#planet13{
+    width: 80%; 
+    height: 40%; 
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
+#trece:target #criaturaenojada{
+    width: 25vw;
+    position: absolute;
+    left:20vw;
+    bottom: 10vh;
+    z-index: 4;
+}
+
+#trece:target #bocacriaturaenojada{
+    width: 10vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 25vh;
+    z-index: 6;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#trece:target #cabezamuerto{
+    width: 10vw;
+    position: absolute;
+    left: 37vw;
+    bottom: 17vh;
+    z-index: 6;
+    transform: rotate(-249deg);
+    animation-name: cabeza;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#trece:target #herida13{
+    width: 10vw;
+    position: absolute;
+    left: 57vw;
+    bottom: 2vh;
+    z-index: 5;
+    opacity: 0;
+    animation-name: sangre;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#trece:target #herida132{
+    width: 12vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 20vh;
+    z-index: 5;
+    opacity: 0;
+    animation-name: sangre;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.5);
+    }
+
+}
+
+@keyframes cabeza{
+
+    0%{
+        transform: rotate(-249deg);
+    }
+
+    50%{
+        transform: translateY(10vh) translateX(10vw) rotate(-249deg);
+
+    }
+
+    100%{
+        transform: translateY(5vh) translateX(20vw) rotate(-249deg);
+    }
+
+}
+@keyframes sangre{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 1;
+    }
+
+}
+
+#asesino{
+    position: absolute;
+    top:5%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;   
+}
+#moraleja{
+    position: absolute;
+    top:20%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8; 
+}
+
+#moraleja p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+#asesino p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 3.5vw;
+}
+#trece .revivir{
+    position: absolute;
+    top:40%;
+    right: 10%;
+    background-color: red;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8; 
+    box-shadow: 0 0 50px black;
+}
+#trece a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+#trece > .revivir:hover{
+    transform: scale(2);
+}
+
+
+
