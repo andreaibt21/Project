@@ -1,0 +1,179 @@
+/* CSS para la view 8 */
+
+#ocho {
+    background-color: #000000;
+}
+
+.alienship8 {
+    animation: initial;
+}
+
+.deathTextView8 {
+    text-align: center;
+    font-size: 0;
+    border: double;
+    width: fit-content;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    background: #191970;
+}
+
+.deathTextView8Animation {
+    animation-name: deathtextview8;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes deathtextview8 {
+    0% {
+        display: hidden;
+    }
+    100% {
+        font-size: 3vw;
+        opacity: 1;
+    }
+}
+
+.revivir8 {
+    text-decoration: none;
+}
+
+.cone {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.cabine {
+    width: 8vw;
+    height: 15vw;
+    background-color: gray;
+}
+
+.legs {
+    width: 8vw;
+    display: flex;
+}
+
+.left-leg {
+    border-top: 50px solid blue;
+    border-right: 50px solid transparent;
+}
+
+.right-leg {
+    border-top: 50px solid blue;
+    border-left: 50px solid transparent;
+    float: right;
+}
+
+.window {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: solid black 4px;
+    border-radius: 500px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.left-wing {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid black;
+    border-left: 50px solid transparent;
+    margin-top: 125px;
+}
+
+.right-wing {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid black;
+    border-right: 50px solid transparent;
+    margin-top: 125px;
+}
+
+.fire {
+    width: 100px;
+    margin-left: 50px;
+    top: -25px;
+    transform: rotate(180deg);
+    position: relative;
+}
+
+.spaceship {
+    transform: rotate(270deg);
+    z-index: 999;
+    position: relative;
+    top: 25vh;
+    left: 100vw;
+    display: inline-block;
+}
+
+.spaceshipimage {
+    width: 17vw;
+}
+
+.spaceshipAnimation {
+    animation: spaceshipMovement;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 20;
+    animation-delay: 0.5s;
+}
+
+.alienshipAnimation {
+    animation-timing-function: linear;
+    animation: alienshipMovement 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes spaceshipMovement {
+    0% {
+        left: 100vw;
+    }
+    50% {
+        left: 35vw;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        left: -100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes alienshipMovement {
+    0% {
+        top: 1vh;
+    }
+    50% {
+        top: 20vh;
+        left: 15vw;
+        transform: rotate(0deg);
+    }
+    55% {
+        opacity: 1;
+    }
+    61% {
+        opacity: 0;
+    }
+    70% {
+        display: hidden;
+    }
+    100% {
+        top: -1000px;
+        left: -20vw;
+    }
+}
