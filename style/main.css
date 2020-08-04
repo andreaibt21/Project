@@ -210,13 +210,8 @@ p>.mensaje, .sms-x{
     position: absolute;
     top: 0;
     left: 0;
-<<<<<<< HEAD
-    z-index: 1;
-}
-=======
     z-index: 0;
 } 
->>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 
 #planet{
     width: 80%;
@@ -518,13 +513,8 @@ z-index: 50;
 }
 .tree-large {
 display: inherit;
-<<<<<<< HEAD
-width: 0;
-height: 0;
-=======
 width: 0; 
 height: 0; 
->>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 border-left: 15px solid transparent;
 border-right: 15px solid transparent;
 border-bottom: 75px solid #365416;
@@ -696,17 +686,6 @@ z-index: 50;
 @keyframes caida {
     0%{
         top:0;
-<<<<<<< HEAD
-        left: 45vw;
-        height: 50px;
-    }
-    100%{
-        top: 50vh;
-        left: 45vw;
-        height: 200px;
-    }
-
-=======
         left: 45vw;  
         height: 50px;
         transform: translateX(20px);  
@@ -729,15 +708,10 @@ z-index: 50;
         position: absolute;
         z-index: 6;
     }
->>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 }
 @keyframes agujero{
     0%{
         opacity: 0;
-<<<<<<< HEAD
-
-=======
->>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
     }
     50%{
         opacity: 1;
@@ -820,14 +794,7 @@ z-index: 50;
     animation-name: agujero;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-<<<<<<< HEAD
-    padding: 10px 40px;
-    border-radius: 50%;
-
-
-=======
     border-radius: 50%;    
->>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 }
 .sms-m6, .sms-ab6,.sms-d6{
     display: none;
@@ -1897,7 +1864,7 @@ transform-origin: right;
     width: 40vw;
     position: absolute;
     left: 15vw;
-    top:22vh;
+    top:20vh;
     z-index: 1;
     animation: monstruoMove 3s linear infinite;
 }
