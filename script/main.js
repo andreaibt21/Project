@@ -18,6 +18,23 @@ function Back_Ground(ide){
     Back_Ground("bg14");
 
     //funcion animaciones pag 7
-    function myFunction() {
-        document.getElementsById("containerMeteorito").style.animation = "meteorito 3s linear 1s inherit"
-      }
+    function animarPaginaSiete() {
+      let meteorito = document.getElementById("meteorito");
+      let marciano = document.getElementById("marcianito7");
+      let marcianoMuerto = document.getElementById("marcianitoMuerto7");
+      let cartelMuerte = document.getElementById("cartel-muerte");
+     
+
+      meteorito.classList.add("meteorito");
+      marciano.classList.add("marcianito7");
+      marcianoMuerto.classList.add("marcianitoMuerto7");
+      cartelMuerte.classList.add("cartel-muerte")
+   }
+
+   function animarPaginaQuince(){
+    let marciano = document.getElementById("marcianito15");
+    let cartelMuerte = document.getElementById("cartel-muerte-15");
+
+    marciano.classList.add("marcianito15")
+    cartelMuerte.classList.add("cartel-muerte")
+   }

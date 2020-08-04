@@ -336,7 +336,7 @@ p>.mensaje, .sms-x{
 }
 
 
-#meteorito{
+.meteorito{
     animation-name: meteorito;
     animation-duration: 3s;
     animation-iteration-count: inherit;
@@ -366,7 +366,7 @@ p>.mensaje, .sms-x{
    
 }
 
-.marcianito-muerto-7{
+#marcianitoMuerto7{
     height: 40%;
     position: absolute;
     bottom: 220%;
@@ -376,8 +376,16 @@ p>.mensaje, .sms-x{
  
 }
 
-
 #marcianito7{
+    height: 40%;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    z-index: 5;
+}
+
+
+.marcianito7{
     animation-name: vuelaMarciano;
     animation-delay: 2.5s;
     animation-duration: 1s;
@@ -386,14 +394,13 @@ p>.mensaje, .sms-x{
     animation-fill-mode: forwards;
 }
 
-.marcianito-muerto-7{
+.marcianitoMuerto7{
     animation-name: cae-marciano-muerto;
     animation-delay: 4s;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    
- }
+}
  
 
 @keyframes cartel-muerte{
@@ -420,7 +427,7 @@ p>.mensaje, .sms-x{
     }
 }
 
-.cartel-muerte{
+#cartel-muerte, #cartel-muerte-15{
     height: 0;
     width: 0;
     position: absolute;
@@ -436,7 +443,7 @@ p>.mensaje, .sms-x{
     animation: cartel-muerte 3s linear 7s, movimiento-cartel 5s linear 13s infinite;
     animation-fill-mode: forwards;
 }
-.cartel-muerte>p{
+#cartel-muerte>p, #cartel-muerte-15>p{
     overflow: hidden;
     color: #fff;
     font-family: 'Amatic SC', cursive;
@@ -453,7 +460,7 @@ p>.mensaje, .sms-x{
     animation-fill-mode: forwards;
 }
 
-.cartel-muerte strong{
+#cartel-muerte strong, #cartel-muerte-15 strong{
     color: black;
 }
 
@@ -666,9 +673,9 @@ z-index: 50;
 .cartel-dir{
     position: absolute;
     top: 20%;
-    left: 48%;
+    left: 90%;
     width: 50%;
-    height: 50%;
+    height: 30%;
     z-index: 6;
 }
 
@@ -770,9 +777,12 @@ z-index: 50;
     position: absolute;
     top: 5%;
     left: 70%;
+}  
+
+.marcianito15{
     animation: marciano-gira 5s linear 0s infinite, marciano-gira2 5s linear 0s forwards, marciano-se-achica 3s linear 5s forwards;
-    
 } 
+
 
 .revivir11{
     left: 25%;
@@ -1081,10 +1091,6 @@ z-index: 50;
         }
     }
 
-    #containerMeteorito{
-        position: relative;
-    }
-
     #meteorito{
         position: absolute;
         top: -810px;
@@ -1092,14 +1098,14 @@ z-index: 50;
         z-index: 5;
     }
 
-    /*
-    #meteorito{
+    
+    .meteorito{
         animation-name: meteorito;
         animation-duration: 3s;
         animation-iteration-count: inherit;
         animation-timing-function: linear;
 
-    }*/
+    }
 
     @keyframes vuelaMarciano{
         0%{
@@ -1123,11 +1129,8 @@ z-index: 50;
 
     }
 
-    
-    #marcianito7{
+    .marcianito7{
 
-        animation: none;
-        
         animation-name: vuelaMarciano;
         animation-delay: 2.7s;
         animation-duration: 1s;
@@ -1137,14 +1140,16 @@ z-index: 50;
         
     }
 
-    
-    .marcianito-muerto-7{
+    #marcianitoMuerto7{
         height: 300px;
         position: absolute;
         bottom: 1310px;
         transform: rotate(-45deg);
         left: 0px;
         z-index: 4;
+    }
+
+    .marcianitoMuerto7{
         animation-name: cae-marciano-muerto;
         animation-delay: 4s;
         animation-duration: 3s;
@@ -1185,7 +1190,7 @@ z-index: 50;
         }
     }
 
-    .cartel-muerte{
+    #cartel-muerte{
         height: 0;
         width: 0;
         position: absolute;
@@ -1194,6 +1199,9 @@ z-index: 50;
         background: rgb(78, 15, 119);
         box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
         z-index: 100;
+    }
+
+    .cartel-muerte{
         animation: cartel-muerte 3s linear 7s, movimiento-cartel 5s linear 13s infinite;
         animation-fill-mode: forwards;
     }
@@ -1211,7 +1219,7 @@ z-index: 50;
         animation-fill-mode: forwards;
     }
 
-    .cartel-muerte strong{
+    #cartel-muerte strong{
         color: black;
     }
 
@@ -1221,7 +1229,7 @@ z-index: 50;
 
 .cartel-dir{
     top: 15%;
-    left: 30%;
+    left: 40%;
     width: 50%;
     height: 60%;
     z-index: 6;
