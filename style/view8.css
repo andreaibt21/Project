@@ -16,8 +16,8 @@
     color: white;
     font-family: 'Amatic SC', cursive;
     position: absolute;
-    left: 30%;
-    top: 40%;
+    left: 30vw;
+    top: 30vh;
     background: #191970;
 }
 
@@ -33,7 +33,7 @@
         display: hidden;
     }
     100% {
-        font-size: 3vw;
+        font-size: 2vw;
         opacity: 1;
     }
 }
@@ -61,7 +61,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    opacity: 20;
+    opacity: 1;
     animation-delay: 0.5s;
 }
 
@@ -105,9 +105,12 @@
         opacity: 0;
     }
     70% {
-        display: hidden;
+        opacity: 0;
+        display: none;
     }
     100% {
+        display: none;
+        opacity: 0;
         top: -100vh;
         left: -20vw;
     }
