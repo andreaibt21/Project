@@ -108,3 +108,5 @@ function modificar_id(ide){
     }
 
 }
+
+view8Script();

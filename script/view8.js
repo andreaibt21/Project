@@ -17,7 +17,7 @@ toEigth.forEach((aTag) => {
         let spaceship8classes = spaceship8.getAttribute("class");
         spaceship8.setAttribute("class", spaceship8classes + " spaceshipAnimation");
 
-        let deathTextView8classes  = deathTextView8.getAttribute("class");
+        let deathTextView8classes = deathTextView8.getAttribute("class");
         deathTextView8.setAttribute("class", deathTextView8classes + " deathTextView8Animation")
     }
 });
