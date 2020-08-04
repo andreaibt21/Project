@@ -195,10 +195,25 @@ p>.mensaje, .sms-x{
     background-color:greenyellow;
     z-index: 11;
 }
+#pinicio{
+    position: absolute;
+    right: 38vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-size: 2.3em;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    width: 28vw;
+    height: 16vh;
+    padding: 10px;
+    z-index: 1;
+}
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#siete,#diez,#catorce,#cinco,#nueve, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#siete,#diez,#catorce, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -211,7 +226,7 @@ p>.mensaje, .sms-x{
     top: 0;
     left: 0;
     z-index: 0;
-} 
+}
 
 #planet{
     width: 80%;
@@ -471,26 +486,12 @@ p>.mensaje, .sms-x{
 
 /*----------------------------------------------------------------------------------------*/
 
-/* -------------5--------------- */
-
-.tree-wrapper {
-    z-index: 0;
-    overflow: hidden;
-    margin:auto;
-    /*background: rgba(0, 63, 0, 0.21);*/
-    background: -moz-linear-gradient(top, rgba(229,232,126,0) 0%, rgba(137,154,30,.1)100%);
-  background: -webkit-linear-gradient(top, rgba(229,232,126,0) 0%,rgba(137,154,30,.3) 100%);
-  background: linear-gradient(to bottom, rgba(229,232,126,0) 0%,rgba(137,154,30,.55) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e87e', endColorstr='#899a1e',GradientType=0 );
-  }
-.tree-container {
-
-display:flex;
-justify-content: center;
-margin:auto;
-flex-wrap: nowrap;
+/* -------------5-9--------------- */
+#cinco,#nueve {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 .back {
 margin-bottom: 1.3rem !important;
 z-index: 20 !important;
@@ -502,46 +503,10 @@ margin-bottom: .75rem !important;
 z-index: 30 !important;
 border-bottom-color: #45681e !important;
 }
-.tree-extra-large {
-width: 0;
-height: 0;
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 95px solid #365416;
-margin-top:auto;
-margin-right:-.9rem;
-z-index: 50;
-}
-.tree-large {
-display: inherit;
-width: 0; 
-height: 0; 
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 75px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
-}
-.tree-medium {
-width: 0;
-height: 0;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 65px solid #365416;
-margin-top:auto;
-margin-right:-1rem;
-z-index: 50;
-}
-.tree-small {
-    width: 0;
-height: 0;
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 55px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
+
+.fondoArboles{
+    z-index: 1;
+    width: 100%;
 }
 
 .backGroundNueveCinco{
@@ -550,34 +515,61 @@ z-index: 50;
     justify-content: center;
 }
 
+#moon{
+    height: 100px;
+    position: absolute;
+    width: 14%;
+    height: 30%;
+    top: 2%;
+    left: 26%;
+    opacity: 28%;
+    z-index: 4;
+}
 .sopi{
-    background-color: #384e21;
+    background: linear-gradient(to bottom, #0f9b0f, #000000);
     position: absolute;
     height: 43%;
     width: 100%;
     overflow: hidden;
     bottom: 0;
 }
-.lodo{
-    background-color: #2b100c;
+
+.hole{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #242020 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #242020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: absolute;
-    height: 19%;
-    width: 39%;
+    height: 72%;
+    width: 21%;
     bottom: 63px;
-    left: 322px;
+    right: 1px;
+    top: 73px;
     overflow: hidden;
     border-radius: 100%;
+    box-shadow: 0 0 50px white;
+    z-index: 1;
 }
-.lodoUpper{
+
+/* .lodo{
     background-color: #2b100c;
     position: absolute;
-    height: 17%;
-    width: 35%;
-    z-index: 100;
-    bottom: 66px;
-    left: 345px;
+    height: 30%;
+    width: 57%;
+    bottom: -50px;
+    left: 290px;
     overflow: hidden;
     border-radius: 100%;
+    z-index: 100;
+} */
+
+#blackhole{
+    position: absolute;
+    height: 27vh;
+    width: 60vw;
+    bottom: -6%;
+    left: 18%;
+    overflow: hidden;
+    z-index: 80;
 }
 
 .marcianitoTree {
@@ -599,13 +591,14 @@ z-index: 50;
 }
 
 #cinco:target>#marcianitoWalkForest{
-    animation: alienWalkForest 3s forwards
+    animation: alienWalkForest 1s forwards;
+    -webkit-animation: alienWalkForest 1s forwards;
 }
 
 #nueve:target>#marcianitoFallForest{
-    animation: alienFallForest 1s forwards;
-    animation-delay: 0.2s;
-
+    animation: alienFallForest 2s forwards;
+    animation-delay: 5s;
+    -webkit-animation: alienFallForest 2s forwards;
 }
 #nueve:target>.reviveButton{
     animation: showReviveButton 1.0s forwards;
@@ -614,23 +607,55 @@ z-index: 50;
 
 .marcianitoFallTree {
     margin-left: 10px;
-    top: 0;
-    left: 500px !important;
+    top: 30%;
+    left: 1px !important;
+    bottom: 1%;
 }
+
+
 
 @keyframes alienFallForest {
     0%{
+
+    }
+    30%{
+        transform: translate(300px);
+        -webkit-transform: translate(300px);
+        -moz-transform: translate(300px);
+        -ms-transform: translate(300px);
+        -o-transform: translate(300px);
+}
+    55%{
+        transform: translate(500px) rotate(45deg);
+        -webkit-transform: translate(500px) rotate(45deg);
+        -moz-transform: translate(500px) rotate(45deg);
+        -ms-transform: translate(500px) rotate(45deg);
+        -o-transform: translate(500px) rotate(45deg);
+}
+    100%{
+        transform: translate(600px, 500px) rotate(90deg);
+        -webkit-transform: translate(600px, 500px) rotate(90deg);
+        -moz-transform: translate(600px, 500px) rotate(90deg);
+        -ms-transform: translate(600px, 500px) rotate(90deg);
+        -o-transform: translate(600px, 500px) rotate(90deg);
+}
+}
+    /* 0%{
     }
     70%{
         transform: translate(0,300px) rotate(90deg);
     }
     71%{
         transform: translate(0,280px) rotate(90deg);
-    }
+        -webkit-transform: translate(0,280px) rotate(90deg);
+        -moz-transform: translate(0,280px) rotate(90deg);
+        -ms-transform: translate(0,280px) rotate(90deg);
+        -o-transform: translate(0,280px) rotate(90deg);
+}
     100%{
         transform: translate(0,300px) rotate(90deg);
     }
-}
+} */
 
 @keyframes showReviveButton {
     100%{
@@ -781,7 +806,6 @@ z-index: 50;
 .marcianito15{
     animation: marciano-gira 5s linear 0s infinite, marciano-gira2 5s linear 0s forwards, marciano-se-achica 3s linear 5s forwards;
 } 
-
 
 .revivir11{
     left: 25%;
@@ -1778,11 +1802,11 @@ transform-origin: right;
 
 /* --------------------------- FINAL ------------------------- */
 #planet16{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #C6FFDD;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f7797d, #FBD786);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -1791,7 +1815,7 @@ transform-origin: right;
     left: 10%;
     z-index: 2;
 }
-#casamarcianito { 
+#casamarcianito {
     position: absolute;
     width: 22%;
     left: 30%;
@@ -2297,11 +2321,11 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
 
 /* -------------------------------- TRECE MUERTE CRIATURA ---------------------------------- */
 #planet13{
-    width: 80%; 
-    height: 40%; 
+    width: 80%;
+    height: 40%;
     background: #D3CCE3;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0 0 50px black;
     border-top-left-radius: 50% 100%;
     border-top-right-radius: 50% 100%;
@@ -2415,7 +2439,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8;   
+    z-index: 8;
 }
 #moraleja{
     position: absolute;
@@ -2426,7 +2450,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8; 
+    z-index: 8;
 }
 
 #moraleja p{
@@ -2453,7 +2477,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     height: 5vw;
     text-align: center;
     border-radius: 20px;
-    z-index: 8; 
+    z-index: 8;
     box-shadow: 0 0 50px black;
 }
 #trece a{
