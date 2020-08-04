@@ -198,7 +198,7 @@ p>.mensaje, .sms-x{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#siete,#diez,#catorce,#cinco,#nueve, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -210,8 +210,13 @@ p>.mensaje, .sms-x{
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     z-index: 1;
 }
+=======
+    z-index: 0;
+} 
+>>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 
 #planet{
     width: 80%;
@@ -513,8 +518,13 @@ z-index: 50;
 }
 .tree-large {
 display: inherit;
+<<<<<<< HEAD
 width: 0;
 height: 0;
+=======
+width: 0; 
+height: 0; 
+>>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 border-left: 15px solid transparent;
 border-right: 15px solid transparent;
 border-bottom: 75px solid #365416;
@@ -659,9 +669,34 @@ z-index: 50;
 /* -------------5--------------- */
 
 /*---------6-10-14----------*/
+/*Seis desde dos*/
+#d_seis,#c_seis {
+   animation-name: fondo-parpadeaseis;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+} 
+
+#astro-fondo{
+    z-index: 5;
+    position: absolute;
+    width: 50px;
+    top: 35vh;
+    left: 20vw;
+}
+@keyframes fondo-parpadeaseis{
+    0%{
+        background: radial-gradient(left bottom, circle farthest-side, #f7ff08 0%,  #329cda 20%,#0c0431 50%, #324bda 80%);
+        background: -webkit-radial-gradient(left bottom, circle farthest-side, #3c6f8d 0%, #216992 20%, #1c2a7a 50%,#050214 80%);
+    }
+    100%{
+        background: radial-gradient(left bottom, circle farthest-side, #f7ff08 0%,  #329cda 20%,#0c0431 50%, #324bda 80%);
+        background: -webkit-radial-gradient(left bottom, circle farthest-side,#7d8105  0%, #1a5c83 20%, #1a2a86 50%,#0c0431 80%);
+    }
+}
 @keyframes caida {
     0%{
         top:0;
+<<<<<<< HEAD
         left: 45vw;
         height: 50px;
     }
@@ -671,11 +706,38 @@ z-index: 50;
         height: 200px;
     }
 
+=======
+        left: 45vw;  
+        height: 50px;
+        transform: translateX(20px);  
+    }
+    25%{
+        transform: translateX(-20px);
+
+    }
+    50%{
+        transform: translateX(20px);
+
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        top: 50vh;
+        left: 45vw;           
+        height: 100px;
+        position: absolute;
+        z-index: 6;
+    }
+>>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 }
 @keyframes agujero{
     0%{
         opacity: 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
     }
     50%{
         opacity: 1;
@@ -686,49 +748,239 @@ z-index: 50;
         transform: scale(2);
     }
 }
+@keyframes  m-ondas {
+    0% {
+      transform: translateY(150vh);
+      z-index: 5;
+    }
 
-#seis:target >.marcianito{
+    100%{
+        transform: translateY(0vh);
+    }
+}
+@keyframes m-tunel{
+}
+
+#d_seis>.tunel,#diez>.tunel{
+    position: absolute;
+    background-color: black;
+    height: 55vh;
+    width: 15vw;
+    top: 0;
+    left: 40vw;
+    z-index: 4;
+    border-radius: 0px 0px 40px 40px;
+    border-bottom: violet solid 5px;
+}
+#d_seis>#tunel_salida{
+    position: absolute;
+    background-color: black;
+    height: 25vh;
+    width: 20vw;
+    top: 45vh;
+    left: 50vw;
+    z-index: 4;
+    border-radius: 0px 40px 40px 0px;
+    border-right: violet solid 5px;
+}
+#d_seis>#t-franja{
+    position: absolute;
+    animation-name: m-ondas;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    background-color: white;
+    height: 1vh;
+    width: 15vw;
+    top: 0vh;
+    left: 40vw;
+    z-index: 4;
+ 
+}
+#d_seis:target >#marcianito6{
+    
     animation-name: caida;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 }
-#seis:target>#agujero{
+#marcianito6{
+    z-index: 4;
+    position:absolute;
+    height: 100px;
+    top: 50vh;
+    left: 45vw; 
+}
+#d_seis:target>#agujero{
+    z-index: 5;
     position: absolute;
-    background-color: #000;
-    top:9vh;
-    left: 45vw;
+    background-color: wheat;
+    top:10px;
+    left: 44vw;
+    height: 2vh;
+    width: 7vw;
     animation-name: agujero;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+<<<<<<< HEAD
     padding: 10px 40px;
     border-radius: 50%;
 
 
+=======
+    border-radius: 50%;    
+>>>>>>> 258ac114d76828a1b006cdee880d829a788ed23c
 }
-
-#seis> .sms-m6, .sms-ab6,.sms-d6{
+.sms-m6, .sms-ab6,.sms-d6{
     display: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
     padding: 15px;
     position: absolute;
     border: black solid 1px;
     border-radius: 50%;
     background-color:bisque;
     color: black;
-    z-index: 11;
-    left: 55vw;
+    z-index: 6;
+}
+
+#d_seis>.flecha-derecha:hover ~ .sms-d6, #c_seis>.flecha-derecha:hover ~ .sms-d6{
+    display: block;
+}
+#d_seis>.flecha-abajo:hover ~ .sms-ab6, #c_seis>.flecha-abajo:hover ~ .sms-ab6 {
+    display: block;
+}
+#d_seis>#marcianito6:hover ~ .sms-m6, #c_seis>#marcianito6:hover ~ .sms-m6 {
+    display: block;
+}
+
+#d_seis> .sms-m6,#d_seis> .sms-ab6,#d_seis>.sms-d6,#c_seis> .sms-m6,#c_seis> .sms-ab6,#c_seis>.sms-d6{
+    left: 50vw;
     top: 45vh;
 }
 
-#seis>.flecha-derecha:hover ~ .sms-d6{
-    display: block;
+@keyframes cartel_exit{
+    100%{
+        transform: scale(2);
+        color: #324bda;
+        background-color: #C6FFDD;
+        
+    }
 }
-#seis>.flecha-abajo:hover ~ .sms-ab6 {
-    display: block;
+.cartel-exit>p{
+    position: absolute;
+    background-color: #3b11d3;
+    color: antiquewhite;
+    top: 75vh;
+    right:13vw ;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: #b326eb solid 2px;
+    /* animation-name: cartel_exit;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; */
 }
-#seis>.marcianito:hover ~ .sms-m6 {
-    display: block;
+#d_seis>.flecha-derecha:hover ~ .cartel-exit>p, #c_seis>.flecha-derecha:hover ~ .cartel-exit>p{
+    animation-name: cartel_exit;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+} 
+/*seis desde cinco*/
+@keyframes alienWalk {
+    0%{
+        left: 0;
+        
+    }
+    100%{
+        left: 45vw;
+    }
 }
-/*-----------------------------------------------*/
+#c_seis>.tunel{
+    position: absolute;
+    background-color: black;
+    height: 25vh;
+    width: 70vw;
+    top: 46vh;
+    left: 0vw;
+    z-index: 4;
+    border-radius: 0px 40px 40px 0px;
+    border-right: violet solid 5px;
+}
+#c_seis:target >#marcianito6{
+    animation-name: alienWalk;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#tunel-conti{
+    position: absolute;
+    background-color: black;
+    height: 50vh;
+    width: 15vw;
+    top: 50vh;
+    left: 40vw;
+    z-index: 4;
+
+}
+#c_seis>.flecha-abajo,#d_seis>.flecha-abajo,#diez>.flecha-abajo{
+    position: absolute;
+    left: 47vw;
+    bottom: 5%;
+    z-index: 10;
+}
+/*-----------------------10------------------------*/
+@keyframes fondo-parpadeadiez{
+    0%{
+        background: radial-gradient(left top, circle farthest-side, #f7ff08 0%,  #329cda 20%,#0c0431 50%, #324bda 80%);
+        background: -webkit-radial-gradient(left top, circle farthest-side, #3c6f8d 0%, #216992 20%, #1c2a7a 50%,#050214 80%);
+    }
+    100%{
+        background: radial-gradient(left top, circle farthest-side, #f7ff08 0%,  #329cda 20%,#0c0431 50%, #324bda 80%);
+        background: -webkit-radial-gradient(left top, circle farthest-side,#7d8105  0%, #1a5c83 20%, #1a2a86 50%,#0c0431 80%);
+    }
+}
+@keyframes caida_diez{
+    0%{
+        top:0;
+        left: 45vw;  
+        height: 50px;
+        transform: translateX(20px);  
+    }
+    25%{
+        transform: translateX(-20px);
+
+    }
+    50%{
+        transform: translateX(20px);
+
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        top: 45vh;
+        left: 45vw;           
+        height: 100px;
+        position: absolute;
+        z-index: 6;
+    }
+}
+#diez {
+    animation-name: fondo-parpadeadiez;
+     animation-duration: 0.2s;
+     animation-iteration-count: infinite;
+ } 
+
+ #diez:target >.marcianito10{
+     animation-name: caida_diez;
+     animation: 4s;
+     animation-fill-mode: forwards;
+ } .marcianito10{
+    z-index: 4;
+    position:absolute;
+    height: 100px;
+    top: 38vh;
+    left: 45vw; 
+ }
 
 
  /*----------------------MEDIA QUERIES-----------------*/
@@ -1409,6 +1661,189 @@ transform-origin: right;
 
 }
 
+/* --------------------------- FINAL ------------------------- */
+#planet16{
+    width: 80%; 
+    height: 40%; 
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+#casamarcianito { 
+    position: absolute;
+    width: 22%;
+    left: 30%;
+    bottom: 25%;
+    z-index: 5 ;
+}
+
+#family{
+    width: 20%;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    z-index: 6 ;
+}
+
+#marcianitofeliz{
+    width: 8%;
+    position: absolute;
+    right: 70%;
+    bottom: 10%;
+    z-index: 6;
+}
+
+#fireworks{
+    width: 30%;
+
+}
+
+#fireworks2{
+    width: 10%;
+    top: 5%;
+    left: 20%;
+    position: absolute;
+}
+#fireworks3{
+    width: 20%;
+    top: 5%;
+    left: 25%;
+    position: absolute;
+}
+
+
+#fireworks4{
+    width: 15%;
+    top: 30%;
+    left: 20%;
+    position: absolute;
+    animation-name: fireworks;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes bounce{
+    0%{
+        transform: translateY(10%);
+    }
+
+    50%{
+        transform: translateY(30%);
+    }
+
+    100%{
+        transform: translateY(10%)
+    }
+}
+
+@keyframes fireworks{
+    0%{
+        opacity:0;
+    }
+
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    75%{
+        opacity: 0.75;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+#family , #marcianitofeliz{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fireworks{
+    animation-name: fireworks;
+    animation-iteration-count: infinite;
+}
+
+#fireworks{
+    animation-duration: 1s;
+}
+
+#fireworks2{
+    animation-duration: 2s;
+}
+
+#fireworks3{
+    animation-duration: 1.5s;
+}
+
+#text{
+    position: absolute;
+    top:5%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;
+}
+
+#text2{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+#text3{
+    position: absolute;
+    top: 35vh;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 13vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+#dieciseis p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 3.5vw;
+}
+#text3 p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+
 /* ------------------TRES------------------------ */
 
 #tres{
@@ -1432,6 +1867,7 @@ transform-origin: right;
     left: 10%;
     z-index: 2;
 }
+
 
 /* -----INICIO ALIEN---- */
 #alien3{
@@ -1743,3 +2179,180 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
 
 
 }
+
+/* -------------------------------- TRECE MUERTE CRIATURA ---------------------------------- */
+#planet13{
+    width: 80%; 
+    height: 40%; 
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+
+#trece:target #criaturaenojada{
+    width: 25vw;
+    position: absolute;
+    left:20vw;
+    bottom: 10vh;
+    z-index: 4;
+}
+
+#trece:target #bocacriaturaenojada{
+    width: 10vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 25vh;
+    z-index: 6;
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#trece:target #cabezamuerto{
+    width: 10vw;
+    position: absolute;
+    left: 37vw;
+    bottom: 17vh;
+    z-index: 6;
+    transform: rotate(-249deg);
+    animation-name: cabeza;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#trece:target #herida13{
+    width: 10vw;
+    position: absolute;
+    left: 57vw;
+    bottom: 2vh;
+    z-index: 5;
+    opacity: 0;
+    animation-name: sangre;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#trece:target #herida132{
+    width: 12vw;
+    position: absolute;
+    left: 30vw;
+    bottom: 20vh;
+    z-index: 5;
+    opacity: 0;
+    animation-name: sangre;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.5);
+    }
+
+}
+
+@keyframes cabeza{
+
+    0%{
+        transform: rotate(-249deg);
+    }
+
+    50%{
+        transform: translateY(10vh) translateX(10vw) rotate(-249deg);
+
+    }
+
+    100%{
+        transform: translateY(5vh) translateX(20vw) rotate(-249deg);
+    }
+
+}
+@keyframes sangre{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 1;
+    }
+
+}
+
+#asesino{
+    position: absolute;
+    top:5%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8;   
+}
+#moraleja{
+    position: absolute;
+    top:20%;
+    right: 10%;
+    background-color: lightslategray;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8; 
+}
+
+#moraleja p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+#asesino p{
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 3.5vw;
+}
+#trece .revivir{
+    position: absolute;
+    top:40%;
+    right: 10%;
+    background-color: red;
+    width: 40vh;
+    height: 5vw;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 8; 
+    box-shadow: 0 0 50px black;
+}
+#trece a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Amatic SC', cursive;
+    display: inline;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+#trece > .revivir:hover{
+    transform: scale(2);
+}
+
+
+

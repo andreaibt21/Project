@@ -74,3 +74,16 @@ starLord.addEventListener("mouseleave", function(){
     textoSL.style.display = "none";
 
 })
+//J:Cambiar de ID para tener distintos diseños
+let divc=document.getElementById("seis")
+
+function modificar_id(ide){
+    divc.setAttribute("id","seis");
+    let enlace=document.getElementById(ide);
+    if(enlace.getAttribute("id") == "seis_c" ){
+        divc.setAttribute("id","c_seis");
+    }else if(enlace.getAttribute("id") == "seis_d"){
+        divc.setAttribute("id","d_seis");
+    }
+
+}

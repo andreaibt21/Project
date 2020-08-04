@@ -140,7 +140,7 @@
             <div class="mensaje sms-d cuadrito2d" ><p>Por acá es mejor</p></div>
                     
             <div class="flecha-abajo">
-                <a href="#seis">
+                <a href="#d_seis" id="seis_d" onclick='modificar_id("seis_d")'>
                     <i class="fas fa-angle-double-down flechaDos"></i>
                 </a>
             </div>
@@ -362,7 +362,7 @@
     </div>
     <img id = "marcianitoWalkForest" class="marcianito marcianitoTree" src="img/marcianito_meh.png" alt="marcianito">
     <div class="flecha-derecha">
-        <a href="#seis">
+        <a href="#c_seis" id="seis_c" onclick='modificar_id("seis_c")'>
             <i class="fas fa-angle-double-right"></i> 
         </a>
     </div>
@@ -378,35 +378,41 @@
 </article>
 
 <!--Janneth-->
-
-        <article id="seis">
-
-            <div id="bg6"></div>
-            <div id="agujero"></div>
-            <img class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
-            <div class="mensaje sms-m6" >
-                <p>¿Que deberia hacer?</p>
-            </div>
-            <div class="flecha-derecha">
+<article id="seis">
+    <div id="bg6"></div>
+    <div id="agujero"></div>
+    <div class="tunel"></div>
+    <div id="tunel_salida"></div>
+    
+    <div id="tunel-conti"></div>
+    <div id="t-franja"></div>
+    <img id="marcianito6" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+    
+    <div class="mensaje sms-m6" >
+        <p>¿Que deberia hacer?</p>
+    </div>
+    <div class="flecha-derecha">
                 <a href="#siete">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
-            </div>
-            <div class="mensaje sms-d6" >
-                <p>Sigo por el tunel</p>
-            </div>
-
-            <div class="flecha-abajo">
+    </div>
+    <div class="mensaje sms-d6" >
+                <p>Salgo del tunel</p>
+    </div>
+    <div class="flecha-abajo">
                 <a href="#diez">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
-            </div>
-            <div class="mensaje sms-ab6" >
-                <p>Salgo del tunel</p>
-            </div>
-            
+    </div>
+    <div class="mensaje sms-ab6" >
+                <p>Sigo por el tunel</p>
+    </div>
+    <div class="cartel-exit">
+        <p>S a l i d a</p> 
+    </div>
+    <img src="img/background/dX7ch.gif" alt="astronauta" id="astro-fondo">
     
-        </article>
+</article>
 
 <!--Florencia-->
 
@@ -574,27 +580,28 @@
 
         <article id="diez">
             <div id="bg10"></div>
-            <img class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <div class="tunel"></div>
+            <img class="marcianito10" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
             <div class="flecha-derecha">
                 <a href="#once">
                     <i class="fas fa-angle-double-right"></i>   
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje10D</p></div>
+            <div class="mensaje sms-d" ><p>Mejor Salgo<br> del Tunel</p></div>
 
             <div class="flecha-abajo">
                 <a href="#catorce">
                     <i class="fas fa-angle-double-down"></i> 
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje10A</p></div>
+            <div class="mensaje sms-ab" ><p>Esa criatura tierna<br>¿Podra ayudarme?</p></div>
 
             <div class="flecha-izquierda">
                 <a href="#nueve">
                     <i class="fas fa-angle-double-left"></i>
                 </a>
             </div>
-            <div class="mensaje sms-i" ><p>mensaje10I</p></div>
+            <div class="mensaje sms-i" ><p>¿Vamos a buscarlos al Bosque?</p></div>
      
         </article>
 
@@ -645,10 +652,24 @@
 <!--Nadine-->
 
         <article id="trece">
-            <div class="revivir">
-                <a href="#inicio">Inicio</a>
+            <div class="background">
+                <div id="planet13"></div>
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
             </div>
-            <div class="mensaje sms-x" ><p>REVIVIR!!!</p></div>
+            <img id="criaturaenojada" src="img/criaturaenojada2.png" alt="">
+            <img id="bocacriaturaenojada" src="img/partes_marcianito/criaturaenojadaboca.png" alt="">
+            <img id="cabezamuerto" src="img/partes_marcianito/cabezamuerto.png" alt="">
+            <img id="herida13" src="img/heridas/1_by_mechasamurai.png" alt="">
+            <img id="herida132" src="img/heridas/1_by_mechasamurai.png" alt="">
+            <div id="asesino"><p>ASESINO!</p></div>
+            <div id="moraleja"><p>Mataste a Pepito por confiar en criaturas desconocidas</p></div>
+            <div class="revivir">
+                <a href="#inicio">REVIVIR</a>
+            </div>
         </article>
 
 
@@ -687,9 +708,31 @@
 <!--Nadine-->
 
         <article id="dieciseis">
-            
-
-
+            <div id="text">
+                <p>Lo conseguiste!</p>
+            </div>
+            <div id="text2">
+                <p>Llegaste a casa</p>
+            </div>
+            <div id="text3">
+                <p>Gracias por hacer que Pepito se encuente con su familia! <br>
+                Y siempre recorda que todas las acciones tienen sus consecuencias!</p>
+            </div>
+            <div class="background">
+            <div id="planet16"></div>
+            <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+            <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+            <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+            <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+            <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+            <img id="casamarcianito" src="img/background/casa.png" alt="">
+            <img class="fireworks" id="fireworks" src="img/background/fuegosartificiales.png" alt="">
+            <img class="fireworks" id="fireworks2" src="img/background/fuegosartificiales.png" alt="">
+            <img class="fireworks" id="fireworks3" src="img/background/fuegosartificiales.png" alt="">
+            <img class="fireworks" id="fireworks4" src="img/background/fuegosartificiales.png" alt="">
+        </div>
+            <img id="marcianitofeliz" src="img/marcianito_feliz.png" alt="">
+            <img id="family" src="img/marcianito_family.png" alt="">
         </article>
 
 
