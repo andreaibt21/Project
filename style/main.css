@@ -236,23 +236,29 @@ p>.mensaje, .sms-x{
     background-color:greenyellow;
     z-index: 11;
 }
-#pinicio{
+#instructions{
     position: absolute;
     right: 38vw;
     background-color: rgba(7, 25, 102, 0.596);
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-        font-size: 2.3em;
-    font-weight: 700;
     color: aliceblue;
-    text-align: center;
     border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
     width: 28vw;
-    height: 16vh;
-    padding: 10px;
+    height: 45vh;
+    margin-top: 1%;
+    padding: 1%;
     z-index: 1;
 }
 
-
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+#pinicio{
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 /*----------------------BACKGROUND-----------------*/
 
@@ -270,7 +276,7 @@ p>.mensaje, .sms-x{
     left: 0;
     z-index: 0;
 } 
-x
+
 
 #planet{
     width: 80%;
@@ -531,13 +537,6 @@ x
 /*----------------------------------------------------------------------------------------*/
 
 /* ------------inicio-5-9--------------- */
-/* .dialogoInicio{
-    position: absolute;
-    width: 19vw;
-    right: 45vw;
-    top: 35vh;
-    z-index: 90;
-} */
 
 #cinco,#nueve {
     background: #0F2027;  /* fallback for old browsers */
