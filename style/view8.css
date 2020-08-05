@@ -1,7 +1,7 @@
 /* CSS para la view 8 */
 
 #ocho {
-    background-color: #000000;
+    background: #0F2027;
 }
 
 .alienship8 {
@@ -115,3 +115,52 @@
         left: -20vw;
     }
 }
+
+#doce{
+    background: #23074d;
+    background: -webkit-linear-gradient(to right,#5614B0, #000000  );
+    background: linear-gradient(to right, #5614B0, #000000);
+    display: flex;
+    flex-direction: column;
+}
+
+.shipContainer {
+    display: flex;
+    margin-left: 20vw;
+}
+
+.alienship12 {
+    align-self: center;
+    position: unset;
+}
+.textViewTwelve{
+    width: 35vw;
+    text-align: center;
+    border: double;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+    position: absolute;
+}
+.textViewTwelve:hover{
+    color: black;
+    background-color: whitesmoke;
+    transform: scale(1.1);
+}
+
+#textViewTwelve1{
+    top: 1vh;
+    left: 55vw;
+    
+}
+
+#textViewTwelve2{
+    bottom: 3vh;
+    left: 55vw;
+
+}
+
+
+  
