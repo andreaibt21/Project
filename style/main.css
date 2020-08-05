@@ -724,7 +724,7 @@ h2{
     animation: showCartel9 2s forwards;
     animation-delay: 1.5s;
 }
-.cartel9 p{
+.cartel9>p{
     text-align: center;
 }
 
