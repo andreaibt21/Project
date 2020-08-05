@@ -565,47 +565,6 @@ margin-bottom: .75rem !important;
 z-index: 30 !important;
 border-bottom-color: #45681e !important;
 }
-.tree-extra-large {
-width: 0;
-height: 0;
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 95px solid #365416;
-margin-top:auto;
-margin-right:-.9rem;
-z-index: 50;
-}
-.tree-large {
-display: inherit;
-width: 0; 
-height: 0; 
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 75px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
-}
-.tree-medium {
-width: 0;
-height: 0;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-bottom: 65px solid #365416;
-margin-top:auto;
-margin-right:-1rem;
-z-index: 50;
-}
-.tree-small {
-    width: 0;
-height: 0;
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-bottom: 55px solid #365416;
-margin-top:auto;
-margin-right:-1.5rem;
-z-index: 50;
-}
 .fondoArboles{
     z-index: 1;
     width: 100%;
@@ -626,6 +585,30 @@ z-index: 50;
     left: 26%;
     opacity: 28%;
     z-index: 4;
+}
+.cartel5{
+    position: absolute;
+    right: 24vw;
+    top: 2%;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(7, 25, 102, 0.596);
+    color: aliceblue;
+    border-radius: 20px;
+    width: 29vw;
+    height: 18vh;
+    padding: 10px;
+    z-index: 1;
+    font-size: 27px;
+}
+
+h2{
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+}
+#pinicio{
+    font-size: 0.9em;
+    font-weight: 700;
 }
 .sopi{
     background: linear-gradient(to bottom, #0f9b0f, #000000);
@@ -693,8 +676,8 @@ z-index: 50;
 }
 
 #cinco:target>#marcianitoWalkForest{
-    animation: alienWalkForest 1s forwards;
-    -webkit-animation: alienWalkForest 1s forwards;
+    animation: alienWalkForest 2s forwards;
+    -webkit-animation: alienWalkForest 2s forwards;
 }
 
 #nueve:target>#marcianitoFallForest{
@@ -765,8 +748,9 @@ z-index: 50;
     }
 }
 .reviveButton>p{
-    color: yellow;
-    font-size: xx-large;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 3em;
 }
 
 .reviveButton{
@@ -774,13 +758,19 @@ z-index: 50;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 100px;
-    height: 170px;
-    width: 170px;
-    background-color:red;
+    top: 20%;
+    height: 15vh;
+    width: 15vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    border-radius: 10px;
+    box-shadow: 0 0 50px palevioletred;
     z-index: 100;
     opacity: 0;
     text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /*--------------------------------PAGINA ONCE------------------------------------------*/
