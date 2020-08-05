@@ -983,12 +983,12 @@ z-index: 50;
     }
     100%{
         opacity: 0;
-        transform: scale(2);
+        transform: scale(1);
     }
 }
 @keyframes  m-ondas {
     0% {
-      transform: translateY(150vh);
+      transform: translateY(170vh);
       z-index: 5;
     }
 
@@ -996,13 +996,13 @@ z-index: 50;
         transform: translateY(0vh);
     }
 }
-@keyframes m-tunel{
+@keyframes m-tunel{/*agregar valores*/
 }
 
 #d_seis>.tunel,#diez>.tunel{
     position: absolute;
     background-color: black;
-    height: 55vh;
+    height: 80vh;
     width: 15vw;
     top: 0;
     left: 40vw;
@@ -1034,13 +1034,13 @@ z-index: 50;
     z-index: 4;
  
 }
-#d_seis:target >#marcianito6{
+#d_seis:target >#marcianito6, #diez:target>.marcianito10{
     
     animation-name: caida;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
-#marcianito6{
+#marcianito6,.marcianito10{
     z-index: 4;
     position:absolute;
     height: 100px;
@@ -1062,11 +1062,8 @@ z-index: 50;
     border-radius: 50%;
 }
 
-#seis> .sms-m6, .sms-ab6,.sms-d6{
-    border-radius: 50%;    
-}
 
-.sms-m6, .sms-ab6,.sms-d6{
+.sms-m6, .sms-ab6,.sms-d6,.sms-astro{
     display: none;
     font-family: 'Amatic SC', cursive;
     font-size: 18px;
@@ -1088,10 +1085,18 @@ z-index: 50;
 #d_seis>#marcianito6:hover ~ .sms-m6, #c_seis>#marcianito6:hover ~ .sms-m6 {
     display: block;
 }
+#astro-fondo:hover ~ .sms-astro {
+    display: block;
+}
 
 #d_seis> .sms-m6,#d_seis> .sms-ab6,#d_seis>.sms-d6,#c_seis> .sms-m6,#c_seis> .sms-ab6,#c_seis>.sms-d6{
     left: 50vw;
     top: 45vh;
+}
+
+#d_seis> .sms-astro,#c_seis> .sms-astro{
+    left: 23vw;
+    top: 27vh;
 }
 
 @keyframes cartel_exit{
@@ -1112,11 +1117,8 @@ z-index: 50;
     font-size: 18px;
     padding: 15px 30px;
     border: #b326eb solid 2px;
-    /* animation-name: cartel_exit;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; */
 }
-#d_seis>.flecha-derecha:hover ~ .cartel-exit>p, #c_seis>.flecha-derecha:hover ~ .cartel-exit>p{
+#d_seis>.flecha-derecha:hover ~ .cartel-exit>p, #diez>.flecha-derecha:hover ~ .cartel-exit>p, #c_seis>.flecha-derecha:hover ~ .cartel-exit>p{
     animation-name: cartel_exit;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -1135,7 +1137,7 @@ z-index: 50;
     position: absolute;
     background-color: black;
     height: 25vh;
-    width: 70vw;
+    width: 90vw;
     top: 46vh;
     left: 0vw;
     z-index: 4;
@@ -1175,50 +1177,52 @@ z-index: 50;
         background: -webkit-radial-gradient(left top, circle farthest-side,#7d8105  0%, #1a5c83 20%, #1a2a86 50%,#0c0431 80%);
     }
 }
-@keyframes caida_diez{
-    0%{
-        top:0;
-        left: 45vw;  
-        height: 50px;
-        transform: translateX(20px);  
-    }
-    25%{
-        transform: translateX(-20px);
 
-    }
-    50%{
-        transform: translateX(20px);
-
-    }
-    75%{
-        transform: translateX(-20px);
-    }
-    100%{
-        top: 45vh;
-        left: 45vw;           
-        height: 100px;
-        position: absolute;
-        z-index: 6;
-    }
-}
 #diez {
     animation-name: fondo-parpadeadiez;
      animation-duration: 0.2s;
      animation-iteration-count: infinite;
  } 
-
- #diez:target >.marcianito10{
-     animation-name: caida_diez;
-     animation: 4s;
-     animation-fill-mode: forwards;
- } .marcianito10{
-    z-index: 4;
-    position:absolute;
-    height: 100px;
-    top: 38vh;
-    left: 45vw; 
+ #tunel_opc{
+    position: absolute;
+    background-color: black;
+    border-radius: 20px;
+   top: 45vh;
+   left: 15vw;
+   width: 65vw;
+   height: 25vh;
+   z-index: 4;
+}
+#diez>#planeta2{
+    display:none;
  }
-#pDiez, #pCatorce{
+ #planet10{
+    width: 30%;
+    height: 15%;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #a78ae9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0,#a78ae9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 2;
+}
+#diez>#criatura_t{
+    position: absolute;
+    top:75vh;
+    left: 15vw;
+    z-index: 3;
+    height: 100px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#pDiez, #pCatorce,#pSeis{
+    text-align: center;
     width: 25vw;
     position:absolute;
     right: 8vw;
@@ -1230,6 +1234,38 @@ z-index: 50;
     color: aliceblue;
     font-size: 25px;
     padding: 10px;
+}
+/*--------------14-------------*/
+#catorce>.marcianito14{
+    position: absolute;
+    top: 40vh;
+    left: 60vw;
+    height: 300px;
+    z-index: 3;
+}
+#catorce>#criatura_t{
+    position: absolute;
+    top:40vh;
+    left: 29vw;
+    z-index: 3;
+    height: 250px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+#planet14{
+    width: 55%;
+    height: 38%;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #a78ae9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0,#a78ae9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 50px black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    z-index: 2;
 }
 
  /*----------------------MEDIA QUERIES-----------------*/
