@@ -239,7 +239,7 @@ p>.mensaje, .sms-x{
 
 .tituloInicio{
     position: absolute;
-    right: 35vw;
+    right: 32vw;
     top: 2%;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(7, 25, 102, 0.596);
@@ -257,7 +257,7 @@ p>.mensaje, .sms-x{
 
 #instructions{
     position: absolute;
-    right: 38vw;
+    right: 35vw;
     top: 15vh;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(7, 25, 102, 0.596);
@@ -283,12 +283,38 @@ h2{
 #logoCodeQueens{
     position: absolute;
     top: 3%;
-    right: 37%;
+    right: 34%;
     opacity: 96%;
     height: 9%;
     z-index: 1;
 }
 
+#inicio:target>#marcianitoInicio{
+    animation-name: marcianoSeMueve;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes marcianoSeMueve{
+
+    0% {
+        transform: translateX(40px);
+
+    }
+    50% {
+        transform: translateY(30px);
+
+    }
+    75% {
+        transform: translateX(-15px);
+
+}
+    100% {
+        transform: translateY(-30px);
+        transform: translateX(40px);
+    }
+}
 /*----------------------BACKGROUND-----------------*/
 
 #inicio,#diez,#catorce, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
@@ -895,15 +921,23 @@ h2{
 
 #mensajeUsuario{
     position: relative;
-    left: 55%;
-    width: 40%;
-    height: 7%;
-    background: #EB5757;
+    top: 5%;
+    left: 75%;
+    width: 20%;
+    height: 10%;
+    padding: 10px;
+    font-size: 27px;
+    background-color: rgba(7, 25, 102, 0.596);
+    color: aliceblue;
     border-radius: 20px;
     z-index: 100;
+   
 }
 
 #mensajeUsuario>p{
+    position: absolute;
+    top: -10%;
+    left: 25%;
     font-family: 'Amatic SC', cursive;
     color: #fff;
     text-align: center;
