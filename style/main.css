@@ -237,18 +237,37 @@ p>.mensaje, .sms-x{
     z-index: 11;
 }
 
-#instructions{
+.tituloInicio{
     position: absolute;
-    right: 38vw; /*38 antes*/
+    right: 35vw;
+    top: 2%;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(7, 25, 102, 0.596);
     color: aliceblue;
     border-radius: 20px;
-    width: 28vw;   /*28 antes*/
-    height: 47vh; /*16 antes*/
+    width: 35vw;
+    height: 8vh;
     padding: 10px;
     z-index: 1;
-    font-size: 30px;
+    font-size: 29px;
+}
+.tituloInicio>h2{
+    text-align: left;
+}
+
+#instructions{
+    position: absolute;
+    right: 38vw;
+    top: 15vh;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(7, 25, 102, 0.596);
+    color: aliceblue;
+    border-radius: 20px;
+    width: 28vw;
+    height: 36vh;
+    padding: 12px;
+    z-index: 1;
+    font-size: 23px;
 }
 
 h2{
@@ -259,6 +278,15 @@ h2{
 #pinicio{
     font-size: 0.9em;
     font-weight: 700;
+}
+
+#logoCodeQueens{
+    position: absolute;
+    top: 3%;
+    right: 37%;
+    opacity: 96%;
+    height: 9%;
+    z-index: 1;
 }
 
 /*----------------------BACKGROUND-----------------*/
@@ -586,6 +614,22 @@ border-bottom-color: #45681e !important;
     opacity: 28%;
     z-index: 4;
 }
+
+@keyframes fadeInOutUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+}
+      to{
+       top: 2%;
+  }
+}
+
+#cinco:target>.cartel5{
+    animation-name: fadeInOutUp;
+    animation-duration: 2s;    
+}
+
 .cartel5{
     position: absolute;
     right: 24vw;
@@ -599,24 +643,6 @@ border-bottom-color: #45681e !important;
     padding: 10px;
     z-index: 1;
     font-size: 27px;
-}
-@keyframes fadeInOutUp {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-      -webkit-transform: translateY(-50px);
-      -moz-transform: translateY(-50px);
-      -ms-transform: translateY(-50px);
-      -o-transform: translateY(-50px);
-}
-      to{
-       top: 2%;
-  }
-}
-
-.cartel5{
-    animation-name: fadeInOutUp;
-    animation-duration: 2s;    
 }
 
 h2{
@@ -694,8 +720,8 @@ h2{
 }
 
 #cinco:target>#marcianitoWalkForest{
-    animation: alienWalkForest 2s forwards;
-    -webkit-animation: alienWalkForest 2s forwards;
+    animation: alienWalkForest 4s forwards;
+    -webkit-animation: alienWalkForest 4s forwards;
 }
 
 #nueve:target>#marcianitoFallForest{
@@ -1479,7 +1505,7 @@ h2{
 
     .movimientoNave{
         position: absolute;
-        right: 20%;
+        right: 16%;
         z-index: 10;
         border: none;
     }
