@@ -895,15 +895,23 @@ h2{
 
 #mensajeUsuario{
     position: relative;
-    left: 55%;
-    width: 40%;
-    height: 7%;
-    background: #EB5757;
+    top: 5%;
+    left: 75%;
+    width: 20%;
+    height: 10%;
+    padding: 10px;
+    font-size: 27px;
+    background-color: rgba(7, 25, 102, 0.596);
+    color: aliceblue;
     border-radius: 20px;
     z-index: 100;
+   
 }
 
 #mensajeUsuario>p{
+    position: absolute;
+    top: 3%;
+    left: 25%;
     font-family: 'Amatic SC', cursive;
     color: #fff;
     text-align: center;

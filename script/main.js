@@ -24,7 +24,7 @@ function Back_Ground(ide){
         let audioGeneral = document.getElementById("audioGeneral");
         let main = document.getElementsById("container");
 
-        audioFinal.innerHTML += '<audio src="sound/007741506_prev.mp3" autoplay="true"></audio>'
+        audioFinal.innerHTML += '<audio src="./sound/007741506_prev.mp3" autoplay="true"></audio>'
         main.removeChild(audioGeneral);
 
     }
