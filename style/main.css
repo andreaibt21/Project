@@ -757,7 +757,7 @@ h2{
 }
 #nueve:target>.reviveButton{
     animation: showReviveButton 1.0s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1.8s;
 }
 
 #nueve:target>.cartel9{
@@ -865,7 +865,13 @@ h2{
     text-decoration: none;
 }
 
-
+.reviveButton:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
 
 
 
