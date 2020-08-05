@@ -28,13 +28,18 @@
                     <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
                     <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">   
                 </div>
-                <p id="pinicio">
-                    ¡AYUDA A PEPITO A ENCONTRAR A SUS PADRES!
-                </p>
-            
+                <div id="instructions">
+                    <h2>INSTRUCCIONES</h2>
+                    <p id="pinicio">
+                        Pepito se perdió en una peligrosa galaxia, necesita regresar a casa y tu lo puedes ayudar!. <br> 
+    
+                        Cada direccion lo llevará a un nuevo destino. <br>
+                        El jugador debe  elegir cuidadosamente el camino correcto, presionando las flechas. <br>
+                        ¿podrás llevarlo a su hogar?
+                    </p>
+                </div>
                 <div id="planet"></div>
                 <img class="marcianito" src="img/marcianito_llora.png" alt="marcianito">
-            
 
              <!--NAVE ESPACIAL-->
             <div class="movimientoNave"> 
@@ -259,12 +264,14 @@
         <img id="moon" src="./img/background/moon1.png" alt="">
     </div>"
 
+    <div class="cartel5"><p>¡Este bosque me dá miedo! ¿Entro al tunel? ¿o sigo buscando el camino a través del bosque?</p></div>
     <img class="fondoArboles" src="./img/arboles_bosque/arboles2.png" alt="arboles">
     <img id = "marcianitoWalkForest" class="marcianito marcianitoTree" src="img/marcianito_meh.png" alt="marcianito">
     <div class="flecha-derecha">
         <a href="#c_seis" id="seis_c" onclick='modificar_id("seis_c")'>
             <i class="fas fa-angle-double-right"></i> 
         </a>
+        
     </div>
     <div class="mensaje sms-d moreLeft" ><p>¿Entrar al tunel?</p></div>
 
@@ -288,8 +295,12 @@
     <div id="tunel-conti"></div>
     <div id="t-franja"></div>
     <img id="marcianito6" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+    <img src="img/background/dX7ch.gif" alt="astronauta" id="astro-fondo">
     
-    <!--FLECHAS-->
+    <p id="pSeis">Aparecio en un tunel <br>
+        ¿que deberia hacer Pepito? <br>
+        ¡Ten mucho cuidado!
+    </p>
     <div class="mensaje sms-m6" >
         <p>¿Que debería hacer?</p>
     </div>
@@ -306,6 +317,9 @@
                     <i class="fas fa-angle-double-down"></i>
                 </a>
     </div>
+    <div class="mensaje sms-astro" >
+        <p>YO no se nada!!</p>
+</div>
     <div class="mensaje sms-ab6" >
                 <p>Por acá sigo por el tunel</p>
     </div>
@@ -314,7 +328,7 @@
     </div>
     <!--FIN FLECHAS-->
 
-    <img src="img/background/dX7ch.gif" alt="astronauta" id="astro-fondo">
+   
     
 </article>
 
@@ -372,9 +386,7 @@
                 <a href="#inicio" class="revivir8">Vuelve a empezar</a>
             </div>
             <div class="movimientoNave1 alienship8" id="alienship8">
-                
-                
-                
+
                 <div class="nave1">
                     <div class="ventana1">
                         <img src="img/Marcianito_dasfio_sor.png" alt="marcianito" id="alien2">
@@ -416,48 +428,54 @@
         <img id="moon" src="./img/background/moon1.png" alt="">
     </div>"
 
-    <a href="#inicio" class="reviveButton"><p>REVIVIR!!!</p></a>
+    <a href="#inicio" class="reviveButton" id="reviveNueve"><p>REVIVIR!!!</p></a>
+    <div class="cartel9"><p>Pepito cayó en un pantano venenoso</p></div>
     <img class="fondoArboles" src="./img/arboles_bosque/arboles2.png" alt="arboles">
     <img id = "marcianitoFallForest" class="marcianito marcianitoFallTree" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
 
     <div class="sopi"></div>
-    <!-- <div class=lodo""></div> -->
-    <div><img id="blackhole" src="./img/arboles_bosque/blackhole.png" alt="black_hole"></div>
+    <!-- <div class="lodo"></div> -->
+    <div><img id="lodopng" src="./img/arboles_bosque/lodo.png" alt="lodo"></div>
 </article>
 
 <!--Janneth-->
 
-        <article id="diez">
-            <div id="bg10"></div>
-            <div class="tunel"></div>
-            <img class="marcianito10" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
-            <div class="flecha-derecha">
-                <a href="#once">
-                    <i class="fas fa-angle-double-right"></i>   
-                </a>
-            </div>
+<article id="diez">
+    <div id="bg10"></div>
+    <div class="tunel"></div>
+    <div id="tunel_opc"></div>
+    <div id="planet10"></div>
+    <img class="marcianito10" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+    <img src="./img/criaturatierna.png" alt="Criatura" id="criatura_t">
+    <div class="flecha-derecha">
+        <a href="#once">
+            <i class="fas fa-angle-double-right"></i>   
+        </a>
+    </div>
 
-            <p id="pDiez">Seguimos en el tunel pero encontramos tres 
-                opciones para elegir. <br>
-                ¡Ten cuidado!
-            </p>
-            <div class="mensaje sms-d" ><p>Mejor Salgo<br> del Tunel</p></div>
+    <p id="pDiez">Seguimos en el tunel pero encontramos tres 
+        opciones para elegir. <br>
+        ¡Ten cuidado!
+    </p>
+    <div class="mensaje sms-d" ><p>Mejor Salgo<br> del Tunel</p></div>
 
-            <div class="flecha-abajo">
-                <a href="#catorce">
-                    <i class="fas fa-angle-double-down"></i> 
-                </a>
-            </div>
-            <div class="mensaje sms-ab" ><p>Esa criatura tierna del fondo<br>¿Podrá ayudarme?</p></div>
+    <div class="flecha-abajo">
+        <a href="#catorce">
+            <i class="fas fa-angle-double-down"></i> 
+        </a>
+    </div>
+    <div class="mensaje sms-ab" ><p>Esa criatura tierna del fondo<br>¿Podrá ayudarme?</p></div>
 
-            <div class="flecha-izquierda">
-                <a href="#nueve">
-                    <i class="fas fa-angle-double-left"></i>
-                </a>
-            </div>
-            <div class="mensaje sms-i" ><p>¿Mi familia estará en el Bosque?</p></div>
-     
-        </article>
+    <div class="flecha-izquierda">
+        <a href="#nueve">
+            <i class="fas fa-angle-double-left"></i>
+        </a>
+    </div>
+    <div class="mensaje sms-i" ><p>¿Mi familia estará en el Bosque?</p></div>
+    <div class="cartel-exit">
+        <p>S a l i d a</p> 
+    </div>
+</article>
 
 <!--Florencia-->
 
@@ -504,22 +522,55 @@
 <!--Belen-->
 
         <article id="doce">
+            <div class="background">    
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                
+            </div>
 
-            <!--FLECHAS-->
             <div class="flecha-arriba">
                 <a href="#ocho">
                     <i class="fas fa-angle-double-up"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ar" ><p>mensaje12Ar</p></div>
+            <div class="shipContainer">
+                <div class="movimientoNave1 alienship12" id="alienship12">
+                
+                    <div class="nave1">
+                        <div class="ventana1">
+                            <img src="img/Marcianito_dasfio.png" alt="marcianito" id="alien2">
+                            <div class="franja1"></div>
+                            <div class="base-antena1">
+                                <div class="palo-11">
+                                    <div class="circulo-11"></div>
+                                </div>
+                            </div>
+                            <div class="base11">
+                                <div class="circle uno1"></div>
+                                <div class="circle dos1"></div>
+                                <div class="circle tres1"></div>
+                                <div class="base21">
+                                    <div class="circle cuatro1"></div>
+                                    <div class="circle cinco1"></div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="textViewTwelve"id="textViewTwelve1"> <strong>Selecciona la flechita hacia arriba si deseas ir hacia el camino donde se reunen las familias</strong>
+            </p>
+            <p class= "textViewTwelve"id="textViewTwelve2"> Selecciona la flechita hacia abajo si deseas perseguir una estrella fugaz </p> -->
+
+            <div class="mensaje sms-ar" ><p>¡Por aca!</p></div>
 
             <div class="flecha-abajo">
                 <a href="#dieciseis">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje12Ab</p></div>
-            <!--FIN FLECHAS-->
+            <div class="mensaje sms-ab" ><p>¡Allá vamos!</p></div>
         </article>
 
 <!--Nadine-->
@@ -548,30 +599,31 @@
 
 <!--Janneth-->
 
-        <article id="catorce">
-            <div id="bg14"></div>
-            <img class="marcianito" src="img/marcianito_meh.png" alt="marcianito">
-            
-            <!--FLECHAS-->
-            <p id="pCatorce">Te has encontrado con una criatura tierna, <br>
-                 ¿será bueno alejarse?</p>
+<article id="catorce">
+    <div id="bg14"></div>
+    <div id="planet14"></div>
+    <img class="marcianito14" src="./img/marcianito_meh.png" alt="marcianito">
+    <img src="./img/criaturatierna.png" alt="Criatura" id="criatura_t">
+    
+    <!--FLECHAS-->
+    <p id="pCatorce">Te has encontrado con una criatura tierna, <br>
+         ¿será bueno alejarse?</p>
 
-            <div class="flecha-izquierda">
-                <a href="#trece">
-                    <i class="fas fa-angle-double-left"></i>
-                </a>
-            </div>
-            <div class="mensaje sms-i" ><p>¿Y si me acerco a la criatura tierna?</p></div>
+    <div class="flecha-izquierda">
+        <a href="#trece">
+            <i class="fas fa-angle-double-left"></i>
+        </a>
+    </div>
+    <div class="mensaje sms-i" ><p>¿Y si me acerco a la criatura tierna?</p></div>
 
-            <div class="flecha-derecha">
-                <a onclick="animarPaginaQuince()" href="#quince">
-                    <i class="fas fa-angle-double-right"></i>
-                </a>
-            </div>
-            <div class="mensaje sms-d" ><p>Mejor me voy de acá</p></div>
+    <div class="flecha-derecha">
+        <a onclick="animarPaginaQuince()" href="#quince">
+            <i class="fas fa-angle-double-right"></i>
+        </a>
+    </div>
+    <div class="mensaje sms-d" ><p>Mejor me voy de acá</p></div>
 
-        </article>
-
+</article>
 <!--Florencia-->
 
         <article id="quince">

@@ -1,4 +1,4 @@
-//J: Cree esta funcion para que tengan el mismo fondo
+//J: Cree esta funcion para que tengan el mismo fondo 
 function Back_Ground(ide){
     square = document.getElementById(ide);
     square.innerHTML = "<div class='background'>"
@@ -13,9 +13,7 @@ function Back_Ground(ide){
     return square;
     }
     //pero solo lo aplique a los cuadritos 6,10,14. Pueden utilizarlo tambien
-    Back_Ground("bg5");
     Back_Ground("bg6");
-    Back_Ground("bg9");
     Back_Ground("bg10");
     Back_Ground("bg14");
 
@@ -46,12 +44,41 @@ function Back_Ground(ide){
     marciano.classList.add("marcianito15");
     cartelMuerte.classList.add("cartel-muerte");
     botonRevivir.classList.add("revivir15");
- }
 
     marciano.classList.add("marcianito15")
     cartelMuerte.classList.add("cartel-muerte")
+ }
 
 
+
+
+//--------------CUATRO
+//alien
+alien4.addEventListener("mouseenter", function(){
+    mensajeVerde[1].style.display = "block"
+})
+
+alien4.addEventListener("mouseleave", function(){
+    mensajeVerde[1].style.display = "none"
+})
+
+//starlord
+
+let starLord = document.getElementById("starlord")
+let mensajeSL = document.getElementById("imagenTSL")
+let textoSL = document.getElementById("textoSL")
+
+starLord.addEventListener("mouseenter", function(){
+    mensajeSL.style.display = "block";
+    textoSL.style.display = "block";
+    
+})
+
+starLord.addEventListener("mouseleave", function(){
+    mensajeSL.style.display = "none";
+    textoSL.style.display = "none";
+
+})
 //J:Cambiar de ID para tener distintos diseños
 let divc=document.getElementById("seis")
 
@@ -67,5 +94,3 @@ function modificar_id(ide){
 }
 
 view8Script();
-
-
