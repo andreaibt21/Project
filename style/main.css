@@ -250,6 +250,7 @@ p>.mensaje, .sms-x{
     height: 16vh;
     padding: 10px;
     z-index: 1;
+    font-size: 30px;
 }
 
 /*----------------------BACKGROUND-----------------*/
