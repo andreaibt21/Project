@@ -705,17 +705,15 @@ h2{
     z-index: 1;
 }
 
-/* .lodo{
-    background-color: #2b100c;
+#lodoUpper{
     position: absolute;
-    height: 30%;
-    width: 57%;
-    bottom: -50px;
-    left: 290px;
+    height: 34vh;
+    width: 60vw;
+    bottom: -10%;
+    left: 18%;
     overflow: hidden;
-    border-radius: 100%;
-    z-index: 100;
-} */
+    z-index: 90;
+}
 
 #lodopng{
     position: absolute;
@@ -724,7 +722,7 @@ h2{
     bottom: -10%;
     left: 18%;
     overflow: hidden;
-    z-index: 80;
+    z-index: 1;
 }
 
 .marcianitoTree {
