@@ -25,26 +25,34 @@ function Back_Ground(ide){
       let marciano = document.getElementById("marcianito7");
       let marcianoMuerto = document.getElementById("marcianitoMuerto7");
       let cartelMuerte = document.getElementById("cartel-muerte");
+      let botonRevivir = document.getElementById("revivir");
      
 
       meteorito.classList.add("meteorito");
       marciano.classList.add("marcianito7");
       marcianoMuerto.classList.add("marcianitoMuerto7");
-      cartelMuerte.classList.add("cartel-muerte")
+      cartelMuerte.classList.add("cartel-muerte");
+      botonRevivir.classList.add("revivir7");
+
+      meteorito.style.display = "block";
+      marcianoMuerto.style.display = "block";
    }
 
    function animarPaginaQuince(){
     let marciano = document.getElementById("marcianito15");
     let cartelMuerte = document.getElementById("cartel-muerte-15");
+    let botonRevivir = document.getElementById("revivir");
 
-    marciano.classList.add("marcianito15")
-    cartelMuerte.classList.add("cartel-muerte")
-   }
+    marciano.classList.add("marcianito15");
+    cartelMuerte.classList.add("cartel-muerte");
+    botonRevivir.classList.add("revivir15");
+ }
+
 let alien = document.getElementById("alien2");
 let alien4 = document.getElementById("alien4");
 let mensajeVerde = document.getElementsByClassName("verde")
 
-//-------------DOS
+//-------------DOS-----------------------------------
 alien.addEventListener("mouseenter", function(){
     mensajeVerde[0].style.display = "block"
 })
@@ -70,7 +78,7 @@ astronauta.addEventListener("mouseleave", function(){
 })
 
 
-//--------------CUATRO
+//--------------CUATRO------------------------------
 //alien
 alien4.addEventListener("mouseenter", function(){
     mensajeVerde[1].style.display = "block"

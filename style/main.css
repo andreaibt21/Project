@@ -146,7 +146,7 @@ i{
 
 .flecha-derecha:hover ~ .sms-d {
     display: block;
-    left: 84vw;
+    left: 70vw; /*antes 84*/
     top: 49vh;
 
 }
@@ -159,8 +159,8 @@ i{
 
 .flecha-izquierda:hover ~ .sms-i{
     display: block;
-    left: 8vw;
-    top: 49vh;
+    left: 10vw; /*antes 8*/
+    top: 52vh; /*antes 49*/
 }
 .flecha-arriba:hover ~ .sms-ar {
     display: block;
@@ -195,9 +195,10 @@ p>.mensaje, .sms-x{
     background-color:greenyellow;
     z-index: 11;
 }
+
 #pinicio{
     position: absolute;
-    right: 38vw;
+    right: 15vw; /*38 antes*/
     background-color: rgba(7, 25, 102, 0.596);
     font-family: 'Fira Sans Extra Condensed', sans-serif;
         font-size: 2.3em;
@@ -205,18 +206,23 @@ p>.mensaje, .sms-x{
     color: aliceblue;
     text-align: center;
     border-radius: 20px;
-    width: 28vw;
-    height: 16vh;
+    width: 40vw;   /*28 antes*/
+    height: 20vh; /*16 antes*/
     padding: 10px;
     z-index: 1;
 }
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#siete,#diez,#catorce, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#diez,#catorce, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#trece{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 /background: linear-gradient(to right, #434343, #000000); / W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #backgroundStars {
@@ -343,6 +349,7 @@ p>.mensaje, .sms-x{
 }
 
 #meteorito{
+    display: none;
     height: 50%;
     position: absolute;
     top: -900px;
@@ -382,6 +389,7 @@ p>.mensaje, .sms-x{
 }
 
 #marcianitoMuerto7{
+    display: none;
     height: 40%;
     position: absolute;
     bottom: 220%;
@@ -416,6 +424,7 @@ p>.mensaje, .sms-x{
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
+
 
 @keyframes cartel-muerte{
     100%{
@@ -458,6 +467,7 @@ p>.mensaje, .sms-x{
     animation-fill-mode: forwards;
 }
 #cartel-muerte>p, #cartel-muerte-15>p{
+    font-size: 40px;
     overflow: hidden;
     color: #fff;
     font-family: 'Amatic SC', cursive;
@@ -480,7 +490,8 @@ p>.mensaje, .sms-x{
 
 .revivir7{
     left: 25%;
-    z-index: 0;
+    opacity: 0;
+    animation: showReviveButton 1s linear 7s forwards ;
 }
 
 
@@ -807,7 +818,8 @@ border-bottom-color: #45681e !important;
     animation: marciano-gira 5s linear 0s infinite, marciano-gira2 5s linear 0s forwards, marciano-se-achica 3s linear 5s forwards;
 } 
 
-.revivir11{
+
+.revivir15{
     left: 25%;
 }
 
@@ -1123,10 +1135,25 @@ border-bottom-color: #45681e !important;
 
 @media only screen and (min-width: 992px){
 
+    .flecha-derecha:hover ~ .sms-d {
+        left: 84vw; 
+    }
+    
+    .flecha-izquierda:hover ~ .sms-i{
+        left: 8vw; 
+        top: 49vh; 
+    }
+
     #planeta2{
         height: 30%;
         top: 12%;
         left: 2%;
+    }
+
+    #pinicio{
+        right: 38vw; 
+        width: 28vw;   
+        height: 19vh; 
     }
 
     /*----------------------MARCIANITO DASFIO-----------------*/
@@ -1339,6 +1366,7 @@ border-bottom-color: #45681e !important;
     }
 
     #meteorito{
+        display: none;
         position: absolute;
         top: -810px;
         left: 100%;
@@ -1377,17 +1405,16 @@ border-bottom-color: #45681e !important;
     }
 
     .marcianito7{
-
         animation-name: vuelaMarciano;
         animation-delay: 2.7s;
         animation-duration: 1s;
         animation-iteration-count: 1;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
-        
     }
 
     #marcianitoMuerto7{
+        display: none;
         height: 300px;
         position: absolute;
         bottom: 1310px;
@@ -1453,6 +1480,7 @@ border-bottom-color: #45681e !important;
         animation-fill-mode: forwards;
     }
     .cartel-muerte>p{
+        font-size: 40px;
         overflow: hidden;
         color: #fff;
         font-family: monospace;
@@ -1985,7 +2013,7 @@ transform-origin: right;
 
 /* ------------------TRES------------------------ */
 
-#tres{
+#tres, #siete{
 
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
