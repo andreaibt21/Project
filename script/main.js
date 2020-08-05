@@ -17,6 +17,17 @@ function Back_Ground(ide){
     Back_Ground("bg10");
     Back_Ground("bg14");
 
+    // audio final
+
+    function audioFinal(){
+        let audioFinal = document.getElementById("audioFinal");
+        let audioGeneral = document.getElementById("audioGeneral");
+        let main = document.getElementsById("container");
+
+        audioFinal.innerHTML += '<audio src="sound/007741506_prev.mp3" autoplay="true"></audio>'
+        main.removeChild(audioGeneral);
+
+    }
     //funcion animaciones pag 7
     function animarPaginaSiete() {
       let meteorito = document.getElementById("meteorito");

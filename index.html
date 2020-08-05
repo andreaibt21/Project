@@ -79,7 +79,7 @@
             </div>
             <div class="mensaje sms-ab" ><p>Entrar al bosque</p></div>
             <!--FIN FLECHAS-->
-           
+            
         
         </article>
 
@@ -566,7 +566,7 @@
             <div class="mensaje sms-ar" ><p>¡Por aca!</p></div>
 
             <div class="flecha-abajo">
-                <a href="#dieciseis">
+                <a onclick="audioFinal()" href="#dieciseis">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
@@ -650,6 +650,7 @@
 <!--Nadine-->
 
         <article id="dieciseis">
+            <div id="audioFinal"></div>
             <div id="text">
                 <p>Lo conseguiste!</p>
             </div>
@@ -678,6 +679,8 @@
         </article>
 
 
+        <audio id="audioGeneral" src="sound/musica-misteriosa.mp3" autoplay="true" loop="true"></audio>
+    
     </main>
     <script src="script/main.js"></script>
     <script src="script/dosycuatro.js"></script>
