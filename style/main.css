@@ -707,6 +707,26 @@ h2{
     animation: showReviveButton 1.0s forwards;
     animation-delay: 1.5s;
 }
+.cartel9{
+    position: absolute;
+    right: 24vw;
+    top: 2%;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(7, 25, 102, 0.596);
+    color: aliceblue;
+    border-radius: 20px;
+    width: 22vw;
+    height: 12vh;
+    padding: 0;
+    z-index: 1;
+    font-size: 27px;
+    opacity: 0;
+    animation: showCartel9 2s forwards;
+    animation-delay: 1.5s;
+}
+.cartel9 p{
+    text-align: center;
+}
 
 .marcianitoFallTree {
     margin-left: 10px;
@@ -723,17 +743,9 @@ h2{
     }
     30%{
         transform: translate(300px);
-        -webkit-transform: translate(300px);
-        -moz-transform: translate(300px);
-        -ms-transform: translate(300px);
-        -o-transform: translate(300px);
 }
     55%{
         transform: translate(500px) rotate(45deg);
-        -webkit-transform: translate(500px) rotate(45deg);
-        -moz-transform: translate(500px) rotate(45deg);
-        -ms-transform: translate(500px) rotate(45deg);
-        -o-transform: translate(500px) rotate(45deg);
 }
     100%{
         transform: translate(600px, 500px) rotate(90deg);
@@ -785,11 +797,19 @@ h2{
     z-index: 100;
     opacity: 0;
     text-decoration: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
+
+@keyframes showCartel9 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
 
 /*--------------------------------PAGINA ONCE------------------------------------------*/
 #once{/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
