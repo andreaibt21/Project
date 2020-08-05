@@ -5,11 +5,14 @@ let mensajeVerde = document.getElementsByClassName("verde")
 
 
 alien.addEventListener("mouseenter", function(){
-    mensajeVerde[0].style.display = "block"
+    mensajeVerde[0].style.display = "block";
+    console.log("funciona")
 })
 
 alien.addEventListener("mouseleave", function(){
-    mensajeVerde[0].style.display = "none"
+    mensajeVerde[0].style.display = "none";
+    console.log("funcionaaa")
+
 })
 
 //astro 
@@ -20,23 +23,23 @@ let mensajeAzul= document.getElementsByClassName("mensajeA")
 
 astronauta.addEventListener("mouseenter", function(){
     mensajeAzul[0].style.display = "block";
-    mensajeAzul[1].style.display = "block"
+    mensajeAzul[1].style.display = "block";
 })
 
 astronauta.addEventListener("mouseleave", function(){
     mensajeAzul[0].style.display = "none";
-    mensajeAzul[1].style.display = "none"
+    mensajeAzul[1].style.display = "none";
 })
 
 
 //--------------CUATRO
 //alien
 alien4.addEventListener("mouseenter", function(){
-    mensajeVerde[1].style.display = "block"
+    mensajeVerde[1].style.display = "block";
 })
 
 alien4.addEventListener("mouseleave", function(){
-    mensajeVerde[1].style.display = "none"
+    mensajeVerde[1].style.display = "none";
 })
 
 //starlord

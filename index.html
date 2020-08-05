@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="style/favicon/favicon-16x16.png">
     <link rel="manifest" href="style/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="style/view8.css">
 </head>
 
 <body scroll="no">
@@ -26,7 +28,10 @@
                     <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
                     <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">   
                 </div>
-
+                <p id="pinicio">
+                    ¡AYUDA A PEPITO A ENCONTRAR A SUS PADRES!
+                </p>
+            
                 <div id="planet"></div>
                 <img class="marcianito" src="img/marcianito_llora.png" alt="marcianito">
             
@@ -62,14 +67,14 @@
             <div class="flecha-derecha">
                     <a href="#dos"><i class="fas fa-angle-double-right c-flecha"></i></a>                  
             </div>
-            <div class="mensaje sms-d" ><p>mensaje1D</p></div>
+            <div class="mensaje sms-d" ><p>Subir a la nave</p></div>
             
             <div class="flecha-abajo">
                 <a href="#cinco">
                     <i class="fas fa-angle-double-down"></i>
                 </a> 
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje1A</p></div>
+            <div class="mensaje sms-ab" ><p>Entrar al bosque</p></div>
             <!--FIN FLECHAS-->
            
         
@@ -172,7 +177,7 @@
             <div class="mensaje sms-d cuadrito" ><p>Corre por acá</p></div>
 
             <div class="flecha-abajo">
-                <a href="#siete">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
@@ -246,127 +251,23 @@
 <!--Luana-->
 
 <article id="cinco" class="backGroundNueveCinco">
-    <div id="bg5"></div>
+    <div class='background'>
+        <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+        <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+        <img id="estrella-fugaz1" src="img/background/estrellafugaz.png"  alt="">
+        <img id="estrella-fugaz2" src="img/background/estrellafugaz.png"  alt="">
+        <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+        <img id="moon" src="./img/background/moon1.png" alt="">
+    </div>"
 
-    <div class="tree-wrapper" style="display: flex;">
-        <div class="tree-container">
-          <div class="tree-extra-large"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-smal"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium middle"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-        </div>
-    </div>
+    <img class="fondoArboles" src="./img/arboles_bosque/arboles2.png" alt="arboles">
     <img id = "marcianitoWalkForest" class="marcianito marcianitoTree" src="img/marcianito_meh.png" alt="marcianito">
     <div class="flecha-derecha">
         <a href="#c_seis" id="seis_c" onclick='modificar_id("seis_c")'>
             <i class="fas fa-angle-double-right"></i> 
         </a>
     </div>
-    <div class="mensaje sms-d moreLeft" ><p>¿Salir del bosque?</p></div>
+    <div class="mensaje sms-d moreLeft" ><p>¿Entrar al tunel?</p></div>
 
     <div class="flecha-abajo">
         <a href="#nueve">
@@ -375,6 +276,7 @@
     </div>
     <div class="mensaje sms-ab" ><p>¿Continuar en el bosque?</p></div>
     <div class="sopi"></div>
+    <div class="hole"></div>
 </article>
 
 <!--Janneth-->
@@ -389,15 +291,15 @@
     <img id="marcianito6" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
     
     <div class="mensaje sms-m6" >
-        <p>¿Que deberia hacer?</p>
+        <p>¿Que debería hacer?</p>
     </div>
     <div class="flecha-derecha">
-                <a href="#siete">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
     </div>
     <div class="mensaje sms-d6" >
-                <p>Salgo del tunel</p>
+                <p>Puedo salir del tunel</p>
     </div>
     <div class="flecha-abajo">
                 <a href="#diez">
@@ -405,7 +307,7 @@
                 </a>
     </div>
     <div class="mensaje sms-ab6" >
-                <p>Sigo por el tunel</p>
+                <p>Por acá sigo por el tunel</p>
     </div>
     <div class="cartel-exit">
         <p>S a l i d a</p> 
@@ -417,6 +319,7 @@
 <!--Florencia-->
 
         <article id="siete">
+            
             <div class="background">
                 <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
                 <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
@@ -425,11 +328,12 @@
                 <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
                 <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">     
             </div>
-
+            
             <div id="planet"></div>
-            <img id="marcianito7" class="marcianito" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
-            <img class="marcianito-muerto-7" src="img/Marcianito_muerto.png" alt="">
+            <img  id="marcianito7" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <img id="marcianitoMuerto7"  src="img/Marcianito_muerto.png" alt="">>
             <img id="meteorito" src="img/muertes/meteorito.gif" alt=""> 
+           
             <a class="revivir7" id="revivir" href="#inicio">
                 <span id="span1"></span>
                 <span id="span2"></span>
@@ -438,7 +342,7 @@
                 Revivir
             </a>
 
-            <div class="cartel-muerte">
+            <div id="cartel-muerte">
                 <p>Elegiste el camino incorrecto <br><strong>A S E S I N O</strong></p>
             </div>
         </article>
@@ -446,134 +350,75 @@
 <!--Belen-->
 
         <article id="ocho">
-            <div class="revivir">
-                <a href="#inicio">Inicio</a>
+            
+            <div class="background">
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+                
             </div>
+            
+            
+            
+            <div class="deathTextView8" id= "deathTextView8">
+                <h1>¡Oh no! ¡Has enviado a Pepito a otra galaxia!</h1>
+                <a href="/" class="revivir8">Vuelve a empezar</a>
+            </div>
+            <div class="movimientoNave1 alienship8" id="alienship8">
+                
+                
+                
+                <div class="nave1">
+                    <div class="ventana1">
+                        <img src="img/Marcianito_dasfio_sor.png" alt="marcianito" id="alien2">
+                        <div class="franja1"></div>
+                        <div class="base-antena1">
+                            <div class="palo-11">
+                                <div class="circulo-11"></div>
+                                </div>
+                            </div>
+                        <div class="base11">
+                            <div class="circle uno1"></div>
+                            <div class="circle dos1"></div>
+                            <div class="circle tres1"></div>
+                            <div class="base21">
+                                <div class="circle cuatro1"></div>
+                                <div class="circle cinco1"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="spaceship" id="spaceship8">
+                <img class="spaceshipimage" src="img/angryspaceship.svg">
+            </div>
+            
             <div class="mensaje sms-x" ><p>REVIVIR!!!</p></div>
         </article>
 
 <!--Luana-->
 
 <article id="nueve" class="backGroundNueveCinco">
-    <div id="bg5"></div>
-    <a href="#inicio" class="reviveButton"><p>REVIVIR!!!</p></a>
-    <div class="tree-wrapper" style="display: flex;">
-        <div class="tree-container">
-          <div class="tree-extra-large"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-smal"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium middle"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-large middle"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-large back"></div>
-          <div class="tree-medium back"></div>
-          <div class="tree-small middle"></div>
-          <div class="tree-extra-large"></div>
-          <div class="tree-small back"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-small"></div>
-          <div class="tree-medium"></div>
-          <div class="tree-large"></div>
-        </div>
-    </div>
-    <img id = "marcianitoFallForest" class="marcianito marcianitoFallTree" src="img/Marcianito_muerto.png" alt="marcianito">
-    <div class="sopi"></div>
-    <div class="lodo"></div>
-    <div class="lodoUpper"></div>
+    <div class='background'>
+        <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+        <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+        <img id="estrella-fugaz1" src="img/background/estrellafugaz.png"  alt="">
+        <img id="estrella-fugaz2" src="img/background/estrellafugaz.png"  alt="">
+        <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+        <img id="moon" src="./img/background/moon1.png" alt="">
+    </div>"
 
+    <a href="#inicio" class="reviveButton"><p>REVIVIR!!!</p></a>
+    <img class="fondoArboles" src="./img/arboles_bosque/arboles2.png" alt="arboles">
+    <img id = "marcianitoFallForest" class="marcianito marcianitoFallTree" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+
+    <div class="sopi"></div>
+    <!-- <div class=lodo""></div> -->
+    <div><img id="blackhole" src="./img/arboles_bosque/blackhole.png" alt="black_hole"></div>
 </article>
 
 <!--Janneth-->
@@ -587,6 +432,11 @@
                     <i class="fas fa-angle-double-right"></i>   
                 </a>
             </div>
+
+            <p id="pDiez">Seguimos en el tunel pero encontramos tres 
+                opciones para elegir. <br>
+                ¡Ten cuidado!
+            </p>
             <div class="mensaje sms-d" ><p>Mejor Salgo<br> del Tunel</p></div>
 
             <div class="flecha-abajo">
@@ -594,40 +444,55 @@
                     <i class="fas fa-angle-double-down"></i> 
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>Esa criatura tierna<br>¿Podra ayudarme?</p></div>
+            <div class="mensaje sms-ab" ><p>Esa criatura tierna del fondo<br>¿Podrá ayudarme?</p></div>
 
             <div class="flecha-izquierda">
                 <a href="#nueve">
                     <i class="fas fa-angle-double-left"></i>
                 </a>
             </div>
-            <div class="mensaje sms-i" ><p>¿Vamos a buscarlos al Bosque?</p></div>
+            <div class="mensaje sms-i" ><p>¿Mi familia estará en el Bosque?</p></div>
      
         </article>
 
 <!--Florencia-->
 
         <article id="once">
+
+            <div class="background">
+                <img id="backgroundStars" src="img/background/background_estrellas.png" alt="estrellas">
+                <img id="estrella-fugaz" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz1" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz2" src="img/background/estrellafugaz.png" alt="">
+                <img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">
+                <img id="planeta2" src="img/background/planeta2.png" alt="planeta2">     
+            </div>
+
+            <div id="planet" class="planet11"></div>
+            <img id="marcianito-11" class="marcianito" src="img/marcianito_dasfio.png" alt="">
+            <img class="cartel-dir" src="img/cartel-direcciones.png" alt="">
+            <div id="mensajeUsuario"><p>¿Hacia dónde voy?</p></div>
+
             <div class="flecha-derecha">
                 <a href="#doce">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje11D</p></div>
+            <div class="mensaje sms-d" ><p>Ir hacia la derecha</p></div>
 
             <div class="flecha-arriba">
-                <a href="#siete">
+                <a onclick="animarPaginaSiete()" href="#siete">
                     <i class="fas fa-angle-double-up"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ar" ><p>mensaje11Ar</p></div>
+            <div class="mensaje sms-ar" ><p>Ir hacia arriba</p></div>
 
             <div class="flecha-abajo">
-                <a href="#quince">
+                <a onclick="animarPaginaQuince()" href="#quince">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
             </div>
-            <div class="mensaje sms-ab" ><p>mensaje11Ab</p></div>
+            <div class="mensaje sms-ab" ><p>Ir hacia abajo</p></div>
         
         </article>
 
@@ -679,29 +544,46 @@
             <div id="bg14"></div>
             <img class="marcianito" src="img/marcianito_meh.png" alt="marcianito">
             
+            <p id="pCatorce">Te has encontrado con una criatura tierna, <br>
+                 ¿será bueno alejarse?</p>
+
             <div class="flecha-izquierda">
                 <a href="#trece">
                     <i class="fas fa-angle-double-left"></i>
                 </a>
             </div>
-            <div class="mensaje sms-i" ><p>mensaje14I</p></div>
+            <div class="mensaje sms-i" ><p>¿Y si me acerco a la criatura tierna?</p></div>
 
             <div class="flecha-derecha">
-                <a href="#quince">
+                <a onclick="animarPaginaQuince()" href="#quince">
                     <i class="fas fa-angle-double-right"></i>
                 </a>
             </div>
-            <div class="mensaje sms-d" ><p>mensaje14D</p></div>
+            <div class="mensaje sms-d" ><p>Mejor me voy de acá</p></div>
 
         </article>
 
 <!--Florencia-->
 
         <article id="quince">
+            
+            <img id="marcianito15" src="img/Marcianito_dasfio_sor.png" alt="marcianito">
+            <img id="augero-negro" src="img/muertes/augero-negro.gif" alt="">
+
             <div class="revivir">
                 <a href="#inicio">Inicio</a>
             </div>
-            <div class="mensaje sms-x" ><p>REVIVIR!!!</p></div>
+            <a class="revivir11" id="revivir" href="#inicio">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Revivir
+            </a>
+
+            <div id="cartel-muerte-15">
+                <p>Elegiste el camino incorrecto <br><strong>A S E S I N O</strong></p>
+            </div>
         </article>
 
 
@@ -739,6 +621,7 @@
     </main>
     <script src="script/main.js"></script>
     <script src="script/dosycuatro.js"></script>
+    <script src="script/view8.js"></script>
 </body>
 
 </html>
