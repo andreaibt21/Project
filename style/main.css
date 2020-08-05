@@ -707,12 +707,27 @@ h2{
     animation: showReviveButton 1.0s forwards;
     animation-delay: 1.5s;
 }
+
+#nueve:target>.cartel9{
+    animation: showCartel9 2s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes showCartel9 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .cartel9{
     position: absolute;
-    right: 24vw;
+    right: 39vw;
     top: 2%;
     font-family: 'Amatic SC', cursive;
-    background-color: rgba(7, 25, 102, 0.596);
+    background-color: rgba(134, 86, 224, 0.596);
     color: aliceblue;
     border-radius: 20px;
     width: 22vw;
@@ -721,12 +736,11 @@ h2{
     z-index: 1;
     font-size: 27px;
     opacity: 0;
-    animation: showCartel9 2s forwards;
-    animation-delay: 1.5s;
 }
 .cartel9>p{
     text-align: center;
 }
+
 
 .marcianitoFallTree {
     margin-left: 10px;
@@ -799,14 +813,7 @@ h2{
     text-decoration: none;
 }
 
-@keyframes showCartel9 {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 
 
