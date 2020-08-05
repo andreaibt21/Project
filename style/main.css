@@ -600,6 +600,24 @@ border-bottom-color: #45681e !important;
     z-index: 1;
     font-size: 27px;
 }
+@keyframes fadeInOutUp {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+      -webkit-transform: translateY(-50px);
+      -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+      -o-transform: translateY(-50px);
+}
+      to{
+       top: 2%;
+  }
+}
+
+.cartel5{
+    animation-name: fadeInOutUp;
+    animation-duration: 2s;    
+}
 
 h2{
     font-size: 1.3em;
