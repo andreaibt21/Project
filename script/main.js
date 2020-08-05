@@ -1,4 +1,4 @@
-//J: Cree esta funcion para que tengan el mismo fondo 
+//J: Cree esta funcion para que tengan el mismo fondo
 function Back_Ground(ide){
     square = document.getElementById(ide);
     square.innerHTML = "<div class='background'>"
@@ -23,7 +23,7 @@ function Back_Ground(ide){
       let marciano = document.getElementById("marcianito7");
       let marcianoMuerto = document.getElementById("marcianitoMuerto7");
       let cartelMuerte = document.getElementById("cartel-muerte");
-     
+
 
       meteorito.classList.add("meteorito");
       marciano.classList.add("marcianito7");
@@ -38,63 +38,7 @@ function Back_Ground(ide){
     marciano.classList.add("marcianito15")
     cartelMuerte.classList.add("cartel-muerte")
    }
-let alien = document.getElementById("alien2");
-let alien4 = document.getElementById("alien4");
-let mensajeVerde = document.getElementsByClassName("verde")
 
-//-------------DOS
-alien.addEventListener("mouseenter", function(){
-    mensajeVerde[0].style.display = "block"
-})
-
-alien.addEventListener("mouseleave", function(){
-    mensajeVerde[0].style.display = "none"
-})
-
-//astro 
-
-let astronauta = document.getElementById("astro")
-let mensajeAzul= document.getElementsByClassName("mensajeA")
-
-
-astronauta.addEventListener("mouseenter", function(){
-    mensajeAzul[0].style.display = "block";
-    mensajeAzul[1].style.display = "block"
-})
-
-astronauta.addEventListener("mouseleave", function(){
-    mensajeAzul[0].style.display = "none";
-    mensajeAzul[1].style.display = "none"
-})
-
-
-//--------------CUATRO
-//alien
-alien4.addEventListener("mouseenter", function(){
-    mensajeVerde[1].style.display = "block"
-})
-
-alien4.addEventListener("mouseleave", function(){
-    mensajeVerde[1].style.display = "none"
-})
-
-//starlord
-
-let starLord = document.getElementById("starlord")
-let mensajeSL = document.getElementById("imagenTSL")
-let textoSL = document.getElementById("textoSL")
-
-starLord.addEventListener("mouseenter", function(){
-    mensajeSL.style.display = "block";
-    textoSL.style.display = "block";
-    
-})
-
-starLord.addEventListener("mouseleave", function(){
-    mensajeSL.style.display = "none";
-    textoSL.style.display = "none";
-
-})
 //J:Cambiar de ID para tener distintos diseños
 let divc=document.getElementById("seis")
 
@@ -110,3 +54,5 @@ function modificar_id(ide){
 }
 
 view8Script();
+
+
