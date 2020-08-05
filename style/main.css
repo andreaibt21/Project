@@ -289,7 +289,7 @@ h2{
     z-index: 1;
 }
 
-#inicio:target>#marcianitoInicio{
+#marcianitoInicio{
     animation-name: marcianoSeMueve;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -315,6 +315,7 @@ h2{
         transform: translateX(40px);
     }
 }
+
 /*----------------------BACKGROUND-----------------*/
 
 #inicio,#diez,#catorce, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
