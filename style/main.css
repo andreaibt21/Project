@@ -2296,7 +2296,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     z-index: 0;
 }
 #mensajeSL{
-    /* display:none; */
+    
     animation: starlord 5s linear infinite;
 
 }
@@ -2306,7 +2306,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     right: 45vw;
     top: 35vh;
     z-index: 90;
-    /* animation: starlord 5s linear infinite; */
+  display: none;
 
 }
 #mensajeSL>#textoSL{
