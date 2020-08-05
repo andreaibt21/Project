@@ -239,7 +239,7 @@ p>.mensaje, .sms-x{
 
 .tituloInicio{
     position: absolute;
-    right: 35vw;
+    right: 32vw;
     top: 2%;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(7, 25, 102, 0.596);
@@ -257,7 +257,7 @@ p>.mensaje, .sms-x{
 
 #instructions{
     position: absolute;
-    right: 38vw;
+    right: 35vw;
     top: 15vh;
     font-family: 'Amatic SC', cursive;
     background-color: rgba(7, 25, 102, 0.596);
@@ -283,10 +283,37 @@ h2{
 #logoCodeQueens{
     position: absolute;
     top: 3%;
-    right: 37%;
+    right: 34%;
     opacity: 96%;
     height: 9%;
     z-index: 1;
+}
+
+#marcianitoInicio{
+    animation-name: marcianoSeMueve;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes marcianoSeMueve{
+
+    0% {
+        transform: translateX(40px);
+
+    }
+    50% {
+        transform: translateY(30px);
+
+    }
+    75% {
+        transform: translateX(-15px);
+
+}
+    100% {
+        transform: translateY(-30px);
+        transform: translateX(40px);
+    }
 }
 
 /*----------------------BACKGROUND-----------------*/
@@ -679,17 +706,15 @@ h2{
     z-index: 1;
 }
 
-/* .lodo{
-    background-color: #2b100c;
+#lodoUpper{
     position: absolute;
-    height: 30%;
-    width: 57%;
-    bottom: -50px;
-    left: 290px;
+    height: 34vh;
+    width: 60vw;
+    bottom: -10%;
+    left: 18%;
     overflow: hidden;
-    border-radius: 100%;
-    z-index: 100;
-} */
+    z-index: 90;
+}
 
 #lodopng{
     position: absolute;
@@ -698,7 +723,7 @@ h2{
     bottom: -10%;
     left: 18%;
     overflow: hidden;
-    z-index: 80;
+    z-index: 1;
 }
 
 .marcianitoTree {
@@ -731,7 +756,7 @@ h2{
 }
 #nueve:target>.reviveButton{
     animation: showReviveButton 1.0s forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1.8s;
 }
 
 #nueve:target>.cartel9{
@@ -839,7 +864,13 @@ h2{
     text-decoration: none;
 }
 
-
+.reviveButton:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
 
 
 
@@ -991,7 +1022,6 @@ h2{
 /*-----------------------------------------------*/
   
 /* -------------5--------------- */
-
 /*---------6-10-14----------*/
 /*Seis desde dos*/
 #d_seis,#c_seis {
@@ -1117,12 +1147,13 @@ h2{
      top: 50vh;
      left: 45vw; 
  }
+ /* reparando agujero */
  #d_seis:target>#agujero{
      z-index: 5;
      position: absolute;
      background-color: wheat;
      top:10px;
-     left: 44vw;
+     left: 40vw;
      height: 2vh;
      width: 7vw;
      animation-name: agujero;
@@ -1131,6 +1162,20 @@ h2{
      padding: 10px 40px;
      border-radius: 50%;
  }
+ #c_seis:target>#agujero{
+    z-index: 5;
+    position: absolute;
+    background-color: wheat;
+    height: 25vh;
+     width: 2vw;
+     top: 46vh;
+     left: 0vw;
+    animation-name: agujero;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+ /* fin */
  
  
  .sms-m6, .sms-ab6,.sms-d6,.sms-astro{
@@ -1255,7 +1300,7 @@ h2{
   } 
   #tunel_opc{
      position: absolute;
-     background-color: black;
+     background-color: black; 
      border-radius: 20px;
     top: 45vh;
     left: 15vw;
@@ -1290,7 +1335,33 @@ h2{
      animation-duration: 1s;
      animation-iteration-count: infinite;
  }
- 
+ /* ------------------ */
+ #planeta3{
+    position:absolute;
+    height: 200px;
+    top: 7vh;
+    left: 1vw;
+}
+@keyframes orbit2 {
+    100% { transform:rotate(120deg); }
+    0% { transform:rotate(-240deg); }
+  }
+  
+#luna{
+   position: absolute;
+   border-radius: 50%;
+   padding: 15px;
+   top: 1vh;
+   left: 11vw;
+   background-color: antiquewhite;
+   animation-name: orbit2;
+   animation-duration:5s;
+   animation-timing-function:linear;
+   transform-origin: center 135px;
+   animation-iteration-count:infinite;
+   z-index: 6;
+}
+/* ------------ */
  #pDiez, #pCatorce,#pSeis{
      text-align: center;
      width: 25vw;
@@ -1337,7 +1408,8 @@ h2{
      left: 25%;
      z-index: 2;
  }
- 
+
+
  
  /*----------------------MEDIA QUERIES-----------------*/
 /*--------------------------------------------------------------------------------------------*/
