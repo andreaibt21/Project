@@ -7,7 +7,7 @@ function Back_Ground(ide){
     square.innerHTML +='<img id="estrella-fugaz1" src="img/background/estrellafugaz.png"  alt="">'
     square.innerHTML +='<img id="estrella-fugaz2" src="img/background/estrellafugaz.png"  alt="">'
     square.innerHTML +='<img id="estrella-fugaz3" src="img/background/estrellafugaz.png" alt="">'
-    square.innerHTML +='<img id="planeta2" src="img/background/planeta2.png" alt="planeta2">'
+    
     square.innerHTML +="</div>"
     console.log(square.innerHTML);
     return square;
