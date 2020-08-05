@@ -211,6 +211,8 @@ p>.mensaje, .sms-x{
     z-index: 1;
 }
 
+
+
 /*----------------------BACKGROUND-----------------*/
 
 #inicio,#siete,#diez,#catorce, #trece, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
@@ -486,7 +488,15 @@ p>.mensaje, .sms-x{
 
 /*----------------------------------------------------------------------------------------*/
 
-/* -------------5-9--------------- */
+/* ------------inicio-5-9--------------- */
+/* .dialogoInicio{
+    position: absolute;
+    width: 19vw;
+    right: 45vw;
+    top: 35vh;
+    z-index: 90;
+} */
+
 #cinco,#nueve {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -562,11 +572,11 @@ border-bottom-color: #45681e !important;
     z-index: 100;
 } */
 
-#blackhole{
+#lodopng{
     position: absolute;
-    height: 27vh;
+    height: 34vh;
     width: 60vw;
-    bottom: -6%;
+    bottom: -10%;
     left: 18%;
     overflow: hidden;
     z-index: 80;

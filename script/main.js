@@ -13,9 +13,7 @@ function Back_Ground(ide){
     return square;
     }
     //pero solo lo aplique a los cuadritos 6,10,14. Pueden utilizarlo tambien
-    Back_Ground("bg5");
     Back_Ground("bg6");
-    Back_Ground("bg9");
     Back_Ground("bg10");
     Back_Ground("bg14");
 
