@@ -109,39 +109,63 @@ article{
 
 .flecha-derecha{
     position: absolute;
-    right: 5%;
-    top: 50%;
+    right: 5vw;
+    top: 50vh;
     z-index: 10;
-
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
 }
 
 .flecha-abajo{
     position: absolute;
-    left: 50%;
-    bottom: 5%;
+    left: 50vw;
+    bottom: 5vh;
     z-index: 10;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
 }
 
 .flecha-izquierda{
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 50vh;
+    left: 5vw;
     z-index: 10;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
 }
 
 .flecha-arriba{
     position: absolute;
-    top: 5%;
-    left: 50%;
+    top: 5vh;
+    left: 50vw;
     z-index: 10;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
 }
 
 i{
     text-decoration: none;
     font-size: 30px ;
-    color: #191970;
+    color: white;
+    margin: 0 auto;
+    
 }
-
 
 
 .flecha-derecha:hover ~ .sms-d {
@@ -153,8 +177,9 @@ i{
 
 .flecha-abajo:hover ~ .sms-ab {
     display: block;
-    left: 47vw;
-    top: 78vh;
+    left: 49vw;
+    bottom: 15vh;
+   
 }
 
 .flecha-izquierda:hover ~ .sms-i{
@@ -177,15 +202,31 @@ i{
 
 /*Inicio*/
 
-p>.mensaje, .sms-d,.sms-ar,.sms-i,.sms-ab{
+p>.mensaje, .sms-d,.sms-i{
     display: none;
     padding: 2px;
     position:absolute;
-    border: black solid 1px;
+    border: none;
     color: blanchedalmond;
-    background-color: crimson;
+    background-color: #157b97c5;
+    border-radius: 5px;
     z-index: 11;
+    font-family:  'Amatic SC', cursive;
+    font-size: 20px;
 }
+p>.mensaje, .sms-ar,.sms-ab{
+    display: none;
+    padding: 2px;
+    position:absolute;
+    border: none;
+    color: blanchedalmond;
+    background-color: #db0f0fad;
+    border-radius: 5px;
+    z-index: 11;
+    font-family:  'Amatic SC', cursive;
+    font-size: 20px;
+}
+
 p>.mensaje, .sms-x{
     display: none;
     padding: 15px;
@@ -210,6 +251,7 @@ p>.mensaje, .sms-x{
     height: 20vh; /*16 antes*/
     padding: 10px;
     z-index: 1;
+    font-size: 30px;
 }
 
 /*----------------------BACKGROUND-----------------*/
@@ -232,7 +274,8 @@ p>.mensaje, .sms-x{
     top: 0;
     left: 0;
     z-index: 0;
-}
+} 
+x
 
 #planet{
     width: 80%;
@@ -514,7 +557,47 @@ margin-bottom: .75rem !important;
 z-index: 30 !important;
 border-bottom-color: #45681e !important;
 }
-
+.tree-extra-large {
+width: 0;
+height: 0;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-bottom: 95px solid #365416;
+margin-top:auto;
+margin-right:-.9rem;
+z-index: 50;
+}
+.tree-large {
+display: inherit;
+width: 0; 
+height: 0; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 75px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
+.tree-medium {
+width: 0;
+height: 0;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-bottom: 65px solid #365416;
+margin-top:auto;
+margin-right:-1rem;
+z-index: 50;
+}
+.tree-small {
+    width: 0;
+height: 0;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 55px solid #365416;
+margin-top:auto;
+margin-right:-1.5rem;
+z-index: 50;
+}
 .fondoArboles{
     z-index: 1;
     width: 100%;
@@ -745,7 +828,7 @@ border-bottom-color: #45681e !important;
     position: relative;
     left: 55%;
     width: 40%;
-    height: 5%;
+    height: 7%;
     background: #EB5757;
     border-radius: 20px;
     z-index: 100;
@@ -1128,7 +1211,19 @@ border-bottom-color: #45681e !important;
     top: 38vh;
     left: 45vw; 
  }
-
+#pDiez, #pCatorce{
+    width: 25vw;
+    position:absolute;
+    right: 8vw;
+    background-color: rgba(7, 25, 102, 0.596);
+    z-index: 90;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 10px;
+}
 
  /*----------------------MEDIA QUERIES-----------------*/
 /*--------------------------------------------------------------------------------------------*/
@@ -1513,19 +1608,7 @@ border-bottom-color: #45681e !important;
 
 /* --------------------DOS-------------------------- */
 
-#dos .cuadrito2, #dos .cuadrito2d{
-    background-color: #157b97c5;
-    font-family:  'Amatic SC', cursive;
-    color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
 
-}
-#dos .cuadrito2d{
-    margin-right: 50px ;
-    margin-bottom: 100px;
-}
 
 
 @keyframes vueloAstro{
@@ -1548,7 +1631,7 @@ border-bottom-color: #45681e !important;
     
 }
 
-/* #azul, #astronauta p, #astro{ */ #astronauta{
+#astronauta{
     z-index: 90;
     position: absolute;
     animation-name: vueloAstro;
@@ -2064,7 +2147,7 @@ transform-origin: right;
     width: 40vw;
     position: absolute;
     left: 15vw;
-    top:22vh;
+    top:20vh;
     z-index: 1;
     animation: monstruoMove 3s linear infinite;
 }
@@ -2097,13 +2180,6 @@ transform-origin: right;
 
 }
 
-#tres .cuadrito {
-    background-color: #0f9b0fad;
-    border-radius: 5px;
-    border:none; font-family: 'Amatic SC', cursive;
-    font-size: 20px;
-
-}
 
 /* ------------------CUATRO------------------------- */
 
@@ -2114,15 +2190,7 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
 
 }
 
-#cuatro .cuadrito4{
-    background-color: #c7db0fad;
-    border-radius: 5px;
-    border:none; font-family: 'Amatic SC', cursive;
-    font-size: 20px;
-   padding: 0 5px;
-   margin-left: 20px;
 
-}
 #starlord{
     height:  30vw;
     position: absolute;
