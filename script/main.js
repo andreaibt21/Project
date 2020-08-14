@@ -98,3 +98,20 @@ function modal(){
 
 }
 
+//BOTON SONIDO
+let boton = document.getElementById("boton");
+let v = document.getElementsByTagName("audio")[0];
+let sound = false;
+var icon = document.getElementById("boton");
+boton.addEventListener("click", function(){
+  if (!sound) {
+    v.play();
+    icon.classList=('fas fa-volume-up');
+    sound = true;
+   } else {
+    v.pause();
+    icon.classList=('fas fa-volume-mute');
+    sound = false;
+   } 
+ });
+
