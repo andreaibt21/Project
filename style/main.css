@@ -318,7 +318,7 @@ h2{
 
 /*----------------------BACKGROUND-----------------*/
 
-#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve, #diecisei {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
+#inicio,#seis,#siete,#diez,#catorce,#cinco,#nueve, #dieciseis {/*J:Agregue id de 6,10 y 14 para que tenga fondo*/
     background: #C33764;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -2875,8 +2875,7 @@ font-size: 18px;
 
 #boton{
     position: absolute;
-    width: 50px;
     left: 27vw;
     top: 6%;
-    z-index: 700;
+    z-index: 20;
 }
