@@ -463,7 +463,7 @@ h2{
 }
 
 
-.meteorito{
+#siete:target>#meteorito{
     animation-name: meteorito;
     animation-duration: 3s;
     animation-iteration-count: inherit;
@@ -513,7 +513,7 @@ h2{
 }
 
 
-.marcianito7{
+#siete:target>#marcianito7{
     animation-name: vuelaMarciano;
     animation-delay: 2.5s;
     animation-duration: 1s;
@@ -522,7 +522,7 @@ h2{
     animation-fill-mode: forwards;
 }
 
-.marcianitoMuerto7{
+#siete:target>#marcianitoMuerto7{
     animation-name: cae-marciano-muerto;
     animation-delay: 4s;
     animation-duration: 3s;
@@ -567,7 +567,8 @@ h2{
     border-radius: 20px;
 }
 
-.cartel-muerte {
+
+#siete:target>#cartel-muerte, #quince:target>#cartel-muerte-15 {
     animation: cartel-muerte 3s linear 7s, movimiento-cartel 5s linear 13s infinite;
     animation-fill-mode: forwards;
 }
@@ -581,7 +582,7 @@ h2{
     font-size: 0;
 }
 
-.cartel-muerte>p{
+#siete:target>#cartel-muerte>p, #quince:target>#cartel-muerte-15>p{
     animation-name: cartel-muerte;
     animation-delay: 7s;
     animation-duration: 6s;
@@ -593,7 +594,7 @@ h2{
     color: black;
 }
 
-.revivir7{
+#siete:target>#revivir7{
     left: 25%;
     opacity: 0;
     animation: showReviveButton 1s linear 7s forwards ;
@@ -842,6 +843,7 @@ h2{
         opacity: 1;
     }
 }
+
 .reviveButton>p{
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -1005,12 +1007,12 @@ h2{
     left: 70%;
 }  
 
-.marcianito15{
+#quince:target>#marcianito15{
     animation: marciano-gira 5s linear 0s infinite, marciano-gira2 5s linear 0s forwards, marciano-se-achica 3s linear 5s forwards;
 } 
 
 
-.revivir15{
+#revivir15{
     left: 25%;
 }
 
@@ -1655,7 +1657,7 @@ h2{
     }
 
     
-    .meteorito{
+    #siete:target>#meteorito{
         animation-name: meteorito;
         animation-duration: 3s;
         animation-iteration-count: inherit;
@@ -1685,7 +1687,7 @@ h2{
 
     }
 
-    .marcianito7{
+    #siete:target>#marcianito7{
         animation-name: vuelaMarciano;
         animation-delay: 2.7s;
         animation-duration: 1s;
@@ -1704,7 +1706,7 @@ h2{
         z-index: 4;
     }
 
-    .marcianitoMuerto7{
+    #siete:target>#marcianitoMuerto7{
         animation-name: cae-marciano-muerto;
         animation-delay: 4s;
         animation-duration: 3s;
@@ -1715,8 +1717,8 @@ h2{
 
     @keyframes cartel-muerte{
         100%{
-            height: 100px;
-            width: 400px;
+            height: 110px;
+            width: 420px;
             font-size: 24px;
             opacity: 1;
         }
@@ -1756,11 +1758,12 @@ h2{
         z-index: 100;
     }
 
-    .cartel-muerte{
+    #siete:target>#cartel-muerte{
         animation: cartel-muerte 3s linear 7s, movimiento-cartel 5s linear 13s infinite;
         animation-fill-mode: forwards;
     }
-    .cartel-muerte>p{
+    
+    #siete:target>#cartel-muerte>p{
         font-size: 40px;
         overflow: hidden;
         color: #fff;
@@ -2782,7 +2785,6 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     position: relative; 
     display: none;
     z-index: 100; 
-    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -2797,6 +2799,10 @@ background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, F
     margin: 15% auto; 
     padding: 20px;
     width: 80%; 
+}
+
+.modal-content h3{
+    color: #fff;
 }
 
 
@@ -2863,4 +2869,13 @@ text-decoration: none;
 color: rgb(209, 209, 209);
 margin: 0.5em 0;
 font-size: 18px;
+}
+
+#icons>a{
+    margin: 0 10px;
+}
+
+.pic{
+    height: 270px;
+    width: 280px;
 }

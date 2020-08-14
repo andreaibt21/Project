@@ -31,34 +31,34 @@ function Back_Ground(ide){
     //funcion animaciones pag 7
     function animarPaginaSiete() {
       let meteorito = document.getElementById("meteorito");
-      let marciano = document.getElementById("marcianito7");
+      // let marciano = document.getElementById("marcianito7");
       let marcianoMuerto = document.getElementById("marcianitoMuerto7");
-      let cartelMuerte = document.getElementById("cartel-muerte");
-      let botonRevivir = document.getElementById("revivir");
+      // let cartelMuerte = document.getElementById("cartel-muerte");
+      // let botonRevivir = document.getElementById("revivir");
      
 
-      meteorito.classList.add("meteorito");
-      marciano.classList.add("marcianito7");
-      marcianoMuerto.classList.add("marcianitoMuerto7");
-      cartelMuerte.classList.add("cartel-muerte");
-      botonRevivir.classList.add("revivir7");
+      // meteorito.classList.add("meteorito");
+      // marciano.classList.add("marcianito7");
+      // marcianoMuerto.classList.add("marcianitoMuerto7");
+      // cartelMuerte.classList.add("cartel-muerte");
+      // botonRevivir.classList.add("revivir7");
 
       meteorito.style.display = "block";
       marcianoMuerto.style.display = "block";
    }
 
-   function animarPaginaQuince(){
-    let marciano = document.getElementById("marcianito15");
-    let cartelMuerte = document.getElementById("cartel-muerte-15");
-    let botonRevivir = document.getElementById("revivir");
+//    function animarPaginaQuince(){
+//     let marciano = document.getElementById("marcianito15");
+//     let cartelMuerte = document.getElementById("cartel-muerte-15");
+//     let botonRevivir = document.getElementById("revivir");
 
-    marciano.classList.add("marcianito15");
-    cartelMuerte.classList.add("cartel-muerte");
-    botonRevivir.classList.add("revivir15");
+//     marciano.classList.add("marcianito15");
+//     cartelMuerte.classList.add("cartel-muerte");
+//     botonRevivir.classList.add("revivir15");
 
-    marciano.classList.add("marcianito15")
-    cartelMuerte.classList.add("cartel-muerte")
- }
+//     marciano.classList.add("marcianito15")
+//     cartelMuerte.classList.add("cartel-muerte")
+//  }
 
 
 
